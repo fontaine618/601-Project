@@ -1,0 +1,81 @@
+\documentclass[bj, preprint]{imsart}
+\RequirePackage[OT1]{fontenc}
+\RequirePackage[colorlinks,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{amsthm,amsmath,natbib,booktabs,cleveref}
+
+% put your definitions there:
+\endlocaldefs
+\input{../utils/preamble}
+
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{{\Large STATS 601 Project Proposal:} \\ 
+\bf Our awesome project}\simon{change title}
+\runtitle{Short title for our awesome project}\simon{change running title}
+
+\begin{aug}
+\author{
+\fnms{Simon} 
+\snm{Fontaine}
+\thanksref{a,e1}
+\ead[label=e1,mark]{simfont@umich.edu}
+},
+\author{
+\fnms{Moritz} 
+\snm{Korte-Stapff}
+\thanksref{a,e2}
+\ead[label=e2,mark]{kortest@umich.edu}
+}
+\and
+\author{
+\fnms{Brian} 
+\snm{Manzo}
+\thanksref{a,e3}
+\ead[label=e3,mark]{bmanzo@umich.edu}
+}
+\address[a]{University of Michigan, Department of Statistics. West Hall, 1085 South University, Ann Arbor, MI, U.S.A., 48109. \printead{e1,e2,e3}}
+\runauthor{S. Fontaine, M. Korte-Stapff and B. Manzo}
+\affiliation{University of Michigan, Department of Statistics}
+\end{aug}
+
+
+
+%\begin{abstract}
+
+%\end{abstract}
+
+% \tableofcontents
+\listoftodos
+\end{frontmatter}
+
+
+% You each have your own command to annotate the text:
+\simon{Simon's comments}
+\moritz{Moritz's comment}
+\brian{Brian's comment}
+
+%------------------------------------------------------------------------------
+\section{The dataset}\label{sec:dataset}\simon{do this}
+
+\cite{}
+
+%------------------------------------------------------------------------------
+\section{Research questions}\label{sec:research}\simon{do this}
+
+
+%------------------------------------------------------------------------------
+\section{Methodology}\label{sec:method}\simon{do this}
+
+
+%------------------------------------------------------------------------------
+\bibliographystyle{imsart-nameyear}
+\bibliography{../utils/references}{}
+
+
+
+
+
+\end{document}
