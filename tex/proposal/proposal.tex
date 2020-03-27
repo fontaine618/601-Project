@@ -13,8 +13,8 @@
 \begin{frontmatter}
 
 \title{{\Large STATS 601 Project Proposal:} \\ 
-\bf Our awesome project}\simon{change title}
-\runtitle{Short title for our awesome project}\simon{change running title}
+\bf Caught Looking: Analyzing Variation in Umpire Strike Zones}\brian{other title option: From Blue to Deep Blue? Assessing the case for robot umpires}
+\runtitle{Caught Looking}
 
 \begin{aug}
 \author{
@@ -54,21 +54,48 @@
 
 % You each have your own command to annotate the text:
 \simon{Simon's comments}
-\moritz{Moritz's comment}
-\brian{Brian's comment}
+\moritz{Moritz's comments}
+\brian{Brian's comments}
 
 %------------------------------------------------------------------------------
-\section{The dataset}\label{sec:dataset}\simon{do this}
-
-\cite{}
+\section{Introduction}\label{sec:intro}
+As technology advances, Major League Baseball (MLB) has faced increased pressure from fans, coaches, and players to use video technologies to aid umpires in making calls on the field.
+In particular, ball and strike calls are notoriously subjective and challenging for a human to make.\footnote{\url{https://www.youtube.com/watch?v=Akx2kBavZ9Y}}
+With this project, we will assess the ability of umpires to make ball and strike calls that match the rulebook and that are consistent across different game situations. 
+%The data necessary for this project, known as PITCHf/x, is freely available from the MLB and can be found at various other baseball websites.
+%We will use classification techniques such as kernel logistic regression, additive logistic regression, and tree methods to infer strike zone densities for each umpire across a variety of situations. 
+%Once we have found each umpire's unique strike zone, we will do inference to determine which umpires are the most consistent and closest to the definition in the rule book.
+The team members for this project are Simon Fontaine, Moritz Korte-Stapff, and Brian Manzo, all team members are first year Ph.D. students in the Department of Statistics. 
 
 %------------------------------------------------------------------------------
-\section{Research questions}\label{sec:research}\simon{do this}
-
+\section{The dataset}\label{sec:dataset}
+PITCHf/x is a system that uses cameras mounted in every MLB stadium to track the speed and location of every pitched baseball. 
+We will access csv files of the PITCHf/x data for the entire 2018 season from Kaggle (cite) and supplement those files with other data from MLB such as player heights. 
+The most important part of the PITCHf/x data for our purposes is the set of coordinates that gives the location of every ball that crosses the plate, but it has many other details about the game and players involved that will enable us to assess the ability of umpires to stay consistent across a variety of situations.
 
 %------------------------------------------------------------------------------
-\section{Methodology}\label{sec:method}\simon{do this}
+\section{Research questions}\label{sec:research}
+The first question we are looking to answer is whether umpires' realized strike zones match the requirements prescribed by the official rules of baseball. 
+Once we have strike zone densities for each umpire, we can use simulation to assess their ``error rate" - the percentage of pitches they would classify as a ball or strike that, according to the rules of baseball, should have the opposite classification.
+As time and space permit, we also are looking to answer the following:
+\begin{itemize}
+\item Do umpires' strike zones change when there are 2 strikes in the count? What about 3 balls?
+\item Do umpires have different strike zones for star pitchers and batters than they do for mediocre players?
+\item Do umpires change their strike zone when a game goes into extra innings?
+\end{itemize}
+The general theme of each all of these questions is: how good are umpires at calling balls and strikes? 
+The worse the umpires perform in game situations, the louder will be the calls for technology-aided officiating.
 
+%------------------------------------------------------------------------------
+\section{Methodology}\label{sec:method}
+Estimating strike zones from pitch location data is fundamentally a nonlinear classification problem. 
+Given pitches that have an x and y coordinate, we want to classify the pitches in a rectangle in the middle of the grid as strikes, and anything too far away from the middle (outside the rectangle) as balls.
+Some methods that we think would succeed in drawing a realistic decision boundary are kernel logistic regression, additive logistic regression, support vector machines, and tree-based methods. 
+Once we have found a technique that we feel is giving a fair representation of the umpires' strike zones based solely on the pitch location, we can train classifiers that take into account game-level and player-level information (i.e., game situation or player skill).
+The density estimates can be discretized a 2d grid (say 100x100 so we get a vector of size 10000) and then we can run some sort of KernelPCA on it to reduce the dimension.
+Then finally compare if the reduced strike zone varies between umpires and according to different game situations with some 
+(multivariate) mixed effects model.
+These methods, which we have studied in 600 and 601, will allow us to construct the strike zone densities, reduce dimension, and then do inference to determine whether strike zones are inconsistent across game situations and different umpires.
 
 %------------------------------------------------------------------------------
 \bibliographystyle{imsart-nameyear}
