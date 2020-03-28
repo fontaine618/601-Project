@@ -7,7 +7,7 @@ from scipy import optimize
 
 from sklearn.base import BaseEstimator, ClassifierMixin
 from sklearn.utils.validation import check_X_y, check_array, check_is_fitted
-
+from sklearn.utils.optimize import _check_optimize_result
 from sklearn.metrics.pairwise import pairwise_kernels
 from sklearn.preprocessing import LabelBinarizer
 
@@ -35,29 +35,25 @@ def _loss_and_grad(w, K, y, alpha, clip=30):
             The gradient
     """
 
-    # n_samples = K.shape[0]
+    n_samples = K.shape[0]
 
     linear_prediction = K.dot(w)
-    out = (alpha / 2.) * w.T.dot(K).dot(w)
+    penalty = (alpha / 2.) * w.T.dot(K).dot(w)
 
     # Loss for kernel logistic regression is the negative likelihood
-    out += np.mean(np.where(
-        np.abs(linear_prediction) > clip,
-        -y * linear_prediction,
-        np.log(1 + np.exp(-y * linear_prediction.clip(-clip, clip)))
-    ))
+    out = np.sum(-y * linear_prediction + np.log(1 + np.exp(linear_prediction))) + penalty
 
     z = expit(linear_prediction)
-    z0 = (y * 2. - 1.) - z - alpha * w
+    z0 = y - z - alpha * w
 
     grad = -K.dot(z0)
 
     return out, grad
 
 
-def _kernel_logistic_regression_path(K, y, tol=1e-4, coef=None,
+def _kernel_logistic_regression_path(K, y, max_iter, tol=1e-4, coef=None,
                                      solver='lbfgs', check_input=True,
-                                     C = 1, maxiter=1000):
+                                     C = 1):
     """
     Compute the kernel logistic regression model
     :param K:
@@ -104,14 +100,14 @@ def _kernel_logistic_regression_path(K, y, tol=1e-4, coef=None,
         opt_res = optimize.minimize(
             func, w0, method="L-BFGS-B", jac=True,
             args=(K, y, 1. / C, 30),
-            options={"iprint": iprint, "gtol": tol, "maxiter": maxiter}
+            options={"iprint": iprint, "gtol": tol, "maxiter": max_iter}
         )
 
-        # TODO: Check Result
+    n_iter = _check_optimize_result(solver, opt_res, max_iter)
 
     w0, loss = opt_res.x, opt_res.fun
 
-    return np.array(w0)
+    return np.array(w0), n_iter
 
 
 class KernelLogisticRegression(BaseEstimator, ClassifierMixin):
@@ -136,7 +132,8 @@ class KernelLogisticRegression(BaseEstimator, ClassifierMixin):
                  coef0=1,
                  C=1,
                  tol=1e-4,
-                 kernel_params=None):
+                 kernel_params=None,
+                 max_iter=1000):
         self.kernel = kernel
         self.learning_rate = learning_rate
         self.gamma = gamma
@@ -145,6 +142,7 @@ class KernelLogisticRegression(BaseEstimator, ClassifierMixin):
         self.C = C
         self.tol = tol
         self.kernel_params = kernel_params
+        self.max_iter = max_iter
 
     def _get_kernel(self, X, Y=None):
         if callable(self.kernel):
@@ -177,14 +175,15 @@ class KernelLogisticRegression(BaseEstimator, ClassifierMixin):
         self.X_ = X
 
         X, y = check_X_y(X, y, accept_sparse=True)
-        self.label_encoder_ = LabelBinarizer(neg_label=-1, pos_label=1)
+        self.label_encoder_ = LabelBinarizer(neg_label=0, pos_label=1)
         y_ = self.label_encoder_.fit_transform(y).reshape((-1))
+
         self.classes_ = self.label_encoder_.classes_
         K = self._get_kernel(X)
 
-        self.coef_ = _kernel_logistic_regression_path(K, y_, tol=self.tol, coef=None,
+        self.coef_, self.n_iter_ = _kernel_logistic_regression_path(K, y_, tol=self.tol, coef=None,
                                      C=self.C, solver='lbfgs', check_input=True,
-                                     maxiter=1000)
+                                     max_iter=self.max_iter)
 
         self.is_fitted_ = True
 
@@ -213,7 +212,48 @@ class KernelLogisticRegression(BaseEstimator, ClassifierMixin):
         """
         scores = self.decision_function(X)
 
-        # indices = (scores > 0).astype(np.int)
-        indices = np.sign(scores)
+        indices = (scores > 0).astype(np.int)
 
-        return self.label_encoder_.inverse_transform(indices)
+        return self.classes_[indices]
+
+    def predict_proba(self, X):
+        """
+        Probability estimates.
+        The returned estimates for all classes are ordered by the
+        label of classes.
+        Parameters
+        ----------
+        X : array-like of shape (n_samples, n_features)
+            Vector to be scored, where `n_samples` is the number of samples and
+            `n_features` is the number of features.
+        Returns
+        -------
+        T : array-like of shape (n_samples, n_classes)
+            Returns the probability of the sample for each class in the model,
+            where classes are ordered as they are in ``self.classes_``.
+        """
+
+        check_is_fitted(self)
+
+        return expit(self.decision_function(X))
+
+    def predict_log_proba(self, X):
+        """
+        Predict logarithm of probability estimates.
+        The returned estimates for all classes are ordered by the
+        label of classes.
+        Parameters
+        ----------
+        X : array-like of shape (n_samples, n_features)
+            Vector to be scored, where `n_samples` is the number of samples and
+            `n_features` is the number of features.
+        Returns
+        -------
+        T : array-like of shape (n_samples, n_classes)
+            Returns the log-probability of the sample for each class in the
+            model, where classes are ordered as they are in ``self.classes_``.
+        """
+
+        check_is_fitted(self)
+
+        return np.log(self.predict_proba(X))
