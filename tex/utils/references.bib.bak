@@ -3,7 +3,7 @@
 @Misc{schale2019mlb,
   author       = {Paul Schale},
   title        = {MLB Pitch Data 2015-2018},
-  howpublished = {Kaggle Dataset (\url{https://www.kaggle.com/pschale/mlb-pitch-data-20152018})},
+  howpublished = {Kaggle Dataset (https://www.kaggle.com/pschale/mlb-pitch-data-20152018)},
   year         = {2019},
   url          = {https://www.kaggle.com/pschale/mlb-pitch-data-20152018},
 }
