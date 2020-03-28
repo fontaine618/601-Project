@@ -210,6 +210,7 @@ class KernelLogisticRegression(BaseEstimator, ClassifierMixin):
         """
         scores = self.decision_function(X)
 
-        indices = (scores > 0).astype(np.int)
+        # indices = (scores > 0).astype(np.int)
+        indices = np.sign(scores)
 
         return self.label_encoder_.inverse_transform(indices)
