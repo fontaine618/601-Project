@@ -7,22 +7,12 @@ from scipy import optimize
 
 from sklearn.base import BaseEstimator, ClassifierMixin
 from sklearn.utils.validation import check_X_y, check_array, check_is_fitted
-from sklearn.metrics.pairwise import rbf_kernel
+
+from sklearn.metrics.pairwise import pairwise_kernels
+from sklearn.preprocessing import LabelBinarizer
 
 
-
-def _kernel_matrix(X, gamma, kernel, Y=None):
-    # TODO: Use scikits generic kernel call
-    if kernel == "rbf_kernel":
-        return rbf_kernel(X, Y=Y, gamma=gamma)
-    # TODO: implement
-    elif kernel == "polynomial":
-        return
-
-    return
-
-
-def _loss_and_grad(w, K, y, alpha):
+def _loss_and_grad(w, K, y, alpha, clip=30):
     """
     Computes the loss and the gradient
     The loss is the negative likelihood function
@@ -45,17 +35,20 @@ def _loss_and_grad(w, K, y, alpha):
             The gradient
     """
 
-    n_samples = K.shape[0]
+    # n_samples = K.shape[0]
 
     linear_prediction = K.dot(w)
-    penalty = (alpha / 2.) * w.T.dot(K).dot(w)
+    out = (alpha / 2.) * w.T.dot(K).dot(w)
 
-    # TODO use labels in (-1,1) to improve
     # Loss for kernel logistic regression is the negative likelihood
-    out = np.sum(-y * linear_prediction + np.log(1 + np.exp(linear_prediction))) + penalty
+    out += np.mean(np.where(
+        np.abs(linear_prediction) > clip,
+        -y * linear_prediction,
+        np.log(1 + np.exp(-y * linear_prediction.clip(-clip, clip)))
+    ))
 
     z = expit(linear_prediction)
-    z0 = y - z - alpha * w
+    z0 = (y * 2. - 1.) - z - alpha * w
 
     grad = -K.dot(z0)
 
@@ -133,16 +126,32 @@ class KernelLogisticRegression(BaseEstimator, ClassifierMixin):
     """
 
     def __init__(self,
-                 kernel='rbf_kernel',
+                 kernel='rbf',
                  learning_rate=1,
                  gamma=1,
+                 degree=3,
+                 coef0=1,
                  C=1,
-                 tol=1e-4):
+                 tol=1e-4,
+                 kernel_params=None):
         self.kernel = kernel
         self.learning_rate = learning_rate
         self.gamma = gamma
+        self.degree = degree
+        self.coef0 = coef0
         self.C = C
         self.tol = tol
+        self.kernel_params = kernel_params
+
+    def _get_kernel(self, X, Y=None):
+        if callable(self.kernel):
+            params = self.kernel_params or {}
+        else:
+            params = {"gamma": self.gamma,
+                      "degree": self.degree,
+                      "coef0": self.coef0}
+        return pairwise_kernels(X, Y, metric=self.kernel,
+                                filter_params=True, **params)
 
     def fit(self, X, y):
         """A reference implementation of a fitting function.
@@ -162,16 +171,15 @@ class KernelLogisticRegression(BaseEstimator, ClassifierMixin):
             raise ValueError("Penalty must be positive")
 
         # Necessary for prediction
-        # TODO: Find a workaround
         self.X_ = X
 
         X, y = check_X_y(X, y, accept_sparse=True)
+        self.label_encoder_ = LabelBinarizer(neg_label=-1, pos_label=1)
+        y_ = self.label_encoder_.fit_transform(y)
+        self.classes_ = self.label_encoder_.classes_
+        K = self._get_kernel(X)
 
-        self.classes_ = np.unique(y)
-
-        K = _kernel_matrix(X, kernel=self.kernel, gamma=self.gamma)
-
-        self.coef_ = _kernel_logistic_regression_path(K, y, tol=self.tol, coef=None,
+        self.coef_ = _kernel_logistic_regression_path(K, y_, tol=self.tol, coef=None,
                                      C=self.C, solver='lbfgs', check_input=True,
                                      maxiter=1000)
 
@@ -181,13 +189,10 @@ class KernelLogisticRegression(BaseEstimator, ClassifierMixin):
 
     def decision_function(self, X):
 
-        check_is_fitted(self)
+        check_is_fitted(self, ["X_", "coef_"])
 
-        if np.array_equal(self.X_.values, X.values):
-            K = _kernel_matrix(X, kernel=self.kernel, gamma=self.gamma)
-        else:
-            K = _kernel_matrix(self.X_, Y=X, gamma=self.gamma, kernel=self.kernel).T
-            
+        K = self._get_kernel(X, self.X_)
+
         scores = K.dot(self.coef_)
 
         return scores
@@ -207,4 +212,4 @@ class KernelLogisticRegression(BaseEstimator, ClassifierMixin):
 
         indices = (scores > 0).astype(np.int)
 
-        return self.classes_[indices]
+        return self.label_encoder_.inverse_transform(indices)
