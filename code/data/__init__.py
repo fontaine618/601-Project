@@ -64,6 +64,10 @@ def create_processed_data(path="./data/pitchfx/"):
 class PitchFxDataset:
 
     def __init__(self, path="./data/pitchfx/", force=False):
+        self.pitchfx = None
+        self.load_pitchfx(force, path)
+
+    def load_pitchfx(self, force, path):
         # Import PitchF/x pitchfx from file.
         # If force or file not found, we create the file.
         if force:
