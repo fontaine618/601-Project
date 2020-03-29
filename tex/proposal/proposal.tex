@@ -13,7 +13,7 @@
 \begin{frontmatter}
 
 \title{{\Large STATS 601 Project Proposal:} \\ 
-\bf Caught Looking: Analyzing Variation in Umpire Strike Zones}\brian{other title option: From Blue to Deep Blue? Assessing the case for robot umpires}
+\bf Caught Looking: Analyzing Variation in Umpire Strike Zones}
 \runtitle{Caught Looking}
 
 \begin{aug}
@@ -56,6 +56,11 @@
 % \moritz{Moritz's comments}
 % \brian{Brian's comments}
 
+% Proposal
+% Each team submits to both the instructor and the GSI via email a one-page project proposal, including information about team members, the data set, and the methods you intend to apply with a brief justification.
+% The deadline for the proposal is Monday, March 30
+
+
 %------------------------------------------------------------------------------
 \section{Introduction}\label{sec:intro}
 As technology advances, Major League Baseball (MLB) has faced increased pressure from fans, coaches, and players to use video technologies to aid umpires in making calls on the field.
@@ -64,37 +69,35 @@ With this project, we will assess the ability of umpires to make ball and strike
 %The data necessary for this project, known as PITCHf/x, is freely available from the MLB and can be found at various other baseball websites.
 %We will use classification techniques such as kernel logistic regression, additive logistic regression, and tree methods to infer strike zone densities for each umpire across a variety of situations. 
 %Once we have found each umpire's unique strike zone, we will do inference to determine which umpires are the most consistent and closest to the definition in the rule book.
-The team members for this project are Simon Fontaine, Moritz Korte-Stapff, and Brian Manzo, all team members are first year Ph.D. students in the Department of Statistics. \simon{maybe put this into the abstract part since it seems unrelated to the rest of the paragraph}
-
-%------------------------------------------------------------------------------
-\section{The dataset}\label{sec:dataset}
+%The team members for this project are Simon Fontaine, Moritz Korte-Stapff, and Brian Manzo, all team members are first year Ph.D. students in the Department of Statistics. \brian{I think it's okay to leave this here since it's just an intro paragraph and he asks for "information about team members"}
+To conduct our analysis, will access preprocessed PITCHf/x data for the entire 2018 MLB season from Kaggle \citep{schale2019mlb}. 
 PITCHf/x is a system that uses cameras mounted in every MLB stadium to track the speed and location of every pitched baseball. 
-We will access csv\simon{don't need to be \textit{that} specific} files of the PITCHf/x data for the entire 2018 season from Kaggle\simon{maybe say pre-processed or something like this since the original data is not from there} \citep{schale2019mlb} and supplement those files\simon{that data?} with other data from MLB such as player heights. 
-The most important part of the PITCHf/x data for our purposes is the set of coordinates that gives the location of every ball that crosses the plate, but it has many other details about the game and players involved that will enable us to assess the ability of umpires to stay consistent across a variety of situations.\simon{second clause basically repeats what is said in the Intro, we could omit it or restructure? Maybe merge first two sections? We would save formatting space also.}
+The most important part of the PITCHf/x data for our purposes is the set of coordinates that gives the location of every ball that crosses the plate, but it has many other details about the game and players involved that will enable us to assess the ability of umpires to stay consistent across a variety of situations.
 
 %------------------------------------------------------------------------------
 \section{Research questions}\label{sec:research}
 The first question we are looking to answer is whether umpires' realized strike zones match the requirements prescribed by the official rules of baseball. 
-Once we have strike zone densities\simon{I think we need a better word than density. Maybe estimated strike zones.} for each umpire, we can use simulation to assess their ``error rate''---\simon{I changed - to ---, but I don't if that's the English way, that might be the French way.}the percentage of pitches they would classify as a ball or strike that, according to the rules of baseball, should have the opposite classification.
-As time and space permit, we also are looking to answer the following\simon{maybe be more vague like ``...to answer secondary questions such as''}:
+Once we have estimated strike zones for each umpire, we can use simulation to assess their ``error rate''---the percentage of pitches they would classify as a ball or strike that, according to the rules of baseball, should have the opposite classification.
+As time and space permit, we also are looking to answer secondary questions such as:
 \begin{itemize}
 \item Do umpires' strike zones change when there are 2 strikes in the count? What about 3 balls?
 \item Do umpires have different strike zones for star pitchers and batters than they do for mediocre players?
 \item Do umpires change their strike zone when a game goes into extra innings?
 \end{itemize}
-The general theme of each all of these questions is: how good are umpires at calling balls and strikes? \simon{...and what affects this assessment?}
-The worse the umpires perform in game situations, the louder will be the calls for technology-aided officiating.
+The general theme of each all of these questions is how good are umpires at (consistently) making the correct ball and strike calls?
+The worse the umpires perform in different game situations, the louder will be the calls for technology-aided officiating.
 
 %------------------------------------------------------------------------------
 \section{Methodology}\label{sec:method}
 Estimating strike zones from pitch location data is fundamentally a nonlinear classification problem. 
 Given pitches that have an $x$ and $y$ coordinate, we want to classify the pitches in a rectangle in the middle of the grid as strikes, and anything too far away from the middle (outside the rectangle) as balls.
-Some methods that we think would succeed in drawing a realistic decision boundary are kernel logistic regression, additive logistic regression, support vector machines, and tree-based methods. \simon{+NN}
-Once we have found a technique that we feel is giving a fair\simon{seems a weak statement: maybe say Upon selecting the best method modeling the umpires' SZ} representation of the umpires' strike zones based solely on the pitch location, we can train classifiers\simon{I don't think they will be classifiers.} that take into account game-level and player-level information (i.e., game situation or player skill).
-The density estimates\simon{again: estimated SZ?} can be discretized a 2d grid (say 100x100 so we get a vector of size 10000) and then we can run some sort of KernelPCA on it to reduce the dimension.\simon{I think we should switch the order: say we reduce the dimension then model these against the external information. In fact, I would just drop the Example: Upon selecting the best method modeling the umpires' strike zones, we will construct low-dimensional encodings (using, e.g., kernel PCA or a neural network approach) that will be used in the main analysis. }
-Then finally compare if the reduced strike zone varies between umpires and according to different game situations with some 
-(multivariate) mixed effects model. \simon{maybe be less specific with the model. We could say:``To study the effect of game- and player-level information as well as the effect of the particular umpire on the strike zone, we will consider a multivariate regression approach where the response will be taken as the estimated strike zone.'' MVT LMM is a special case of MVT regression.}
-These methods, which we have studied in 600 and 601, will allow us to construct the strike zone densities, reduce dimension, and then do inference to determine whether strike zones are inconsistent across game situations and different umpires.\simon{maybe drop this last sentence since it's a just a summary of very few sentences.}
+Some methods that we think would succeed in drawing a realistic decision boundary are kernel logistic regression, additive logistic regression, support vector machines, tree-based methods, and neural networks. 
+Upon selecting a technique that gives representation of the umpires' strike zones based solely on the pitch location, we can train models that take into account game-level and player-level information (such as game situation or player skill).
+Upon selecting the best method modeling the umpires' strike zones, we will construct low-dimensional encodings (using, e.g., kernel PCA or a neural network approach) that will be used in the main analysis.
+To study the effect of game- and player-level information as well as the effect of the particular umpire on the strike zone, we will consider a multivariate regression approach where the response will be taken as the estimated strike zone.
+Finally, we can compare the list of ``best'' umpires according to our analysis with the umpires who were selected by MLB to officiate in the playoffs to see if our rankings match those of the league's executives.
+%Taken together, these methods will provide a rigorous answer to the question of how (in)consistent umpires are in their ball and strike calls. 
+%These methods, which we have studied in 600 and 601, will allow us to construct the strike zone densities, reduce dimension, and then do inference to determine whether strike zones are inconsistent across game situations and different umpires.\brian{i'm in favor of keeping this last sentence as it would be the last sentence of the proposal and then we wouldn't have a conclusion paragraph or anything}%\simon{maybe drop this last sentence since it's a just a summary of very few sentences.}
 
 %------------------------------------------------------------------------------
 \bibliographystyle{imsart-nameyear}
