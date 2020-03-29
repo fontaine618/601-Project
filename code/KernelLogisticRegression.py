@@ -58,10 +58,10 @@ def _kernel_logistic_regression_path(K, y, max_iter, tol=1e-4, coef=None,
     Compute the kernel logistic regression model
     :param K:
         array-like of shape (n_sample, n_features)
-        Input data
+        Input pitchfx
     :param y:
         array-like of shape (n_samples,)
-        Input data, target values
+        Input pitchfx, target values
     :param tol:
         float, default = 1e-4
         The stopping criterion for the solver
@@ -73,7 +73,7 @@ def _kernel_logistic_regression_path(K, y, max_iter, tol=1e-4, coef=None,
         The solver to be used
     :param check_input:
         bool, default = True
-        Determines whether the input data should be checked
+        Determines whether the input pitchfx should be checked
     :return:
         w0 : ndarray of shape
     """
