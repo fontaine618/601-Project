@@ -2,13 +2,12 @@ import pandas as pd
 import datetime
 
 
-def create_processed_data(path="./pitchfx/pitchfx/"):
+def create_processed_data(path="./data/pitchfx/"):
     # import files
     try:
         atbats = pd.read_csv(path + "atbats.csv")
         games = pd.read_csv(path + "games.csv")
         pitches = pd.read_csv(path + "pitches.csv")
-        player_names = pd.read_csv(path + "player_names.csv")
     except FileNotFoundError:
         raise FileNotFoundError("Data files not found. Please download them from Kaggle"
                                 " and unzip it into " + str(path))
@@ -31,7 +30,6 @@ def create_processed_data(path="./pitchfx/pitchfx/"):
     del atbats2018
     print("Merged at bats into pitches:", pitchfx.shape)
     pitchfx = pd.merge(pitchfx, games2018, how="left", on="g_id")
-    del games2018
     print("Merged games into pitches:", pitchfx.shape)
     # regular season only
     pitchfx["date"] = pd.to_datetime(pitchfx["date"], format='%Y-%m-%d')
@@ -40,16 +38,23 @@ def create_processed_data(path="./pitchfx/pitchfx/"):
     print("Keep only regular season games:", pitchfx.shape)
     # umpires with many games
     umpires_counts = games2018["umpire_HP"].value_counts()
+    del games2018
     umpires = umpires_counts.index[umpires_counts > 29]
     print("Umpires with at least 30 games:", umpires.shape)
     pitchfx = pitchfx[pitchfx["umpire_HP"].isin(umpires)]
     print("Subset to umpires with at least 30 games:", pitchfx.shape)
-    # clean dataset
+    # clean dataset (arbitrary by looking at histograms)
     ranges = {
-        "": (0, 1),
+        "px": (-5, 5),
+        "pz": (-0, 6),
+        "break_angle": (-100, 100),
+        "sz_bot": (0, 3),
+        "sz_top": (2, 5),
     }
     for col, r in ranges.items():
-        pass
+        pitchfx = pitchfx[pitchfx[col].between(*r)]
+        print("Subset to {} in {}:".format(col, r), pitchfx.shape)
+
     # write to file
     print("Writing to ", path + "pitchfx.csv")
     pitchfx.to_csv(path + "pitchfx.csv", index=False)
@@ -58,7 +63,7 @@ def create_processed_data(path="./pitchfx/pitchfx/"):
 
 class PitchFxDataset:
 
-    def __init__(self, path="./pitchfx/pitchfx/", force=False):
+    def __init__(self, path="./data/pitchfx/", force=False):
         # Import PitchF/x pitchfx from file.
         # If force or file not found, we create the file.
         if force:
@@ -68,7 +73,7 @@ class PitchFxDataset:
         except FileNotFoundError:
             create_processed_data(path)
             self.pitchfx = pd.read_csv(path + "pitchfx.csv")
-        expected_shape = (300000, 200)
+        expected_shape = (178922, 66)
         if not self.pitchfx.shape == expected_shape:
             raise ImportError(
                 "PitchF/x pitchfx imported, but pitchfx set has unexpected shape: \n" +
