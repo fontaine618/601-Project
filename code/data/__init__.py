@@ -113,6 +113,7 @@ class PitchFxDataset:
                     labels=[feature+"_{}_{}".format(bins[i], bins[i+1]) for i in range(len(bins)-1)]
                 )
                 cols.append(col)
-        df = self.pitchfx.groupby(by=cols)[["px", "pz_std"]]
-        print(df.agg("count"))
+        df = self.pitchfx.groupby(by=cols)
+        counts = df.agg("count")["px"]
+        print(counts.agg(["min", "max", "count", "mean"]))
         return df
