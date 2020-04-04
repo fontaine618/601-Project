@@ -66,6 +66,7 @@ class PitchFxDataset:
     def __init__(self, path="./data/pitchfx/", force=False):
         self.pitchfx = None
         self.load_pitchfx(force, path)
+        self.standardize_pz()
 
     def load_pitchfx(self, force, path):
         # Import PitchF/x pitchfx from file.
@@ -85,3 +86,33 @@ class PitchFxDataset:
                 ", found: " + str(self.pitchfx.shape)
             )
 
+    def standardize_pz(self):
+        y = self.pitchfx[["sz_bot", "sz_top"]].mean()
+        x_mean = self.pitchfx[["sz_bot", "sz_top"]].mean(axis=1)
+        y_diff = y.diff()["sz_top"]
+        x_diff = self.pitchfx["sz_top"] - self.pitchfx["sz_bot"]
+        beta = y_diff / x_diff
+        alpha = y.mean() - beta * x_mean
+        self.pitchfx["pz_std"] = alpha + beta * self.pitchfx["pz"]
+
+    def group_by(self, **kwargs):
+        request = kwargs
+        no_match = set(request) - set(self.pitchfx.columns)
+        if len(no_match) > 0:
+            raise ValueError("Some arguemnts do not match data frame columns: " + str(no_match))
+        # create new columns
+        cols = []
+        for feature, bins in request.items():
+            if bins == "all":
+                cols.append(feature)
+            else:
+                col = feature+"_binned"
+                self.pitchfx[col] = pd.cut(
+                    x=self.pitchfx[feature],
+                    bins=bins,
+                    labels=[feature+"_{}_{}".format(bins[i], bins[i+1]) for i in range(len(bins)-1)]
+                )
+                cols.append(col)
+        df = self.pitchfx.groupby(by=cols)[["px", "pz_std"]]
+        print(df.agg("count"))
+        return df
