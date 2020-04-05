@@ -1,0 +1,98 @@
+\documentclass[bj, preprint]{imsart}
+\RequirePackage[OT1]{fontenc}
+\RequirePackage[colorlinks,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{amsthm,amsmath,natbib,booktabs,cleveref}
+
+% put your definitions there:
+\endlocaldefs
+\input{../utils/preamble}
+
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{{\Large STATS 601 Project:} \\ 
+\bf Caught Looking: Analyzing Variation in Umpire Strike Zones}
+\runtitle{Caught Looking}
+
+\begin{aug}
+\author{
+\fnms{Simon} 
+\snm{Fontaine}
+\thanksref{a,e1}
+\ead[label=e1,mark]{simfont@umich.edu}
+},
+\author{
+\fnms{Moritz} 
+\snm{Korte-Stapff}
+\thanksref{a,e2}
+\ead[label=e2,mark]{kortest@umich.edu}
+}
+\and
+\author{
+\fnms{Brian} 
+\snm{Manzo}
+\thanksref{a,e3}
+\ead[label=e3,mark]{bmanzo@umich.edu}
+}
+\address[a]{Ph.D. Student, University of Michigan, Department of Statistics. West Hall, 1085 South University, Ann Arbor, MI, U.S.A., 48109. \printead{e1,e2,e3}}
+\runauthor{S. Fontaine, M. Korte-Stapff and B. Manzo}
+\affiliation{University of Michigan, Department of Statistics}
+\end{aug}
+
+
+
+\begin{abstract}
+As technology advances, Major League Baseball (MLB) has faced increased pressure from fans, coaches, and players to use video technologies to aid umpires in making calls on the field, especially for the notoriously subjective ball and strike calls.
+With this project, we will assess the ability of umpires to make ball and strike calls that match the rulebook and that are consistent across different game situations. 
+Using nonlinear classification methods such as \textbf{[methods]} we can learn a strike zone for each umpire based on pitch location as well as game circumstances. 
+After learning a strike zone classifier we then compute an umpire's error rate (miscalled balls and strikes) for different game situations to see which umpires are the most accurate and the most consistent. 
+Finally we compute a ranking of each umpire and compare our top umpires with those who were selected by MLB to officiate the playoffs.
+The team members for this project are Simon Fontaine, Moritz Korte-Stapff, and Brian Manzo, all team members are first year Ph.D. students in the Department of Statistics.
+\end{abstract}
+
+% \tableofcontents
+\end{frontmatter}
+
+%\newpage
+
+% You each have your own command to annotate the text:
+% \simon{Simon's comments}
+% \moritz{Moritz's comments}
+% \brian{Brian's comments}
+
+% Project report.
+% Each team submits a final project report by Monday, April 27
+% Please limit your report to 12–15 pages, including figures and tables.
+% (Do not include any computer code in your main document. 
+% You may also provide an appendix with additional output and/or code but it is not obligated to consider
+% the appendix when evaluating your project).
+% Please also clearly specify the contribution of each team member.
+
+
+%------------------------------------------------------------------------------
+\section{Introduction}\label{sec:intro}
+``The STRIKE ZONE is that area over home plate the upper limit ofwhich is a horizontal line at the midpoint between the top of the shoulders and the top of the uniform pants, and the lower level is a line at thehollow beneath the kneecap. 
+The Strike Zone shall be determined from the batter’s stance as the batter is prepared to swing at a pitched ball."\cite{mlbrules}
+
+
+%------------------------------------------------------------------------------
+\section{Learning a Base Classifier}\label{sec:base}
+The first step in the analysis is to 
+
+
+%------------------------------------------------------------------------------
+\section{Creating a Low Dimension Encoding of the Classifier}\label{sec:lowdim}
+
+
+
+%------------------------------------------------------------------------------
+\bibliographystyle{imsart-nameyear}
+\bibliography{../utils/references}{}
+
+
+
+
+
+\end{document}
