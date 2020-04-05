@@ -107,13 +107,20 @@ class PitchFxDataset:
                 cols.append(feature)
             else:
                 col = feature+"_binned"
+                bins = sorted(bins)
+                labels = [
+                    feature+"_({},{}]".format(bins[i], bins[i+1]) if i > 0 else
+                    feature+"_[{},{}]".format(bins[i], bins[i+1])
+                    for i in range(len(bins)-1)
+                ]
                 self.pitchfx[col] = pd.cut(
                     x=self.pitchfx[feature],
                     bins=bins,
-                    labels=[feature+"_{}_{}".format(bins[i], bins[i+1]) for i in range(len(bins)-1)]
+                    labels=labels,
+                    include_lowest=True
                 )
                 cols.append(col)
         df = self.pitchfx.groupby(by=cols)
         counts = df.agg("count")["px"]
-        print(counts.agg(["min", "max", "count", "mean"]))
+        print(counts.agg(["min", "max", "count", "mean", "median"]))
         return df
