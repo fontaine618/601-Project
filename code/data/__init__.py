@@ -66,7 +66,7 @@ class PitchFxDataset:
     def __init__(self, path="./data/pitchfx/", force=False):
         self.pitchfx = None
         self.load_pitchfx(force, path)
-        self.standardize_pz()
+        self._standardize_pz()
 
     def load_pitchfx(self, force, path):
         # Import PitchF/x pitchfx from file.
@@ -86,7 +86,7 @@ class PitchFxDataset:
                 ", found: " + str(self.pitchfx.shape)
             )
 
-    def standardize_pz(self):
+    def _standardize_pz(self):
         y = self.pitchfx[["sz_bot", "sz_top"]].mean()
         x_mean = self.pitchfx[["sz_bot", "sz_top"]].mean(axis=1)
         y_diff = y.diff()["sz_top"]

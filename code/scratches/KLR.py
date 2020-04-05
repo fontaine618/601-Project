@@ -1,4 +1,4 @@
-from KernelLogisticRegression import KernelLogisticRegression
+from models.classification.kernel_logistic_regression import KernelLogisticRegression
 import numpy as np
 from scipy.special import expit
 from sklearn.model_selection import GridSearchCV
