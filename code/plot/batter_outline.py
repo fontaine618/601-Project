@@ -18,7 +18,7 @@ def generate_contour():
     np.savetxt("./data/batter_outline/outline.csv", contour, delimiter=",")
 
 
-def batter_outline(stand="R", x=-25.5/12):
+def batter_outline(stand="R", x=-17/12):
     contour = np.loadtxt("./data/batter_outline/outline.csv", delimiter=",")
     contour[:, 0] += x
     if stand == "L":

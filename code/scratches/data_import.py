@@ -1,6 +1,6 @@
 import sys
 sys.path.extend(['/home/simon/Documents/601-Project/code'])
-from data import PitchFxDataset
+from data.pitchfx import PitchFxDataset
 import matplotlib.pyplot as plt
 import pandas as pd
 from plot.batter_outline import batter_outline
@@ -44,6 +44,9 @@ plt.imshow(pred_grid)
 plt.title(levels)
 plt.show()
 
-plt.scatter(pitches["px_std"], pitches["pz_std"])
-plt.plot(*batter_outline(x = -1))
+plt.scatter(pitches["px_std"][pitches["type"] == "B"],
+            pitches["pz_std"][pitches["type"] == "B"])
+plt.scatter(pitches["px_std"][pitches["type"] == "S"],
+            pitches["pz_std"][pitches["type"] == "S"])
+plt.plot(*batter_outline())
 plt.show()
