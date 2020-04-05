@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import datetime
 
 
@@ -63,10 +64,13 @@ def create_processed_data(path="./data/pitchfx/"):
 
 class PitchFxDataset:
 
-    def __init__(self, path="./data/pitchfx/", force=False):
+    def __init__(self, path="./data/pitchfx/", force=False, x_lim=11.5 / 12):
         self.pitchfx = None
         self.load_pitchfx(force, path)
+        self._sz_x_lim = x_lim
+        self._set_correct_call()
         self._standardize_pz()
+        self._standardize_px()
 
     def load_pitchfx(self, force, path):
         # Import PitchF/x pitchfx from file.
@@ -86,6 +90,16 @@ class PitchFxDataset:
                 ", found: " + str(self.pitchfx.shape)
             )
 
+    def _set_correct_call(self):
+        self.pitchfx["type_from_sz"] = np.where(
+            (self.pitchfx["px"] >= -self._sz_x_lim) &
+            (self.pitchfx["px"] <= self._sz_x_lim) &
+            (self.pitchfx["pz"] >= self.pitchfx["sz_bot"]) &
+            (self.pitchfx["pz"] <= self.pitchfx["sz_top"]),
+            "S",
+            "B"
+        )
+
     def _standardize_pz(self):
         y = self.pitchfx[["sz_bot", "sz_top"]].mean()
         x_mean = self.pitchfx[["sz_bot", "sz_top"]].mean(axis=1)
@@ -94,6 +108,13 @@ class PitchFxDataset:
         beta = y_diff / x_diff
         alpha = y.mean() - beta * x_mean
         self.pitchfx["pz_std"] = alpha + beta * self.pitchfx["pz"]
+
+    def _standardize_px(self):
+        self.pitchfx["px_std"] = np.where(
+            self.pitchfx["stand"] == "L",
+            -self.pitchfx["px"],
+            self.pitchfx["px"]
+        )
 
     def group_by(self, **kwargs):
         request = kwargs

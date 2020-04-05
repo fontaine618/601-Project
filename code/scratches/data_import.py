@@ -2,9 +2,11 @@ import sys
 sys.path.extend(['/home/simon/Documents/601-Project/code'])
 from data import PitchFxDataset
 import matplotlib.pyplot as plt
+import pandas as pd
+from plot.batter_outline import batter_outline
 
 pitchfx = PitchFxDataset()
-
+pd.crosstab(pitchfx.pitchfx["type"], pitchfx.pitchfx["type_from_sz"])
 df = pitchfx.group_by(
     umpire_HP="all",
     stand="all",
@@ -33,11 +35,15 @@ klr = KernelLogisticRegression(
 
 levels, pitches = next(it)
 klr.fit(
-    X=pitches[["px", "pz_std"]].to_numpy(),
+    X=pitches[["px_std", "pz_std"]].to_numpy(),
     y=pitches["type"].to_numpy()
 )
 pred = klr.predict_proba(X)
 pred_grid = pred.reshape((100, 100))
 plt.imshow(pred_grid)
 plt.title(levels)
+plt.show()
+
+plt.scatter(pitches["px_std"], pitches["pz_std"])
+plt.plot(*batter_outline(x = -1))
 plt.show()
