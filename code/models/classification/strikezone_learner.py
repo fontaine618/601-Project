@@ -11,14 +11,20 @@ class StrikezoneLearner:
             raise NotImplementedError("classifier must implement fit")
         if "predict_proba" not in dir(self.classifier):
             raise NotImplementedError("classifier must implement predict")
-        self.grouped_pitches = df
-        self.groups = self.grouped_pitches.agg({
+        self.pitches = df
+        # self.groups = self.pitches.agg({
+        #     "px": ["count"]
+        # })
+        # self.groups.columns = ["count"]
+        # self.groups["model"] = None
+        # self.groups["strikezone"] = None
+
+        self.counts = self.pitches.agg({
             "px": ["count"]
-        })
-        self.groups.columns = ["count"]
-        self.groups["model"] = None
-        self.groups["strikezone"] = None
-        self._fitted = False
+        }).to_dict()[("px", "count")]
+        self.fit = dict()
+        self.strikezone = dict()
+
         self.x_range = x_range
         self.y_range = y_range
         self.res = res
@@ -28,24 +34,33 @@ class StrikezoneLearner:
         )
         self.X_sz = np.concatenate([self.grid_x.reshape((-1, 1)), self.grid_y.reshape((-1, 1))], axis=1)
 
-    def fit(self, levels, pitches):
-        self.groups.at[levels, "model"] = copy.deepcopy(self.classifier.fit(
+    def _fit_one(self, pitches):
+        return self.classifier.fit(
             pitches[["px_std", "pz_std"]].to_numpy(),
             pitches[["type"]].to_numpy().reshape((-1))
-        ))
+        )
 
     def fit_all(self):
-        for levels, pitches in self.grouped_pitches:
-            self.fit(levels, pitches)
-        self._fitted = True
+        for levels, pitches in self.pitches:
+            self.fit[levels] = copy.deepcopy(self._fit_one(pitches))
+            break
 
-    def predict_strikezone(self, levels, model):
-        self.groups.at[levels, "strikezone"] = model.predict_proba(self.X_sz).reshape((self.res, self.res))
+
+    def _predict_strikezone(self, levels):
+        if levels in self.fit:
+            fit = self.fit[levels]
+        else:
+            pitches = self.pitches.get_group(levels)
+            fit = self.classifier.fit(
+                pitches[["px_std", "pz_std"]].to_numpy(),
+                pitches[["type"]].to_numpy().reshape((-1))
+            )
+        return fit.predict_proba(self.X_sz).reshape((self.res, self.res))
 
     def predict_strikezone_all(self):
-        if not self._fitted:
-            raise ValueError("models are not fitted yet; run .fit_all() first!")
-        for levels, model in self.groups["model"].items():
-            self.predict_strikezone(levels, model)
+        for levels, pitches in self.pitches:
+            self.strikezone[levels] = self._predict_strikezone(levels)
+            break
+
 
 

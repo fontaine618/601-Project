@@ -64,7 +64,7 @@ def create_processed_data(path="./data/pitchfx/"):
 
 class PitchFxDataset:
 
-    def __init__(self, path="./data/pitchfx/", force=False, x_lim=11.5 / 12):
+    def __init__(self, path="./data/pitchfx/", force=False, x_lim=10.5 / 12):
         self.pitchfx = None
         self.load_pitchfx(force, path)
         self._sz_x_lim = x_lim

@@ -3,7 +3,7 @@ sys.path.extend(['/home/simon/Documents/601-Project/code'])
 from data.pitchfx import PitchFxDataset
 import matplotlib.pyplot as plt
 import pandas as pd
-from plot.batter_outline import batter_outline
+from plot.utils import batter_outline
 
 pitchfx = PitchFxDataset()
 pd.crosstab(pitchfx.pitchfx["type"], pitchfx.pitchfx["type_from_sz"])
