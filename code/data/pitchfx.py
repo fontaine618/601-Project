@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import datetime
+from sklearn.preprocessing import LabelBinarizer
 
 
 def create_processed_data(path="./data/pitchfx/"):
@@ -71,6 +72,8 @@ class PitchFxDataset:
         self._set_correct_call()
         self._standardize_pz()
         self._standardize_px()
+        self.label_encoder_ = LabelBinarizer(neg_label=0, pos_label=1).fit(["B", "S"])
+        self.pitchfx["type_01"] = self.label_encoder_.transform(self.pitchfx["type"])
 
     def load_pitchfx(self, force, path):
         # Import PitchF/x pitchfx from file.

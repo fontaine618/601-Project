@@ -4,6 +4,7 @@ from sklearn.metrics import accuracy_score
 from joblib import Parallel, delayed
 from sklearn.model_selection import cross_val_score
 
+
 class StrikezoneLearner:
 
     def __init__(self, df, classifier, x_range=(-1.5, 1.5), y_range=(4, 1), res=100):
@@ -32,13 +33,12 @@ class StrikezoneLearner:
     def _fit_one(self, pitches):
         return self.classifier.fit(
             pitches[["px_std", "pz_std"]].to_numpy(),
-            pitches[["type"]].to_numpy().reshape((-1))
+            pitches[["type_01"]].to_numpy().reshape((-1))
         )
 
     def fit_all(self):
         for levels, pitches in self.pitches:
             self.fit[levels] = copy.deepcopy(self._fit_one(pitches))
-
 
     def _predict_strikezone(self, levels):
         if levels in self.fit:
@@ -47,19 +47,23 @@ class StrikezoneLearner:
             pitches = self.pitches.get_group(levels)
             fit = self.classifier.fit(
                 pitches[["px_std", "pz_std"]].to_numpy(),
-                pitches[["type"]].to_numpy().reshape((-1))
+                pitches[["type_01"]].to_numpy().reshape((-1))
             )
-        return fit.predict_proba(self.X_sz).reshape((self.res, self.res))
+        # pred = fit.predict_proba(self.X_sz)
+        pred = fit.predict(self.X_sz)
+        if len(pred.shape) == 2:
+            pred = pred[:, 1]
+        return pred.reshape((self.res, self.res))
 
     def predict_strikezone_all(self):
         for levels, pitches in self.pitches:
             self.strikezone[levels] = self._predict_strikezone(levels)
 
-    def _cv_one(self, pitches, n_folds=5, seed=1):
+    def _cv_one(self, levels, pitches, n_folds=5):
         accuracy = np.zeros(n_folds)
         n = len(pitches)
         fold_id = np.array([[i]*(n//n_folds + 1) for i in range(n_folds)]).ravel()
-        np.random.seed(seed)
+        np.random.seed(1)
         np.random.shuffle(fold_id)
         fold_id = fold_id[:n]
         for i in range(n_folds):
@@ -67,26 +71,28 @@ class StrikezoneLearner:
             test = pitches.iloc[fold_id == i]
             self.classifier.fit(
                 train[["px_std", "pz_std"]].to_numpy(),
-                train[["type"]].to_numpy().reshape((-1))
+                train[["type_01"]].to_numpy().reshape((-1))
             )
             pred = self.classifier.predict(
                 test[["px_std", "pz_std"]].to_numpy()
             )
-            accuracy[i] = accuracy_score(test[["type"]].to_numpy().reshape((-1)), pred)
-        return accuracy.mean()
+            accuracy[i] = accuracy_score(test[["type_01"]].to_numpy().reshape((-1)), pred)
+        return levels, accuracy.mean()
 
-    def _cv_one_scikit(self, levels, pitches, n_folds=5):
+    def _cv_one_scikit(self, levels, pitches, n_folds=5, scoring="accuracy"):
         accuracy = cross_val_score(
             self.classifier,
             pitches[["px_std", "pz_std"]].to_numpy(),
-            pitches[["type"]].to_numpy().reshape((-1)),
-            cv=n_folds
+            pitches[["type_01"]].to_numpy().reshape((-1)),
+            cv=n_folds,
+            scoring=scoring
         )
         return levels, accuracy.mean()
 
-    def cv_all(self, n_folds=5, n_jobs=-1, prefer="threads"):
+    def cv_all(self, n_folds=5, n_jobs=-1, prefer="threads", scoring="accuracy"):
         out = Parallel(n_jobs=n_jobs, prefer=prefer)(
-            delayed(self._cv_one_scikit)(levels, pitches, n_folds)
+            delayed(self._cv_one_scikit)(levels, pitches, n_folds, scoring)
+            # delayed(self._cv_one)(levels, pitches, n_folds)
             for levels, pitches in self.pitches
         )
         self.cv_accuracy = dict((levels, acc) for levels, acc in out)

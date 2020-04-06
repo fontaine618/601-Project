@@ -27,8 +27,18 @@ def batter_outline(stand="R", x=-17/12):
 
 
 def strike_zone(x_range=(-10.5 / 12, 10.5 / 12), y_range=(1.603276, 3.425886)):
-    # x_range: +/- 17/12 + 2
+    # x_range: +/- 17/12*2 (plate half-width) + 2/12(ball diameter)
     # y_range: values used to standardize pz
     x = np.array([x_range[0], x_range[1], x_range[1], x_range[0], x_range[0]])
     y = np.array([y_range[0], y_range[0], y_range[1], y_range[1], y_range[0]])
     return x, y
+
+
+def labeled_pitches(pitches):
+    xb = pitches.loc[pitches["type"] == "B"]["px_std"]
+    zb = pitches.loc[pitches["type"] == "B"]["pz_std"]
+    xs = pitches.loc[pitches["type"] == "S"]["px_std"]
+    zs = pitches.loc[pitches["type"] == "S"]["pz_std"]
+    return xb, zb, xs, zs
+
+
