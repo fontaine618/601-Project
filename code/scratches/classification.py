@@ -17,7 +17,7 @@ klr = KernelLogisticRegression(
     gamma=1.
 )
 
-self = StrikezoneLearner(df, klr, x_range=(-2.5, 2.5), y_range=(6, 0))
+self = StrikezoneLearner(df, klr, x_range=(-2, 2), y_range=(5, 0.5))
 
 self.fit_all()
 
@@ -32,3 +32,22 @@ for levels, sz in self.strikezone.items():
     plt.plot(*strike_zone(), scalex=False, scaley=False)
     plt.show()
     break
+
+self.cv_all()
+
+plt.style.use("seaborn")
+plt.scatter(
+    x=self.counts.values(),
+    y=self.cv_accuracy.values()
+)
+plt.xlabel("Nb. pitches")
+plt.ylabel("CV(5) accuracy")
+plt.title("Gaussian Kernel Logistic Regression")
+plt.show()
+
+n_folds = 5
+n_jobs=-1
+prefer="threads"
+levels = ("Adam Hamari", "L")
+pitches = self.pitches.get_group(levels)
+

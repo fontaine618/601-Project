@@ -14,7 +14,7 @@ def generate_batter_outline():
     contour[:, 0] = contour[:, 0] * 2.5 / max(contour[:, 0])
     contour[:, 1] = contour[:, 1] - min(contour[:, 1])
     contour[:, 0] = contour[:, 0] - max(contour[:, 0])
-    contour[:, 1] = contour[:, 1] *7 / max(contour[:, 1])
+    contour[:, 1] = contour[:, 1] * 6 / max(contour[:, 1])
     np.savetxt("./data/utils/batter_outline.csv", contour, delimiter=",")
 
 

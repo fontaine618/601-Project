@@ -1,7 +1,8 @@
-import pandas as pd
 import numpy as np
 import copy
-
+from sklearn.metrics import accuracy_score
+from joblib import Parallel, delayed
+from sklearn.model_selection import cross_val_score
 
 class StrikezoneLearner:
 
@@ -12,18 +13,12 @@ class StrikezoneLearner:
         if "predict_proba" not in dir(self.classifier):
             raise NotImplementedError("classifier must implement predict")
         self.pitches = df
-        # self.groups = self.pitches.agg({
-        #     "px": ["count"]
-        # })
-        # self.groups.columns = ["count"]
-        # self.groups["model"] = None
-        # self.groups["strikezone"] = None
-
         self.counts = self.pitches.agg({
             "px": ["count"]
         }).to_dict()[("px", "count")]
         self.fit = dict()
         self.strikezone = dict()
+        self.cv_accuracy = dict()
 
         self.x_range = x_range
         self.y_range = y_range
@@ -43,7 +38,6 @@ class StrikezoneLearner:
     def fit_all(self):
         for levels, pitches in self.pitches:
             self.fit[levels] = copy.deepcopy(self._fit_one(pitches))
-            break
 
 
     def _predict_strikezone(self, levels):
@@ -60,7 +54,39 @@ class StrikezoneLearner:
     def predict_strikezone_all(self):
         for levels, pitches in self.pitches:
             self.strikezone[levels] = self._predict_strikezone(levels)
-            break
 
+    def _cv_one(self, pitches, n_folds=5, seed=1):
+        accuracy = np.zeros(n_folds)
+        n = len(pitches)
+        fold_id = np.array([[i]*(n//n_folds + 1) for i in range(n_folds)]).ravel()
+        np.random.seed(seed)
+        np.random.shuffle(fold_id)
+        fold_id = fold_id[:n]
+        for i in range(n_folds):
+            train = pitches.iloc[fold_id != i]
+            test = pitches.iloc[fold_id == i]
+            self.classifier.fit(
+                train[["px_std", "pz_std"]].to_numpy(),
+                train[["type"]].to_numpy().reshape((-1))
+            )
+            pred = self.classifier.predict(
+                test[["px_std", "pz_std"]].to_numpy()
+            )
+            accuracy[i] = accuracy_score(test[["type"]].to_numpy().reshape((-1)), pred)
+        return accuracy.mean()
 
+    def _cv_one_scikit(self, levels, pitches, n_folds=5):
+        accuracy = cross_val_score(
+            self.classifier,
+            pitches[["px_std", "pz_std"]].to_numpy(),
+            pitches[["type"]].to_numpy().reshape((-1)),
+            cv=n_folds
+        )
+        return levels, accuracy.mean()
 
+    def cv_all(self, n_folds=5, n_jobs=-1, prefer="threads"):
+        out = Parallel(n_jobs=n_jobs, prefer=prefer)(
+            delayed(self._cv_one_scikit)(levels, pitches, n_folds)
+            for levels, pitches in self.pitches
+        )
+        self.cv_accuracy = dict((levels, acc) for levels, acc in out)
