@@ -60,7 +60,7 @@ embeddings = encoder.transform(szl.strikezone)
 reconstructed_strikezones = encoder.inverse_transform(embeddings, szl.strikezone.keys())
 
 with open("./data/models/encoding/PCA10_umpire_balls_strikes.txt", "wb") as f:
-    pickle.dump((encoder, embeddings), f)
+    pickle.dump((encoder, embeddings, szl.x_range, szl.y_range), f)
 
 #
 # import torch
