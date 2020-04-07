@@ -42,3 +42,17 @@ def labeled_pitches(pitches):
     return xb, zb, xs, zs
 
 
+def plot_pitches(pitches=None, x_range=(-2, 2), z_range=(0.5, 5), sz=None, b_outline=True, sz_outline=True):
+    if sz is not None:
+        plt.imshow(sz, extent=(*x_range, *z_range[::-1]), alpha=sz.astype(float))
+    else:
+        plt.axis([*x_range, *z_range[::-1]])
+    if b_outline:
+        plt.plot(*batter_outline(), scalex=False, scaley=False, color="black")
+    if sz_outline:
+        plt.plot(*strike_zone(), scalex=False, scaley=False, color="white", linewidth=1, linestyle="--")
+    if pitches is not None:
+        xb, zb, xs, zs = labeled_pitches(pitches)
+        plt.plot(xb, zb, label="Ball", scalex=False, scaley=False, linestyle="", marker="o")
+        plt.plot(xs, zs, label="Strike", scalex=False, scaley=False, linestyle="", marker="o")
+        plt.legend(framealpha=1., frameon=True, loc="upper right")

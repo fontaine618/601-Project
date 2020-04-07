@@ -12,7 +12,9 @@ class StrikezoneLearner:
         if "fit" not in dir(self.classifier):
             raise NotImplementedError("classifier must implement fit")
         if "predict_proba" not in dir(self.classifier):
-            raise NotImplementedError("classifier must implement predict")
+            if "predict" not in dir(self.classifier):
+                raise NotImplementedError("classifier must implement predict_proba or at least predict")
+            raise UserWarning("classifier does not implement predict_proba; predict will be used instead")
         self.pitches = df
         self.counts = self.pitches.agg({
             "px": ["count"]
@@ -49,8 +51,10 @@ class StrikezoneLearner:
                 pitches[["px_std", "pz_std"]].to_numpy(),
                 pitches[["type_01"]].to_numpy().reshape((-1))
             )
-        # pred = fit.predict_proba(self.X_sz)
-        pred = fit.predict(self.X_sz)
+        if "predict_proba" not in dir(self.classifier):
+            pred = fit.predict(self.X_sz)
+        else:
+            pred = fit.predict_proba(self.X_sz)
         if len(pred.shape) == 2:
             pred = pred[:, 1]
         return pred.reshape((self.res, self.res))

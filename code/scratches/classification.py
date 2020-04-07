@@ -4,7 +4,7 @@ from data.pitchfx import PitchFxDataset
 from models.classification.strikezone_learner import StrikezoneLearner
 from models.classification.kernel_logistic_regression import KernelLogisticRegression
 import matplotlib.pyplot as plt
-from plot.utils import batter_outline, strike_zone, labeled_pitches
+from plot.utils import batter_outline, strike_zone, labeled_pitches, plot_pitches
 from pygam import LogisticGAM, te
 from sklearn.svm import SVC
 plt.style.use("seaborn")
@@ -32,7 +32,7 @@ classifier = SVC(
     C=C,
     gamma=gamma,
     probability=True,
-    class_weight="balanced"
+    #class_weight="balanced"
 )
 
 
@@ -46,15 +46,9 @@ self.predict_strikezone_all()
 levels = ("Angel Hernandez", "b_count_[0,2]", "s_count_(1,2]")
 sz = self.strikezone[levels]
 for levels, sz in self.strikezone.items():
-    plt.imshow(sz, extent=(*self.x_range, *self.y_range[::-1]), alpha=sz.astype(float))
-    plt.title(levels)
-    plt.plot(*batter_outline(), scalex=False, scaley=False, color="black")
-    plt.plot(*strike_zone(), scalex=False, scaley=False, color="white", linewidth=1, linestyle="--")
     pitches = df.get_group(levels)
-    xb, zb, xs, zs = labeled_pitches(pitches)
-    plt.plot(xb, zb, label="Ball", scalex=False, scaley=False, linestyle="", marker="o")
-    plt.plot(xs, zs, label="Strike", scalex=False, scaley=False, linestyle="", marker="o")
-    plt.legend(framealpha=1., frameon=True, loc="upper right")
+    plot_pitches(pitches=pitches, x_range=self.x_range, z_range=self.y_range, sz=sz)
+    plt.title(levels)
     plt.show()
 
 self.cv_all(scoring="accuracy")
