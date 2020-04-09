@@ -2,10 +2,11 @@ from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.ndimage
+import os
 
 
 def generate_batter_outline():
-    load = Image.open('./data/utils/batter_raw.png')
+    load = Image.open('./../data/utils/batter_raw.png')
     gray = load.convert('L')
     gray = 255-np.array(gray)[::-1, :][:, ::-1]
     im = scipy.ndimage.zoom(gray, 3)
@@ -19,7 +20,8 @@ def generate_batter_outline():
 
 
 def batter_outline(stand="R", x=-17/12):
-    contour = np.loadtxt("./../data/utils/batter_outline.csv", delimiter=",")
+    file_path = os.path.join(os.path.dirname(__file__), 'data/batter_outline.csv')
+    contour = np.loadtxt(file_path, delimiter=",")
     contour[:, 0] += x
     if stand == "L":
         contour[:, 0] = -contour[:, 0]
