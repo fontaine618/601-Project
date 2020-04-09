@@ -19,7 +19,7 @@ def generate_batter_outline():
 
 
 def batter_outline(stand="R", x=-17/12):
-    contour = np.loadtxt("./data/utils/batter_outline.csv", delimiter=",")
+    contour = np.loadtxt("./../data/utils/batter_outline.csv", delimiter=",")
     contour[:, 0] += x
     if stand == "L":
         contour[:, 0] = -contour[:, 0]
