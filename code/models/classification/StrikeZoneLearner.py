@@ -4,7 +4,9 @@ from joblib import Parallel, delayed
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
-
+from time import time
+from collections import defaultdict
+from functools import partial
 
 # TODO: improve error checking.
 # TODO: The method to pass tuples of tuples in case we want CV is clumsy
@@ -13,22 +15,27 @@ import matplotlib.pyplot as plt
 
 class StrikeZoneLearner:
 
-    def __init__(self, n_jobs=-1, prefer="threads",
-                 scoring="accuracy"):
+    def __init__(self, scoring="accuracy"):
         # TODO: I think at initialisation, the fitter should be
         # TODO: agnostic of the data and algorithmic parameters
         # Used to store the fitting results, keys: groups,
         # values, tuple of probs + best classifier.
-        self.fits = {}
-        self.probabilities = {}
-        self.scores = {}
-        self.groups = []
+        self.fits = defaultdict(object)
+        self.probabilities = defaultdict(partial(np.ndarray, 0))
+        self.scores = defaultdict(float)
+        self.groups = set()
         self.scoring = scoring
-        self.strike_zones = {}
+        self.strike_zones = defaultdict(partial(np.ndarray, 0))
+        self.groups_processed = 0
+        self.n_groups = 0
+        self.time0 = time()
 
     def fit(self, pitches, labels, classifier, param_grid=None,
             cv=False, n_jobs=-1, cv_folds=None, group="All",
             single_call=True):
+        # logging
+        if self.groups_processed == 0:
+            self.time0 = time()
         if isinstance(pitches, pd.core.groupby.generic.DataFrameGroupBy):
             raise ValueError("Use fit_groups to fit groups.")
         if cv:
@@ -36,13 +43,18 @@ class StrikeZoneLearner:
                 raise ValueError("A parameter grid needs to be provided"
                                  " for cross validation")
             gsv = GridSearchCV(classifier, param_grid=param_grid,
-                               n_jobs=n_jobs, scoring=self.scoring)
+                               n_jobs=n_jobs, scoring=self.scoring, cv=cv_folds)
             fit = gsv.fit(pitches, labels)
             score = fit.best_score_
             fit = fit.best_estimator_
         else:
             fit = classifier.fit(pitches, labels)
             score = accuracy_score(fit.predict(pitches), labels)
+        # logging
+        self.groups_processed += 1
+        if self.groups_processed % 10 == 0:
+            print(self.groups_processed, "/", self.n_groups, "groups processed in", round(time() - self.time0, 2), "s")
+            self.time0 = time()
 
         # This hack so that fit can be called individually
         # but we can also make use of paralleled processing
@@ -53,46 +65,60 @@ class StrikeZoneLearner:
             self.scores[group] = score
             return self
         else:
-            return group, fit.predict_proba(pitches), fit, score
+            if score > self.scores[group]:
+                # found a better classifier
+                print("    New best classifier for group", group)
+                print("    - Classifier:", type(classifier).__name__)
+                print("    - Params:", gsv.best_params_)
+                print("    - Score", score, "(previous={})".format(self.scores[group]))
+                self.fits[group] = fit
+                self.probabilities[group] = fit.predict_proba(pitches)
+                self.scores[group] = score
+            return self
 
     def fit_groups(self, df, data_col, label_col, classifier=None,
                    param_grid=None, cv=False, cv_folds=None, n_jobs=-1,
-                   prefer=None, single_classifier=True):
+                   prefer=None):
+        # logging
+        print(type(classifier).__name__, "=" * 80)
+        for k, v in param_grid.items():
+            print(k, ":", v)
+        time0 = time()
+        self.n_groups = len(df)
+        self.groups_processed = 0
+
         # This expects df to be an instance of
         # pd.core.groupby.generic.DataFrameGroupBy
+        if not isinstance(df, pd.core.groupby.generic.DataFrameGroupBy):
+            raise ValueError("fit_groups expects a grouped DataFrame")
 
         # This should be the case if we want to fit
         # one classifier to all groups
         if cv:
-            n_jobs_ = 1
-        else:
             n_jobs_ = n_jobs
-
-        out = Parallel(n_jobs=n_jobs, prefer=prefer)(
+            n_jobs = 1
+        else:
+            n_jobs_ = 1
+        Parallel(n_jobs=n_jobs, prefer=prefer)(
             delayed(self.fit)(pitches[data_col].to_numpy(),
                               pitches[label_col].to_numpy().reshape((-1)),
                               classifier, param_grid, cv, n_jobs=n_jobs_,
                               cv_folds=cv_folds, group=group,
                               single_call=False) for group, pitches in df
         )
-
-        # Same hack as in fit. Used to that it can be called
-        # on its own.
-        if single_classifier:
-            for group, probabilities, fit, score in out:
-                self.fits[group] = fit
-                self.probabilities[group] = probabilities
-                self.scores[group] = score
-            return self
-        else:
-            return out
+        print(type(classifier).__name__, "completed in", time() - time0, "s")
+        return self
 
     def fit_groups_all_classifiers(self, df, data_col, label_col,
-                                   classifiers, cv=False, cv_folds=None, n_jobs=-1,
-                                   prefer=None):
+                                   classifiers, cv=False, cv_folds=None, n_jobs=-1):
         # This expects df to be an instance of
         # pd.core.groupby.generic.DataFrameGroupBy
+        if not isinstance(df, pd.core.groupby.generic.DataFrameGroupBy):
+            raise ValueError("fit_groups expects a grouped DataFrame")
 
+        # For this, classifiers should be a tuple of 2 tuples,
+        # the first entry the classifier object, the second a
+        # dictionary with parameters for CV.
         if np.ndim(classifiers) > 2:
             raise ValueError("Classifier argument should either"
                              " be an iterable over Classifier instances"
@@ -101,49 +127,11 @@ class StrikeZoneLearner:
         elif np.ndim(classifiers) == 2:
             cv = True
 
-        # For this, classifiers should be a tuple of 2 tuples,
-        # the first entry the classifier object, the second a
-        # dictionary with parameters for CV.
-        if cv:
-            out = Parallel(n_jobs=n_jobs, prefer=prefer)(
-                delayed(self.fit_groups)(df, data_col, label_col,
-                                         c[0], c[1], cv, n_jobs=1,
-                                         cv_folds=cv_folds,
-                                         single_classifier=False) for c in classifiers
-            )
-        # Here classifiers should be a list of classifier
-        # objects initialised with the necessary params
-        # TODO: Maybe this is a bit clumsy but I think
-        # TODO: it might be convenient
-        else:
-            out = Parallel(n_jobs=n_jobs, prefer=prefer)(
-                delayed(self.fit_groups)(df, data_col, label_col,
-                                         c, cv, n_jobs=1,
-                                         cv_folds=cv_folds,
-                                         single_classifier=False
-                                         ) for c in classifiers
-            )
-
-        # TODO: If we use other scoring, than this might not be sensible
-        # Necessary since the output might not come in order
-        bs = {}
-        for group in df.groups:
-            bs[group] = -1
-        # For every classifier
-        for i in range(len(out)):
-            # For every group
-            for j in range(len(out[i])):
-                group = out[i][j][0]
-                if out[i][j][3] > bs[group]:
-                    self.fits[group] = out[i][j][2]
-                    if len(out[i][j][1].shape) == 2:
-                        pred = pred[:, 1]
-                    else:
-                        pred = out[i][j][1]
-                    self.probabilities[group] = pred
-                    self.scores[group] = out[i][j][3]
-        self.groups = df.groups
-
+        # fit on all groups, iterating through classifiers
+        for c in classifiers:
+            self.fit_groups(df=df, data_col=data_col, label_col=label_col,
+                             classifier=c[0], param_grid=c[1], cv=cv,
+                             n_jobs=n_jobs, cv_folds=cv_folds)
         return self
 
     # The instance should be agnostic to the strike zone
@@ -163,19 +151,19 @@ class StrikeZoneLearner:
                 pred = pred[:, 1]
             self.strike_zones[group] = pred.reshape((res, res))
 
-    def plot_results(self, type = "bar"):
+    def plot_results(self, type="bar"):
         if len(self.groups)> 0:
             plt.style.use('seaborn')
             fig, ax = plt.subplots()
             x = []
             y = []
-            for group, pitches in self.groups:
-                x.append(group)
+            for i, group in enumerate(self.groups):
+                x.append(i)
                 y.append(self.scores[group])
             if type == "bar":
-                ax.bar(self.groups, self.scores)
+                ax.bar(x, y)
             else:
-                ax.plot(self.groups, self.scores)
+                ax.plot(x, y)
             ax.set_xlabel("Groups")
             ax.set_ylabel("Best scores")
             plt.show()
