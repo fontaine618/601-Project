@@ -7,7 +7,8 @@ import matplotlib.pyplot as plt
 from time import time
 from collections import defaultdict
 from functools import partial
-
+import warnings
+from copy import deepcopy
 
 # TODO: improve error checking.
 # TODO: The method to pass tuples of tuples in case we want CV is clumsy
@@ -21,9 +22,10 @@ class StrikeZoneLearner:
         # TODO: agnostic of the data and algorithmic parameters
         # Used to store the fitting results, keys: groups,
         # values, tuple of probs + best classifier.
-        self.fits = defaultdict(object)
+        self.fits = dict()
         self.probabilities = defaultdict(partial(np.ndarray, 0))
-        self.scores = defaultdict(float)
+        inf_lambda = lambda: float('-inf')
+        self.scores = defaultdict(inf_lambda)
         self.groups = set()
         self.scoring = scoring
         self.strike_zones = defaultdict(partial(np.ndarray, 0))
@@ -44,14 +46,16 @@ class StrikeZoneLearner:
             if param_grid is None:
                 raise ValueError("A parameter grid needs to be provided"
                                  " for cross validation")
-            gsv = GridSearchCV(classifier, param_grid=param_grid,
-                               n_jobs=n_jobs, scoring=self.scoring, cv=cv_folds)
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                gsv = GridSearchCV(classifier, param_grid=param_grid,
+                                   n_jobs=n_jobs, scoring=self.scoring, cv=cv_folds)
             fit = gsv.fit(pitches, labels)
             score = fit.best_score_
             fit = fit.best_estimator_
         else:
-            fit = classifier.fit(pitches, labels)
-            score = accuracy_score(fit.predict(pitches), labels)
+            classifier.fit(pitches, labels)
+            score = accuracy_score(classifier.predict(pitches), labels)
         # logging
         self.groups_processed += 1
         if self.groups_processed % 10 == 0:
@@ -62,9 +66,12 @@ class StrikeZoneLearner:
         # but we can also make use of paralleled processing
         # if this called from the other methods
         if single_call:
-            self.fits[group] = fit
-            self.params[group] = fit.best_params_
-            self.probabilities[group] = fit.predict_proba(pitches)
+            print("    group", group)
+            print("    - Classifier:", type(classifier).__name__)
+            print("    - Score", score)
+            self.fits[group] = deepcopy(classifier)
+            self.params[group] = {}
+            self.probabilities[group] = classifier.predict_proba(pitches)
             self.scores[group] = score
             return self
         else:
@@ -75,7 +82,7 @@ class StrikeZoneLearner:
                 print("    - Params:", gsv.best_params_)
                 print("    - Score", score, "(previous={})".format(self.scores[group]))
                 self.fits[group] = fit
-                self.params[group] = fit.best_params_
+                self.params[group] = gsv.best_params_
                 self.probabilities[group] = fit.predict_proba(pitches)
                 self.scores[group] = score
             return self
@@ -89,6 +96,7 @@ class StrikeZoneLearner:
             print(k, ":", v)
         time0 = time()
         self.n_groups = len(df)
+        self.groups.update([g for g, _ in df])
         self.groups_processed = 0
 
         # This expects df to be an instance of
@@ -103,12 +111,13 @@ class StrikeZoneLearner:
             n_jobs = 1
         else:
             n_jobs_ = 1
+            n_jobs = 1
         Parallel(n_jobs=n_jobs, prefer=prefer)(
             delayed(self.fit)(pitches[data_col].to_numpy(),
                               pitches[label_col].to_numpy().reshape((-1)),
                               classifier, param_grid, cv, n_jobs=n_jobs_,
                               cv_folds=cv_folds, group=group,
-                              single_call=False) for group, pitches in df
+                              single_call=False if cv else True) for group, pitches in df
         )
         print(type(classifier).__name__, "completed in", time() - time0, "s")
         return self
@@ -149,8 +158,8 @@ class StrikeZoneLearner:
         )
         x_sz = np.concatenate([grid_x.reshape((-1, 1)),
                                grid_y.reshape((-1, 1))], axis=1)
-        for group in self.groups:
-            pred = self.fits[group].predict_proba(x_sz)
+        for group, fit in self.fits.items():
+            pred = fit.predict_proba(x_sz)
             if len(pred.shape) == 2:
                 pred = pred[:, 1]
             self.strike_zones[group] = pred.reshape((res, res))

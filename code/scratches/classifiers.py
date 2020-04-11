@@ -1,19 +1,18 @@
 import sys
-sys.path.extend(['/home/simon/Documents/601-Project/code'])
 from data.pitchfx import PitchFxDataset
 from models.classification.StrikeZoneLearner import StrikeZoneLearner
 import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import warnings
+import pickle
+
 # classifiers
 from models.classification.kernel_logistic_regression import KernelLogisticRegression
 from sklearn.svm import SVC
 from pygam import LogisticGAM, te
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier, GradientBoostingClassifier
 from sklearn.neural_network import MLPClassifier
-import pickle
+from models.classification.polynomial_logistic_regression import PolynomialLogisticRegression
 
+sys.path.extend(['/home/simon/Documents/601-Project/code'])
 
 pitchfx = PitchFxDataset()
 df = pitchfx.group_by(
@@ -22,10 +21,9 @@ df = pitchfx.group_by(
 	s_count=[0, 1, 2]
 )
 
-szl = StrikeZoneLearner(scoring="neg_brier_score")
+szl = StrikeZoneLearner(scoring="balanced_accuracy")
 
 classifiers = []
-
 
 # add SVC
 svc = SVC(probability=True)
@@ -35,14 +33,6 @@ svc_params = {
 	"class_weight": [None, "balanced"]
 }
 classifiers.append((svc, svc_params))
-
-# add GAM
-gam = LogisticGAM(te(0, 1))
-gam_params = {
-	"n_splines": [3, 5, 7, 10, 15],
-	"lam": np.logspace(-2, 1, 10)
-}
-classifiers.append((gam, gam_params))
 
 # add RandomForest
 rf = RandomForestClassifier()
@@ -86,22 +76,27 @@ klr_params = {
 }
 classifiers.append((klr, klr_params))
 
+# add polynomial LogisticRegression
+plr = PolynomialLogisticRegression()
+plr_params = {
+	"degree": [8, 10],
+	"C": np.logspace(-2, 1, 4),
+	"class_weight": [None, "balanced"]
+}
+classifiers.append((plr, plr_params))
+
 # fit
-with warnings.catch_warnings():
-    warnings.simplefilter("ignore")
-	szl.fit_groups_all_classifiers(
-		df=df,
-		data_col=["px_std", "pz_std"],
-		label_col="type_01",
-		classifiers=classifiers,
-		cv=True,
-		cv_folds=5,
-		n_jobs=-1,
-	)
+szl.fit_groups_all_classifiers(
+	df=df,
+	data_col=["px_std", "pz_std"],
+	label_col="type_01",
+	classifiers=classifiers,
+	cv=True,
+	cv_folds=5,
+	n_jobs=-1,
+)
 
 
-
-
-with open("./data/models/classifiers/umpire_balls_strikes_brier.txt", "wb") as f:
+with open("./data/models/classifiers/umpire_balls_strikes_balanced_accuracy.txt", "wb") as f:
 	pickle.dump(szl, f)
 

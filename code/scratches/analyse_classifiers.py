@@ -23,19 +23,21 @@ scores = []
 fits = []
 n_obs = []
 groups = []
+params = []
 
 for group, pitches in df:
     groups.append(group)
     scores.append(szl.scores[group])
     fits.append(type(szl.fits[group]).__name__)
     n_obs.append(len(pitches))
+    params.append(szl.params[group])
 
 results = pd.DataFrame({
-    "score": scores, "model": fits, "n_obs": n_obs
+    "score": scores, "model": fits, "n_obs": n_obs, "params": params
 })
 results.index = groups
 
-plt.style.use("seaborn")
+
 plt.figure()
 models = results["model"].unique()
 for k, model in enumerate(models):
@@ -47,25 +49,25 @@ for k, model in enumerate(models):
 plt.legend()
 plt.show()
 
-# fix old version
-szl_ = StrikeZoneLearner(scoring="accuracy")
-szl_.groups = set([gr for gr, _ in df])
-szl_.fits = szl.fits
+# # fix old version
+# szl_ = StrikeZoneLearner(scoring="accuracy")
+# szl_.groups = set([gr for gr, _ in df])
+# szl_.fits = szl.fits
 
-grid_x, grid_y, szs = szl_.compute_strike_zones()
+grid_x, grid_y, szs = szl.compute_strike_zones()
 x_range = (grid_x.min(), grid_x.max())
 z_range = (grid_y.max(), grid_y.min())
 
 levels = ("Angel Hernandez", "b_count_[0,2]", "s_count_(1,2]")
 sz = szs[levels]
 
-for levels, sz in szs.items():
-    pitches = df.get_group(levels)
+for group, sz in szs.items():
+    pitches = df.get_group(group)
     plot_pitches(
         pitches=pitches,
         x_range=x_range, z_range=z_range,
-        sz=sz, sz_type="heatmap",
+        sz=sz, sz_type="uncertainty",
     )
-    plt.title(results["model"][levels] + str(levels))
+    plt.title(results["model"][group] + str(results["params"][group]))
     plt.show()
 
