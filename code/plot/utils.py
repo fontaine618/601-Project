@@ -48,25 +48,26 @@ def plot_pitches(pitches=None, x_range=(-2, 2), z_range=(0.5, 5),
                  sz=None, b_outline=True, sz_outline=True,
                  sz_type=None, levels=[0.5], X=None, Y=None):
     fig = plt.figure()
+    ax = fig.gca()
     if sz is not None:
         if sz_type == "heatmap":
-            fig.imshow(sz, extent=(*x_range, *z_range[::-1]), alpha=sz.astype(float))
+            ax.imshow(sz, extent=(*x_range, *z_range[::-1]), alpha=sz.astype(float))
         elif sz_type == "contour":
-            fig.contour(X, Y, sz, extent=(*x_range, *z_range[::-1]), levels=levels)
+            ax.contour(X, Y, sz, extent=(*x_range, *z_range[::-1]), levels=levels)
         elif sz_type == "contourf":
-            fig.contourf(X, Y, sz, extent=(*x_range, *z_range[::-1]), levels=levels)
+            ax.contourf(X, Y, sz, extent=(*x_range, *z_range[::-1]), levels=levels)
         elif sz_type == "uncertainty":
-            fig.imshow(4 * sz * (1. - sz), extent=(*x_range, *z_range[::-1]),
+            ax.imshow(4 * sz * (1. - sz), extent=(*x_range, *z_range[::-1]),
                        alpha=(4 * sz * (1. - sz)).astype(float))
     else:
-        fig.axis([*x_range, *z_range[::-1]])
+        ax.axis([*x_range, *z_range[::-1]])
     if b_outline:
-        fig.plot(*batter_outline(), scalex=False, scaley=False, color="black")
+        ax.plot(*batter_outline(), scalex=False, scaley=False, color="black")
     if sz_outline:
-        fig.plot(*strike_zone(), scalex=False, scaley=False, color="white", linewidth=1, linestyle="--")
+        ax.plot(*strike_zone(), scalex=False, scaley=False, color="white", linewidth=1, linestyle="--")
     if pitches is not None:
         xb, zb, xs, zs = labeled_pitches(pitches)
-        fig.plot(xb, zb, label="Ball", scalex=False, scaley=False, linestyle="", marker="o")
-        fig.plot(xs, zs, label="Strike", scalex=False, scaley=False, linestyle="", marker="o")
-        fig.legend(framealpha=1., frameon=True, loc="upper right")
+        ax.plot(xb, zb, label="Ball", scalex=False, scaley=False, linestyle="", marker="o", alpha=0.5)
+        ax.plot(xs, zs, label="Strike", scalex=False, scaley=False, linestyle="", marker="o", alpha=0.5)
+        ax.legend(framealpha=1., frameon=True, loc="upper right")
     return fig

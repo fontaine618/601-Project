@@ -8,6 +8,7 @@ from time import time
 from collections import defaultdict
 from functools import partial
 
+
 # TODO: improve error checking.
 # TODO: The method to pass tuples of tuples in case we want CV is clumsy
 # TODO: Probably unnecessary to save the train probabilities
@@ -29,6 +30,7 @@ class StrikeZoneLearner:
         self.groups_processed = 0
         self.n_groups = 0
         self.time0 = time()
+        self.params = defaultdict(dict)
 
     def fit(self, pitches, labels, classifier, param_grid=None,
             cv=False, n_jobs=-1, cv_folds=None, group="All",
@@ -61,6 +63,7 @@ class StrikeZoneLearner:
         # if this called from the other methods
         if single_call:
             self.fits[group] = fit
+            self.params[group] = fit.best_params_
             self.probabilities[group] = fit.predict_proba(pitches)
             self.scores[group] = score
             return self
@@ -72,6 +75,7 @@ class StrikeZoneLearner:
                 print("    - Params:", gsv.best_params_)
                 print("    - Score", score, "(previous={})".format(self.scores[group]))
                 self.fits[group] = fit
+                self.params[group] = fit.best_params_
                 self.probabilities[group] = fit.predict_proba(pitches)
                 self.scores[group] = score
             return self
@@ -130,8 +134,8 @@ class StrikeZoneLearner:
         # fit on all groups, iterating through classifiers
         for c in classifiers:
             self.fit_groups(df=df, data_col=data_col, label_col=label_col,
-                             classifier=c[0], param_grid=c[1], cv=cv,
-                             n_jobs=n_jobs, cv_folds=cv_folds)
+                            classifier=c[0], param_grid=c[1], cv=cv,
+                            n_jobs=n_jobs, cv_folds=cv_folds)
         return self
 
     # The instance should be agnostic to the strike zone
@@ -143,16 +147,17 @@ class StrikeZoneLearner:
             np.linspace(*x_range, num=res),
             np.linspace(*y_range, num=res)
         )
-        x_sz = np.concatenate([self.grid_x.reshape((-1, 1)),
-                               self.grid_y.reshape((-1, 1))], axis=1)
+        x_sz = np.concatenate([grid_x.reshape((-1, 1)),
+                               grid_y.reshape((-1, 1))], axis=1)
         for group in self.groups:
-            pred = self.fit[group].predict(x_sz)
+            pred = self.fits[group].predict_proba(x_sz)
             if len(pred.shape) == 2:
                 pred = pred[:, 1]
             self.strike_zones[group] = pred.reshape((res, res))
+        return grid_x, grid_y, self.strike_zones
 
     def plot_results(self, type="bar"):
-        if len(self.groups)> 0:
+        if len(self.groups) > 0:
             plt.style.use('seaborn')
             fig, ax = plt.subplots()
             x = []
