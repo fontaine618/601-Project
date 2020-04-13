@@ -9,7 +9,7 @@ from plot.utils import plot_pitches
 plt.style.use("seaborn")
 
 sys.path.extend(['/home/simon/Documents/601-Project/code'])
-with open("./data/models/classifiers/umpire_balls_strikes_accuracy.txt", "rb") as f:
+with open("./data/models/classifiers/umpire_balls_strikes_roc_auc_svc_klr.txt", "rb") as f:
     szl = pickle.load(f)
 
 pitchfx = PitchFxDataset()

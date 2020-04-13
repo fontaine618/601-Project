@@ -17,6 +17,9 @@ from copy import deepcopy
 
 class StrikeZoneLearner:
 
+    def _inf_lambda(self):
+        return float('-inf')
+
     def __init__(self, scoring="accuracy"):
         # TODO: I think at initialisation, the fitter should be
         # TODO: agnostic of the data and algorithmic parameters
@@ -24,8 +27,7 @@ class StrikeZoneLearner:
         # values, tuple of probs + best classifier.
         self.fits = dict()
         self.probabilities = defaultdict(partial(np.ndarray, 0))
-        inf_lambda = lambda: float('-inf')
-        self.scores = defaultdict(inf_lambda)
+        self.scores = defaultdict(self._inf_lambda)
         self.groups = set()
         self.scoring = scoring
         self.strike_zones = defaultdict(partial(np.ndarray, 0))
@@ -43,6 +45,8 @@ class StrikeZoneLearner:
         if isinstance(pitches, pd.core.groupby.generic.DataFrameGroupBy):
             raise ValueError("Use fit_groups to fit groups.")
         if cv:
+            if (len(pitches) > 1000) & (type(classifier).__name__ == "KernelLogisticRegression"):
+                return self
             if param_grid is None:
                 raise ValueError("A parameter grid needs to be provided"
                                  " for cross validation")

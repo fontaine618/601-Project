@@ -21,24 +21,24 @@ df = pitchfx.group_by(
 	s_count=[0, 1, 2]
 )
 
-szl = StrikeZoneLearner(scoring="balanced_accuracy")
+szl = StrikeZoneLearner(scoring="neg_brier_score")
 
 classifiers = []
 
 # add SVC
 svc = SVC(probability=True)
 svc_params = {
-	"C": np.logspace(-2, 1, 8),
-	"gamma": np.logspace(-2, 1, 8),
-	"class_weight": [None, "balanced"]
+	"C": np.logspace(-1, 1, 7),
+	"gamma": np.logspace(-1, 0.3, 7),
+	"class_weight": ["balanced"]
 }
 classifiers.append((svc, svc_params))
 
 # add RandomForest
 rf = RandomForestClassifier()
 rf_params = {
-	"n_estimators": np.logspace(1, 3, 10).round().astype(int),
-	"ccp_alpha": np.logspace(-6, -1, 10),
+	"n_estimators": np.logspace(1, 3, 6).round().astype(int),
+	"ccp_alpha": np.logspace(-6, -1, 6),
 	"class_weight": [None, "balanced"]
 }
 classifiers.append((rf, rf_params))
@@ -46,8 +46,8 @@ classifiers.append((rf, rf_params))
 # add AdaBoost
 ada = AdaBoostClassifier()
 ada_params = {
-	"n_estimators": np.logspace(1, 3, 10).round().astype(int),
-	"learning_rate": np.logspace(-4, -1, 10)
+	"n_estimators": np.logspace(1, 3, 6).round().astype(int),
+	"learning_rate": np.logspace(-4, -1, 6)
 }
 classifiers.append((ada, ada_params))
 
@@ -71,8 +71,8 @@ classifiers.append((gdb, gdb_params))
 # add KLR
 klr = KernelLogisticRegression()
 klr_params = {
-	"gamma": np.logspace(-0.5, 0.5, 3),
-	"C": np.logspace(-0.5, 0.5, 3)
+	"gamma": np.logspace(-1, 1, 9),
+	"C": np.logspace(-1, 1, 9)
 }
 classifiers.append((klr, klr_params))
 
@@ -97,6 +97,6 @@ szl.fit_groups_all_classifiers(
 )
 
 
-with open("./data/models/classifiers/umpire_balls_strikes_balanced_accuracy.txt", "wb") as f:
+with open("./data/models/classifiers/umpire_balls_strikes_brier_svc_klr.txt", "wb") as f:
 	pickle.dump(szl, f)
 
