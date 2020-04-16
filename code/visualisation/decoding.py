@@ -14,7 +14,7 @@ class DecodingApp(server.Launch):
         min = embeddings.min(0)
         max = embeddings.max(0)
 
-        self.n_components = encoder.encoder.n_components
+        self.n_components = encoder.n_components
         self.encoder = encoder
         self.x_range = x_range
         self.y_range = y_range
@@ -31,9 +31,9 @@ class DecodingApp(server.Launch):
                 "key": "c" + str(i+1),
                 "label": "Component " + str(i + 1),
                 "value": 0,
-                "min": round(min_),
-                "max": round(max_),
-                "step": (round(max_) - round(min_)) / 10.,
+                "min": min_,
+                "max": max_,
+                "step": (max_ - min_) / 100.,
                 "action_id": "plot"
             }
             for i, min_, max_ in zip(range(self.n_components), min, max)
@@ -41,12 +41,12 @@ class DecodingApp(server.Launch):
 
     def getPlot(self, params):
         u = np.array([[float(params["c" + str(i+1)]) for i in range(self.n_components)]])
-        sz = self.encoder.inverse_transform(u, ["sz"])["sz"].clip(0, 1)
+        sz = self.encoder.inverse_transform(u.reshape((1, -1))).clip(0, 1).reshape((100, 100))
         sz_alpha = (4 * sz * (1. - sz)).astype(float)
         fig = plt.figure()
         ax = fig.add_subplot(1, 1, 1)
         ax.imshow(
-            sz_alpha,
+            sz,
             extent=(*self.x_range, *self.y_range[::-1]),
             # alpha=sz
         )

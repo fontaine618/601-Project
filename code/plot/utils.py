@@ -47,7 +47,7 @@ def labeled_pitches(pitches):
 def plot_pitches(pitches=None, x_range=(-2, 2), z_range=(0.5, 5),
                  sz=None, b_outline=True, sz_outline=True,
                  sz_type=None, levels=[0.5], X=None, Y=None):
-    fig = plt.figure()
+    plt.axis([*x_range, *z_range[::-1]])
     if sz is not None:
         if sz_type == "heatmap":
             plt.imshow(sz, extent=(*x_range, *z_range[::-1]), alpha=sz.astype(float))
@@ -56,10 +56,8 @@ def plot_pitches(pitches=None, x_range=(-2, 2), z_range=(0.5, 5),
         elif sz_type == "contourf":
             plt.contourf(X, Y, sz, extent=(*x_range, *z_range[::-1]), levels=levels)
         elif sz_type == "uncertainty":
-            plt.imshow(4 * sz * (1. - sz), extent=(*x_range, *z_range[::-1]),
-                       alpha=(4 * sz * (1. - sz)).astype(float))
-    else:
-        plt.axis([*x_range, *z_range[::-1]])
+            u = (4 * sz * (1. - sz)).astype(float)
+            plt.imshow(u, extent=(*x_range, *z_range[::-1]), alpha=u)
     if b_outline:
         plt.plot(*batter_outline(), scalex=False, scaley=False, color="black")
     if sz_outline:
@@ -69,4 +67,3 @@ def plot_pitches(pitches=None, x_range=(-2, 2), z_range=(0.5, 5),
         plt.plot(xb, zb, label="Ball", scalex=False, scaley=False, linestyle="", marker="o", alpha=0.5)
         plt.plot(xs, zs, label="Strike", scalex=False, scaley=False, linestyle="", marker="o", alpha=0.5)
         plt.legend(framealpha=1., frameon=True, loc="upper right")
-    return fig
