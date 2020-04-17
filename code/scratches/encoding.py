@@ -142,4 +142,4 @@ for k, (gr, sz, szr) in enumerate(zip(groups, strike_zones.values(), szsr.values
 
 # Potentially pickle at some point
 with open(out_path + out_file_fit, "wb") as f:
-    pickle.dump((fit, U, x_range, z_range), f)
+    pickle.dump((fit, U, list(strike_zones.keys()), x_range, z_range), f)

@@ -9,7 +9,7 @@ class DecodingApp(server.Launch):
 
     def __init__(self, encoder_path):
         with open(encoder_path, "rb") as f:
-            encoder, embeddings, x_range, y_range = pickle.load(f)
+            encoder, embeddings, _, x_range, y_range = pickle.load(f)
 
         min = embeddings.min(0)
         max = embeddings.max(0)
