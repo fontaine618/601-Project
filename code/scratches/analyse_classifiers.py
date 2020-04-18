@@ -9,7 +9,7 @@ from plot.utils import plot_pitches
 plt.style.use("seaborn")
 
 sys.path.extend(['/home/simon/Documents/601-Project/code'])
-with open("./data/models/classifiers/umpire_balls_strikes_roc_auc_svc_klr.txt", "rb") as f:
+with open("./data/models/classifiers/umpire_pitchers_batters_auc_roc_svc_klr.txt", "rb") as f:
     szl = pickle.load(f)
 
 pitchfx = PitchFxDataset()
@@ -17,6 +17,33 @@ df = pitchfx.group_by(
     umpire_HP="all",
     b_count=[0, 2, 3],
     s_count=[0, 1, 2]
+)
+
+
+pitchfx.pitchfx["pfx_x"] = np.where(
+	pitchfx.pitchfx["stand"] == "L",
+	-pitchfx.pitchfx["pfx_x"],
+	pitchfx.pitchfx["pfx_x"]
+)
+df = pitchfx.group_by(
+	umpire_HP="all",
+	pfx_x=[-60, 0, 60],
+	pfx_z=[-20, 5, 20]
+)
+
+
+df = pitchfx.group_by(
+	umpire_HP="all",
+	p_throws="all",
+    stand="all"
+)
+
+pitchfx.pitchfx["score_diff_b_p"] = pitchfx.pitchfx["b_score"] - pitchfx.pitchfx["p_score"]
+
+df = pitchfx.group_by(
+	umpire_HP="all",
+	score_diff_b_p=[-25, -2, 1, 25],
+	inning=[1, 6, 18]
 )
 
 scores = []
@@ -61,13 +88,15 @@ z_range = (grid_y.max(), grid_y.min())
 levels = ("Angel Hernandez", "b_count_[0,2]", "s_count_(1,2]")
 sz = szs[levels]
 
-for group, sz in szs.items():
+for k, (group, sz) in enumerate(szs.items()):
+    if k > 10:
+        break
     pitches = df.get_group(group)
     plot_pitches(
         pitches=pitches,
         x_range=x_range, z_range=z_range,
         sz=sz, sz_type="uncertainty",
     )
-    plt.title(results["model"][group] + str(results["params"][group]))
+    plt.title(results["model"][group] + str(results["params"][group]) + "\n" + str(group))
     plt.show()
 

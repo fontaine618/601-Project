@@ -18,16 +18,21 @@ from models.encoding.autoencoder import strikezone_dict_to_array, array_to_strik
 
 sys.path.append('/home/simon/Documents/601-Project/code')
 
-in_path = './data/models/classifiers/'
-in_file = 'umpire_balls_strikes_roc_auc_svc_klr.txt'
+in_path = '/home/simon/Documents/601-Project/code/data/models/classifiers/'
+in_files = [
+    'umpire_balls_strikes_roc_auc_svc_klr.txt',
+    'umpire_score_inning_roc_auc_svc_klr.txt',
+    'umpire_pfx_x_z_auc_roc_svc_klr.txt',
+    'umpire_pitchers_batters_auc_roc_svc_klr.txt',
+]
 
-out_path = './data/models/encoding/'
-out_file = 'umpire_balls_strikes_k-pca_results.txt'
-out_file_fit = 'umpire_balls_strikes_fit.txt'
+out_path = '/home/simon/Documents/601-Project/code/data/models/encoding/'
+out_results = 'all_results.txt'
+out_fit = 'all_fit'
 
 max_components = 15
 n_components = range(1, max_components+1)
-alphas = np.logspace(-8, -1, 10)
+alphas = np.logspace(-8, -8, 1)
 gammas = np.logspace(-4, -1, 10)
 kernel_pca_arguments = list(it.product(alphas, gammas))
 
@@ -35,16 +40,18 @@ n_jobs = 10
 
 # Read the strike_zones from the pickle file
 # This expects the strike zones to be a dictionary
-szl = pickle.load(open(in_path + in_file, "rb"))
-grid_x, grid_y, strike_zones = szl.compute_strike_zones()
-groups, sz_array = strikezone_dict_to_array(strike_zones)
+strike_zones = dict()
+for in_file in in_files:
+    szl = pickle.load(open(in_path + in_file, "rb"))
+    grid_x, grid_y, sz = szl.compute_strike_zones()
+    strike_zones.update(sz)
 # Transform all strike zones to arrays
 # so that PCA can use them
 groups, sz_array = strikezone_dict_to_array(strike_zones)
 
 # -------------- User Defined Functions -------------------
 
-def fit_kernel_pca(sz_array, alpha, gamma, nc):
+def fit_kernel_pca(sz_array, alpha, gamma, nc, return_fit=True):
 
     kernel_pca = KernelPCA(alpha=alpha, gamma=gamma,
                            n_components=nc, kernel='rbf',
@@ -52,8 +59,10 @@ def fit_kernel_pca(sz_array, alpha, gamma, nc):
     transformed = kernel_pca.fit_transform(sz_array)
     inverse_transformed = kernel_pca.inverse_transform(transformed)
     losses = mse(sz_array.T, inverse_transformed.T, multioutput='raw_values').T
-
-    return losses, alpha, gamma, transformed, inverse_transformed, kernel_pca
+    if return_fit:
+        return losses, alpha, gamma, transformed, inverse_transformed, kernel_pca
+    else:
+        return losses, alpha, gamma, transformed, inverse_transformed
 
 # -------------- Procedure -------------------
 
@@ -74,16 +83,18 @@ results_kernel_pca = pd.DataFrame(
     index=groups
 )
 
+
 for n in n_components:
-    out = Parallel(n_jobs=n_jobs)(
+    out = Parallel(n_jobs=n_jobs, prefer="threads")(
         delayed(fit_kernel_pca)(sz_array,
                                 alpha,
                                 gamma,
-                                n
+                                n,
+                                False
                                 ) for alpha, gamma in kernel_pca_arguments
     )
     bl = np.inf
-    for l, a, g, t, s, _ in out:
+    for l, a, g, t, s in out:
         if l.mean() < bl:
             bl = l.mean()
             best_alpha = a
@@ -101,21 +112,36 @@ for n in n_components:
     results_pca.at[:, n] = losses
 
 # Potentially pickle at some point
-with open(out_path + out_file, "wb") as f:
+with open(out_path + out_results, "wb") as f:
     pickle.dump((results_pca, results_kernel_pca), f)
 
 
 # --------------- Plot MSEs ------------------------
-stats_pca = results_pca.agg(["min", "mean", "max", "std"], axis=0).T
-stats_kernel_pca = results_kernel_pca.agg(["min", "mean", "max", "std"], axis=0).T
+def percentile(n):
+    def percentile_(x):
+        return x.quantile(n)
+    percentile_.__name__ = 'percentile_{:2.0f}'.format(n*100)
+    return percentile_
+
+
+stats_pca = results_pca.agg([
+    np.min, np.mean, np.max, np.std, percentile(0.05), percentile(0.95)
+], axis=0).T
+stats_kernel_pca = results_kernel_pca.agg([
+    np.min, np.mean, np.max, np.std, percentile(0.05), percentile(0.95)
+], axis=0).T
+
+
+
 
 plt.style.use("seaborn")
 fig = plt.figure()
-plt.semilogy(True)
 plt.plot(n_components, stats_pca["mean"], label="PCA")
-plt.fill_between(n_components, stats_pca["min"], stats_pca["max"], alpha=0.2)
+#plt.fill_between(n_components, stats_pca["min"], stats_pca["max"], alpha=0.2)
+plt.fill_between(n_components, stats_pca["percentile_ 5"], stats_pca["percentile_95"], alpha=0.2)
 plt.plot(n_components, stats_kernel_pca["mean"], label="KernelPCA")
-plt.fill_between(n_components, stats_kernel_pca["min"], stats_kernel_pca["max"], alpha=0.2)
+#plt.fill_between(n_components, stats_kernel_pca["min"], stats_kernel_pca["max"], alpha=0.2)
+plt.fill_between(n_components, stats_kernel_pca["percentile_ 5"], stats_kernel_pca["percentile_95"], alpha=0.2)
 plt.legend(title="Model")
 plt.xlabel("Number of components")
 plt.ylabel("Reconstruction MSE")
@@ -131,8 +157,8 @@ x_range = (grid_x.min(), grid_x.max())
 z_range = (grid_y.max(), grid_y.min())
 
 for k, (gr, sz, szr) in enumerate(zip(groups, strike_zones.values(), szsr.values())):
-    if k > 9:
-        break
+    if k < 379 or k > 390:
+        continue
     plot_pitches(x_range=x_range, z_range=z_range, sz=sz,
                  sz_type="uncertainty", X=grid_x, Y=grid_y)
     plot_pitches(x_range=x_range, z_range=z_range, sz=szr,
@@ -141,5 +167,5 @@ for k, (gr, sz, szr) in enumerate(zip(groups, strike_zones.values(), szsr.values
     plt.show()
 
 # Potentially pickle at some point
-with open(out_path + out_file_fit, "wb") as f:
+with open(out_path + out_fit, "wb") as f:
     pickle.dump((fit, U, list(strike_zones.keys()), x_range, z_range), f)

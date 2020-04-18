@@ -12,9 +12,9 @@ from sklearn.metrics import mean_squared_error as mse
 
 # -------------- Setup -------------------
 
-sys.path.append('/path/to/code')
+sys.path.append('/home/simon/Documents/601-Project/code')
 
-in_path = '/path/to/load/'
+in_path = '/home/simon/Documents/601-Project/code/data/classifiers/'
 in_file = 'umpire_balls_strikes_brier_svc_klr.txt'
 
 out_path = '/path/to/dump/'

@@ -81,18 +81,22 @@ class Autoencoder(TransformerMixin, BaseEstimator, metaclass=ABCMeta):
             batch_size = X.shape[0]
         dataset = TensorDataset(X)
         dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
-
+        losses = []
         for epoch in range(num_epochs):
             for X in dataloader:
                 X = X.cuda()
                 # forward step
                 out = self.model(X)
                 loss = self.loss(out, X)
+                losses.append(loss.data.item())
                 # backward step
                 self.optimizer.zero_grad()
                 loss.backward()
                 self.optimizer.step()
-            print('epoch [{}/{}], loss:{:.4f}'.format(epoch + 1, num_epochs, loss.data.item()))
+            print('epoch [{}/{}], loss:{:.4f}'.format(
+                epoch + 1, num_epochs, loss.data.item()
+            ))
+        self.losses_ = np.array(losses)
         self.fitted_ = True
 
     def transform(self, X):
@@ -126,7 +130,7 @@ class Autoencoder(TransformerMixin, BaseEstimator, metaclass=ABCMeta):
         """
         with torch.no_grad():
             U = torch.tensor(U).cuda().float()
-            return self.model.decoder(U).cpu().numpy()
+            return self.model.decoder(U).cpu().numpy().clip(0, 1)
 
     def fit_transform(self, X, y=None, **fit_params):
         """Fit the model with X and apply the dimensionality reduction on X.
@@ -222,6 +226,60 @@ class NNAutoencoder(nn.Module):
         decoding_layers.append(nn.Linear(prev, size))
         decoding_layers.append(nn.Sigmoid())
         self.decoder = nn.Sequential(*decoding_layers)
+
+    def forward(self, x):
+        x = self.encoder(x)
+        x = self.decoder(x)
+        return x
+
+
+class CNNAutoencoder(nn.Module):
+
+    def __init__(
+            self,
+            size=100,
+            n_components=5
+    ):
+        super(CNNAutoencoder, self).__init__()
+        self.encoder = nn.Sequential(
+            View((-1, 1, size, size)),
+            nn.Conv2d(1, 4, 69, stride=1, padding=0),
+            nn.AvgPool2d(2, stride=2),
+            #nn.Sigmoid(),
+            #nn.ReLU(True),
+            nn.Conv2d(4, 16, 9, stride=1, padding=0),
+            nn.AvgPool2d(2, stride=2),
+            #nn.Sigmoid(),
+            #nn.ReLU(True),
+            nn.Conv2d(16, 32, 4, stride=1, padding=0),
+            #nn.Sigmoid(),
+            #nn.ReLU(True),
+            View((-1, 32)),
+            #nn.Linear(32, 32),
+            #nn.ReLU(True),
+            nn.Linear(32, n_components),
+            #nn.Tanh(),
+        )
+        self.decoder = nn.Sequential(
+            nn.Linear(n_components, 32),
+            #nn.Sigmoid(),
+            #nn.ReLU(True),
+            #nn.Linear(32, 32),
+            View((-1, 32, 1, 1)),
+            #nn.ReLU(True),
+            #nn.Sigmoid(),
+            nn.ConvTranspose2d(32, 16, 4, stride=1),
+            #nn.Sigmoid(),
+            #nn.ReLU(True),
+            nn.Upsample(scale_factor=2),
+            nn.ConvTranspose2d(16, 4, 9, stride=1, padding=0),
+            #nn.Sigmoid(),
+            #nn.ReLU(True),
+            nn.Upsample(scale_factor=2),
+            nn.ConvTranspose2d(4, 1, 69, stride=1, padding=0),
+            View((-1, size * size)),
+        )
+
 
     def forward(self, x):
         x = self.encoder(x)
