@@ -27,7 +27,7 @@ for in_file in in_files:
 # so that PCA can use them
 groups, X = strikezone_dict_to_array(szs)
 
-n_components = 5
+n_components = 15
 
 nn = CNNAutoencoder(size=100, n_components=n_components).cuda()
 

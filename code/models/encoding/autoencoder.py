@@ -251,24 +251,24 @@ class CNNAutoencoder(nn.Module):
             nn.AvgPool2d(2, stride=2),
             #nn.Sigmoid(),
             #nn.ReLU(True),
-            nn.Conv2d(16, 32, 4, stride=1, padding=0),
+            nn.Conv2d(16, 128, 4, stride=1, padding=0),
             #nn.Sigmoid(),
             #nn.ReLU(True),
-            View((-1, 32)),
-            #nn.Linear(32, 32),
+            View((-1, 128)),
+            #nn.Linear(128, 128),
             #nn.ReLU(True),
-            nn.Linear(32, n_components),
+            nn.Linear(128, n_components),
             #nn.Tanh(),
         )
         self.decoder = nn.Sequential(
-            nn.Linear(n_components, 32),
+            nn.Linear(n_components, 128),
             #nn.Sigmoid(),
             #nn.ReLU(True),
-            #nn.Linear(32, 32),
-            View((-1, 32, 1, 1)),
+            #nn.Linear(128, 128),
+            View((-1, 128, 1, 1)),
             #nn.ReLU(True),
             #nn.Sigmoid(),
-            nn.ConvTranspose2d(32, 16, 4, stride=1),
+            nn.ConvTranspose2d(128, 16, 4, stride=1),
             #nn.Sigmoid(),
             #nn.ReLU(True),
             nn.Upsample(scale_factor=2),
@@ -279,7 +279,6 @@ class CNNAutoencoder(nn.Module):
             nn.ConvTranspose2d(4, 1, 69, stride=1, padding=0),
             View((-1, size * size)),
         )
-
 
     def forward(self, x):
         x = self.encoder(x)

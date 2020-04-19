@@ -6,6 +6,8 @@ from statsmodels.multivariate.manova import MANOVA
 from statsmodels.formula.api import ols
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
+import numpy as np
+import matplotlib
 
 pd.set_option('display.max_rows', 100)
 pd.set_option('display.max_columns', 20)
@@ -24,7 +26,7 @@ df["ball_count"] = df["ball_count"].str.replace("b_count_", "")
 df["strike_count"] = df["strike_count"].str.replace("s_count_", "")
 
 X = df[["umpire", "ball_count", "strike_count"]].to_numpy()
-y = df[range(10)].to_numpy()
+y = df[["c"+str(i) for i in range(10)]].to_numpy()
 
 manova = MANOVA.from_formula("c0+c1+c2+c3+c4+c5+c6+c7+c8+c9~umpire+ball_count*strike_count", data=df)
 print(manova.mv_test())
@@ -70,7 +72,64 @@ results.columns = ["stat", "component", "Intercept", "b[0,2]",
                    "s[0,1]", "b[0,2]:s[0,1]"]
 results = results.pivot(index="component", columns="stat")
 
-print(results.applymap("{0:.4f}".format))
+
+params.index = pd.MultiIndex.from_product([
+        ["c"+str(i) for i in range(10)],
+        ["Intercept", "ball_count[[0,2]]", "strike_count[[0,1]]", "ball_count[[0,2]]:strike_count[[0,1]]"]
+    ])
+params = params.reset_index()
+params.columns = ["component", "param", "value"]
+param_mat = params.pivot(index="component", columns="param", values="value").T
+
+
+pvalues.index = pd.MultiIndex.from_product([
+        ["c"+str(i) for i in range(10)],
+        ["Intercept", "ball_count[[0,2]]", "strike_count[[0,1]]", "ball_count[[0,2]]:strike_count[[0,1]]"]
+    ])
+pvalues = pvalues.reset_index()
+pvalues.columns = ["component", "param", "value"]
+pvalue_mat = pvalues.pivot(index="component", columns="param", values="value").T
+
+
+
+N = 256
+vals = np.ones((N, 4))
+vals[:, 0] = np.linspace(0/256, 255/256, N)
+vals[:, 1] = np.linspace(39/256, 203/256, N)
+vals[:, 2] = np.linspace(76/256, 2/256, N)
+newcmp = matplotlib.colors.ListedColormap(vals)
+newcmp.set_bad(color='white')
+
+
+fig = plt.figure(figsize=(8, 3.8))
+param_mat[(pvalue_mat > 0.05)] = np.nan
+plt.imshow(param_mat, cmap=newcmp)
+cbar = plt.colorbar()
+plt.grid(False)
+plt.xticks(range(10), [
+    "Smaller",
+    "Uncertain",
+    "High inside excluded",
+    "Wide bottom",
+    "Wide middle",
+    "Wide top",
+    "NW/SE diagonal",
+    "Irregular 1",
+    "Irregular 2",
+    "Irregular 3",
+], rotation=45)
+plt.yticks(range(4), [
+    "Count: 3 balls, 2 strikes",
+    "Count: [0, 2] balls, 2 strikes",
+    "Count: 3 balls, [0, 1] strikes",
+    "Count: [0, 2] balls, [0, 1] strikes"])
+plt.title("LMM: Significant Effects",
+		  loc="left",fontweight="bold")
+fig.tight_layout()
+plt.savefig("./fig/lmm_effects.pdf")
+
+plt.show()
+cols = ["#00274c", "#ffcb05"]
 
 
 
