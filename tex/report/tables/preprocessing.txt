@@ -1,0 +1,27 @@
+=== importation and tidying ===
+
+Imported 2018 pitches: (724444, 40)
+Imported 2018 at bats: (185574, 11)
+Imported 2018 games: (2431, 17)
+Keep only called balls and strikes: (364099, 40)
+Merged at bats into pitches: (364099, 50)
+Merged games into pitches: (364099, 66)
+Keep only regular season games: (364099, 66)
+Umpires with at least 30 games: (39,)
+Subset to umpires with at least 30 games: (182558, 66)
+Subset to px in (-5, 5): (181560, 66)
+Subset to pz in (0, 6): (178941, 66)
+Subset to break_angle in (-100, 100): (178939, 66)
+Subset to sz_bot in (0, 3): (178923, 66)
+Subset to sz_top in (2, 5): (178922, 66)
+Writing to  ./data/pitchfx/pitchfx.csv
+Success.
+
+=== compute and standardize ===
+
+set_correct_call: compute the call using sz_top and sz_bot and |px| < 10.5/12
+set_score_diff: compute score difference batters - pitchers -> score_diff_b_p
+standardize_px: switch sign of px and pfx_x for L batters -> px_std, pfx_x_std
+standardize_pz: linear transform to average sz_top and sz_bot -> pz_std
+label_encoder: B=0, S=1 -> type_01
+

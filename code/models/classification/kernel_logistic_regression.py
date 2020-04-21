@@ -235,7 +235,9 @@ class KernelLogisticRegression(BaseEstimator, ClassifierMixin):
 
         check_is_fitted(self)
 
-        return expit(self.decision_function(X))
+        pred_1 = expit(self.decision_function(X).clip(-30, 30)).reshape((-1, 1))
+
+        return np.hstack((1.0 - pred_1, pred_1))
 
     def predict_log_proba(self, X):
         """
