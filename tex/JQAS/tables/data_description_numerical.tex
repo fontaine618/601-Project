@@ -1,0 +1,37 @@
+\begin{table}
+\centering\small
+\caption{Description of the numerical variables used in the analysis after pre-processing and tidying.}
+\label{tab:data.desc.num}
+\begin{tabular}{llrrrrrrr}
+\toprule
+\multicolumn{7}{l}{\textbf{Numerical variables description}}\\\addlinespace
+
+                    Description &        Type &   Mean &  Std dev. &    Min. &   Med. &   Max. \\
+\midrule
+\addlinespace
+\multicolumn{7}{c}{\textbf{Original variables}}\\
+\addlinespace
+
+     Horiz. pitch location (ft) &  Continuous &  0.039 &     1.013 &  -3.971 &  0.063 &  4.826 \\
+      Vert. pitch location (ft) &  Continuous &  2.307 &     1.007 &   0.000 &  2.236 &  5.999 \\
+   Strike zone lower limit (ft) &  Continuous &  1.603 &     0.136 &   0.198 &  1.602 &  2.672 \\
+   Strike zone upper limit (ft) &  Continuous &  3.426 &     0.212 &   2.414 &  3.423 &  4.989 \\
+             Balls in the count &    Discrete &  0.724 &     0.917 &   0.000 &  0.000 &  3.000 \\
+           Strikes in the count &    Discrete &  0.679 &     0.787 &   0.000 &  0.000 &  2.000 \\
+            Batter's team score &    Discrete &  2.186 &     2.532 &   0.000 &  1.000 & 25.000 \\
+           Pitcher's team score &    Discrete &  2.255 &     2.616 &   0.000 &  1.000 & 25.000 \\
+                 Current inning &    Discrete &  4.982 &     2.699 &   1.000 &  5.000 & 17.000 \\
+ Horizontal pitch movement (ft) &  Continuous & -1.273 &     6.181 & -18.317 & -1.957 & 15.614 \\
+   Vertical pitch movement (ft) &  Continuous &  4.795 &     5.134 & -19.212 &  6.015 & 16.443 \\
+              Pitch break angle &  Continuous &  6.350 &    23.444 & -60.100 &  7.200 & 63.900 \\
+\addlinespace
+\multicolumn{7}{c}{\textbf{Calculated variables}}\\
+\addlinespace
+
+ Std horiz. pitch location (ft) &  Continuous &  0.298 &     0.969 &  -3.625 &  0.394 &  4.826 \\
+  Std vert. pitch location (ft) &  Continuous &  2.314 &     1.028 &  -0.652 &  2.234 &  8.652 \\
+ Std horiz. pitch movement (ft) &  Continuous &  0.866 &     6.251 & -16.153 &  1.401 & 18.317 \\
+ Score diff. (batter - pitcher) &    Discrete & -0.070 &     3.174 & -24.000 &  0.000 & 24.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

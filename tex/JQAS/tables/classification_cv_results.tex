@@ -1,0 +1,29 @@
+\begin{table}
+\centering\small
+\begin{tabular}{lcccc}
+\toprule
+\multicolumn{1}{l}{\textbf{Classification results}}
+ & \multicolumn{4}{c}{Score}\\\cmidrule(l){2-5}
+Model &  AUROC &  Accuracy &  Balanced accuracy &  Brier \\
+\midrule
+\multicolumn{5}{c}{\textbf{3 balls ($n=150$)}}\\\addlinespace
+AdaBoost 					&  0.900 &     0.847 &              0.841 & 0.173 \\
+Gradient Boosting 			&  0.867 &     0.780 &              0.777 & 0.157 \\
+Kernel Logistic Regression 	&  \underline{0.934} &     \underline{0.873} &              \underline{0.865} & \underline{0.106} \\
+MLP 							&  \underline{0.934} &     \underline{0.880} &              \underline{0.872} & \underline{0.104} \\
+Random Forest 				&  0.900 &     0.853 &              0.813 & 0.130 \\
+SVC 							&  \underline{0.936} &     0.867 &              \underline{0.863} & \underline{0.108} \\
+\midrule
+\multicolumn{5}{c}{\textbf{{[0, 2]} balls ($n=3332$)}}\\\addlinespace
+AdaBoost						&  {0.968} &     0.907 &              0.907 & 0.164 \\
+Gradient Boosting 			&  {0.968} &     0.909 &              0.908 & 0.068 \\
+Kernel Logistic Regression 	&  \underline{0.972} &     \underline{0.911} &              0.906 & \underline{0.065} \\
+MLP 							&  \underline{0.972} &     \underline{0.913} &              0.908 & \underline{0.065} \\
+Random Forest 				&  {0.967} &     0.909 &              0.908 & 0.069 \\
+SVC 							&  \underline{0.972} &     0.908 &              \underline{0.910} & \underline{0.065} \\
+\bottomrule
+\end{tabular}
+\vspace{1.5mm}
+\caption{CV(5) scores for the selected model by four different criteria for two subsets (Joe West, {[0, 1]} strikes, {[0, 2]} or 3 balls).}
+\label{tab:classification.cv_results}
+\end{table}

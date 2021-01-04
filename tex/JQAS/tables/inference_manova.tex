@@ -1,0 +1,40 @@
+\begin{table}[t!]
+\centering\small
+\begin{tabular}{lrrrrr}
+\toprule
+\multicolumn{6}{l}{\textbf{MANOVA Results}}\\\addlinespace
+                    Term & Wilks' lambda & Num DF &   Den DF &  F Value &  Pr $>$ F \\
+\midrule
+\multicolumn{6}{c}{\textbf{Ball and strike count}}\\\addlinespace
+%               Intercept &        0.8074 &     10 &      105 &   2.5050 &  0.0097 \\
+                  Umpire &        0.0142 &    380 &     1046 &   1.5181 &  0.0000 \\
+              Ball count &        0.4112 &     10 &      105 &  15.0334 &  0.0000 \\
+            Strike Count &        0.3553 &     10 &      105 &  19.0555 &  0.0000 \\
+ Ball count:Strike count &        0.7675 &     10 &      105 &   3.1805 &  0.0013 \\
+\midrule
+\multicolumn{6}{c}{\textbf{Horizontal and vertical pitch movement}}\\\addlinespace
+%               Intercept &        0.6391 &     10 &      105 &   5.9304 &  0.0000 \\
+                  Umpire &        0.0022 &    380 &     1046 &   2.4258 &  0.0000 \\
+              Horizontal &        0.4325 &     10 &      105 &  13.7767 &  0.0000 \\
+                Vertical &        0.4624 &     10 &      105 &  12.2084 &  0.0000 \\
+     Horizontal:Vertical &        0.5546 &     10 &      105 &   8.4335 &  0.0000 \\
+\midrule
+\multicolumn{6}{c}{\textbf{Pitcher's arm and batter's stand}}\\\addlinespace
+%               Intercept &        0.7161 &     10 &      105 &   4.1629 &  0.0001 \\
+                  Umpire &        0.0069 &    380 &     1046 &   1.8519 &  0.0000 \\
+                 Pitcher &        0.3638 &     10 &      105 &  18.3618 &  0.0000 \\
+                  Batter &        0.3205 &     10 &      105 &  22.2661 &  0.0000 \\
+          Pitcher:Batter &        0.3827 &     10 &      105 &  16.9381 &  0.0000 \\
+\midrule
+\multicolumn{6}{c}{\textbf{Score and inning}}\\\addlinespace
+%               Intercept &        0.9270 &     10 &      181 &   1.4253 &  0.1721 \\
+                  Umpire &        0.0133 &    380 &  1782.16 &   2.6359 &  0.0000 \\
+                   Score &        0.8282 &     20 &      362 &   1.7888 &  0.0204 \\
+                  Inning &        0.7807 &     10 &      181 &   5.0838 &  0.0000 \\
+            Score:Inning &        0.8139 &     20 &      362 &   1.9632 &  0.0084 \\
+\bottomrule
+\end{tabular}
+\vspace{2mm}
+\caption{Results from the multivariate analyses of variance on the components under four experiments.}
+\label{tab:inference.manova}
+\end{table}

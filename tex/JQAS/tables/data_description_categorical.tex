@@ -1,0 +1,46 @@
+\begin{table}
+\centering\small
+\caption{Description of the categorical variables used in the analysis after pre-processing and tidying.}
+\label{tab:data.desc.cat}
+\begin{tabular}{llrr}
+\toprule
+\multicolumn{2}{l}{\textbf{Categorical variables description}}\\\addlinespace
+
+                Description (nb. levels) & Level &   Count & Frequency           \\
+\midrule
+\addlinespace
+\multicolumn{4}{c}{\textbf{Original variables}}\\
+\addlinespace
+
+Umpire's call (2) & B &  118153 &   66.04 \% \\
+                & S &   60769 &   33.96 \% \\
+Batter's stand (2) & L &   75506 &   42.20 \% \\
+                & R &  103416 &   57.80 \% \\
+Pitcher's throwing arm (2) & L &   49837 &   27.85 \% \\
+                & R &  129085 &   72.15 \% \\
+Home plate umpire (39) & Adam Hamari &    4434 &    2.48 \% \\
+                & Adrian Johnson &    4591 &    2.57 \% \\
+                & Alan Porter &    4339 &    2.43 \% \\
+                & ... &     ... &       ... \\
+                & Todd Tichenor &    4680 &    2.62 \% \\
+                & Tripp Gibson III &    4572 &    2.56 \% \\
+                & Vic Carapazza &    4265 &    2.38 \% \\
+\addlinespace
+\multicolumn{4}{c}{\textbf{Calculated variables}}\\
+\addlinespace
+
+Call from official strike zone (2) & B &  124137 &   69.38 \% \\
+                & S &   54785 &   30.62 \% \\
+Ball count bins (2) & [0,2] &  167639 &   93.69 \% \\
+                & \{3\} &   11283 &    6.31 \% \\
+Strike count bins (2) & [0,1] &  142938 &   79.89 \% \\
+                & \{2\} &   35984 &   20.11 \% \\
+Horizontal movement bins (2) & Inward &   77940 &   43.56 \% \\
+                & Outward &  100982 &   56.44 \% \\
+Vertical movement bins (2) & Downward &  102590 &   57.34 \% \\
+                & Upward &   76332 &   42.66 \% \\
+Inning bins (2) & 7+ &   58447 &   32.67 \% \\
+                & [1,6] &  120475 &   67.33 \% \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,54 @@
+%% This file is to be used as a template for your submission. 
+%% Rename this file and replace the text with the text of 
+%% your manuscript.
+%%
+%% The standard LaTeX document class "article" is recommended. 
+%% Use options letterpaper and 12pt.
+\documentclass[letterpaper,12pt]{article}
+
+%% This is the recommended preamble for your document.
+
+%% Load De Gruyter specific settings 
+\usepackage{dgjournal}          
+
+%% The mathptmx package is recommended for Times compatible math symbols.
+%% Use mtpro2 or mathtime instead of mathptmx if you have the commercially
+%% available MathTime fonts.
+%% Other options are txfonts (free) or belleek (free) or TM-Math (commercial)
+\usepackage{mathptmx}
+
+%% Use the graphics package to include figures
+\usepackage{graphics}
+
+%% Use natbib with these recommended options
+\usepackage[authoryear,comma,longnamesfirst,sectionbib]{natbib} 
+
+%% Start your document body here
+\begin{document}
+
+%% Do NOT include any fronmatter information; including the title, author names,
+%% institutes, acknowledgments and title footnotes (author information, funding
+%% sources, etc.). Start the document with the first section or paragraph of
+%% the article.
+
+
+%------------------------------------------------------------------------------
+\section{Introduction}\label{sec:intro}
+
+``The STRIKE ZONE is that area over home plate the upper limit of which is a horizontal line at the midpoint between the top of the shoulders and the top of the uniform pants, and the lower level is a line at the hollow beneath the kneecap. 
+The Strike Zone shall be determined from the batter’s stance as the batter is prepared to swing at a pitched ball."\cite{mlbrules}
+Those two sentences define the strike zone in the rulebook for Major League Baseball (MLB). 
+Calling balls and strikes is easier said than done, however, as pitches cross home plate at speeds of up to 100mph and frequently move in different directions as they cross the plate. 
+MLB umpires have faced increased scrutiny in recent years as video technology enables every player, coach, fan, and league official to be a critic and review every call an umpire makes for accuracy. 
+
+We are interested not only in an umpire's accuracy -- the percentage of calls that matches classification according to the strike zone defined in the rule book -- but to be able to learn a representation of a strike zone that can define a probability of a pitch being called a ball or strike based on its location, and, later on, game situation.
+We use nonlinear classification methods to learn the strike zones, then reduce their dimension using kernel PCA, enabling us to perform inference on the principal components for each strike zone. 
+This methodology makes it possible to determine how umpires' strike zones change in numerous game situations. 
+Our work is useful for players seeking to gain an edge on the field, league officials determining which umpires should be promoted, and for umpires who are looking to improve their skills. 
+
+
+%% BibTeX support
+\bibliographystyle{DeGruyter}
+\bibliography{baseball}
+
+\end{document}
