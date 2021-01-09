@@ -1,0 +1,2472 @@
+,game_id,datetime,away,home,away_score,home_score,venue,hp_umpire
+0,565895,2019-03-28,nym,wsh,2,0,Nationals Park,Bill Miller
+1,567456,2019-03-28,bal,nyy,2,7,Yankee Stadium,Fieldin Culbreth
+2,567552,2019-03-28,stl,mil,4,5,Miller Park,Gary Cederstrom
+3,567059,2019-03-28,atl,phi,4,10,Citizens Bank Park,Mike Winters
+4,566864,2019-03-28,det,tor,2,0,Rogers Centre,Dana DeMuth
+5,566664,2019-03-28,hou,tb,5,1,Tropicana Field,Sam Holbrook
+6,566763,2019-03-28,chc,tex,12,4,Globe Life Park in Arlington,Jeff Kellogg
+7,566086,2019-03-28,laa,oak,0,4,Oakland Coliseum,Mike Everitt
+8,565799,2019-03-28,ari,lad,5,12,Dodger Stadium,Brian Gorman
+9,565220,2019-03-28,pit,cin,3,5,Great American Ball Park,Joe West
+10,566275,2019-03-28,sf,sd,0,2,Petco Park,Ted Barrett
+11,566962,2019-03-28,cle,min,0,2,Target Field,Tom Hallion
+12,567359,2019-03-28,col,mia,6,3,Marlins Park,Gerry Davis
+13,565702,2019-03-28,cws,kc,3,5,Kauffman Stadium,Jerry Meals
+14,566372,2019-03-28,bos,sea,4,12,T-Mobile Park,Larry Vanover
+15,566865,2019-03-29,det,tor,0,6,Rogers Centre,Angel Hernandez
+16,566665,2019-03-29,hou,tb,2,4,Tropicana Field,Dan Iassogna
+17,567360,2019-03-29,col,mia,6,1,Marlins Park,Greg Gibson
+18,567553,2019-03-29,stl,mil,9,5,Miller Park,Marvin Hudson
+19,566087,2019-03-29,laa,oak,6,2,Oakland Coliseum,Bill Welke
+20,565800,2019-03-29,ari,lad,5,4,Dodger Stadium,Scott Barry
+21,566373,2019-03-29,bos,sea,7,6,T-Mobile Park,Alfonso Marquez
+22,566276,2019-03-29,sf,sd,1,4,Petco Park,Lance Barksdale
+23,565896,2019-03-30,nym,wsh,11,8,Nationals Park,Doug Eddings
+24,567457,2019-03-30,bal,nyy,5,3,Yankee Stadium,Paul Nauert
+25,566963,2019-03-30,cle,min,2,1,Target Field,Phil Cuzzi
+26,565703,2019-03-30,cws,kc,6,8,Kauffman Stadium,Ron Kulpa
+27,566866,2019-03-30,det,tor,0,3,Rogers Centre,Ed Hickox
+28,567060,2019-03-30,atl,phi,6,8,Citizens Bank Park,Tim Timmons
+29,566666,2019-03-30,hou,tb,1,3,Tropicana Field,Jim Wolf
+30,567361,2019-03-30,col,mia,3,7,Marlins Park,Brian Knight
+31,567554,2019-03-30,stl,mil,2,4,Miller Park,Adrian Johnson
+32,566764,2019-03-30,chc,tex,6,8,Globe Life Park in Arlington,Brian O'Nora
+33,566277,2019-03-30,sf,sd,3,2,Petco Park,John Tumpane
+34,566088,2019-03-30,laa,oak,2,4,Oakland Coliseum,Chris Guccione
+35,565801,2019-03-30,ari,lad,5,18,Dodger Stadium,Tripp Gibson
+36,566374,2019-03-30,bos,sea,5,6,T-Mobile Park,Dan Bellino
+37,565221,2019-03-30,pit,cin,1,8,Great American Ball Park,Jansen Visconti
+38,567458,2019-03-31,bal,nyy,7,5,Yankee Stadium,CB Bucknor
+39,566867,2019-03-31,det,tor,4,3,Rogers Centre,Chad Whitson
+40,565222,2019-03-31,pit,cin,5,0,Great American Ball Park,Eric Cooper
+41,566667,2019-03-31,hou,tb,1,3,Tropicana Field,Manny Gonzalez
+42,567362,2019-03-31,col,mia,0,3,Marlins Park,Pat Hoberg
+43,565897,2019-03-31,nym,wsh,5,6,Nationals Park,Carlos Torres
+44,566964,2019-03-31,cle,min,3,9,Target Field,Todd Tichenor
+45,567555,2019-03-31,stl,mil,4,5,Miller Park,Quinn Wolcott
+46,565704,2019-03-31,cws,kc,6,3,Kauffman Stadium,Marty Foster
+47,566765,2019-03-31,chc,tex,10,11,Globe Life Park in Arlington,James Hoye
+48,566089,2019-03-31,laa,oak,1,2,Oakland Coliseum,Lance Barrett
+49,565802,2019-03-31,ari,lad,7,8,Dodger Stadium,Nic Lentz
+50,566375,2019-03-31,bos,sea,8,10,T-Mobile Park,David Rackley
+51,566278,2019-03-31,sf,sd,1,3,Petco Park,Ramon De Jesus
+52,567061,2019-03-31,atl,phi,1,5,Citizens Bank Park,Rob Drake
+53,566180,2019-04-01,stl,pit,6,5,PNC Park,Jerry Layne
+54,565316,2019-04-01,cws,cle,3,5,Progressive Field,Dana DeMuth
+55,567459,2019-04-01,det,nyy,1,3,Yankee Stadium,Gerry Davis
+56,565223,2019-04-01,mil,cin,4,3,Great American Ball Park,Jeff Nelson
+57,566868,2019-04-01,bal,tor,6,5,Rogers Centre,Chris Conroy
+58,566668,2019-04-01,col,tb,1,7,Tropicana Field,Andy Fletcher
+59,567157,2019-04-01,chc,atl,0,8,SunTrust Park,Gary Cederstrom
+60,567363,2019-04-01,nym,mia,7,3,Marlins Park,Sam Holbrook
+61,566766,2019-04-01,hou,tex,2,1,Globe Life Park in Arlington,Gabe Morales
+62,566090,2019-04-01,bos,oak,0,7,Oakland Coliseum,Kerwin Danley
+63,566279,2019-04-01,ari,sd,10,3,Petco Park,Mike Everitt
+64,566376,2019-04-01,laa,sea,3,6,T-Mobile Park,Mark Wegner
+65,565803,2019-04-01,sf,lad,4,2,Dodger Stadium,Larry Vanover
+66,567460,2019-04-02,det,nyy,3,1,Yankee Stadium,Brian Knight
+67,565224,2019-04-02,mil,cin,4,3,Great American Ball Park,Laz Diaz
+68,565898,2019-04-02,phi,wsh,8,2,Nationals Park,Paul Emmel
+69,566869,2019-04-02,bal,tor,2,1,Rogers Centre,Bill Miller
+70,566669,2019-04-02,col,tb,0,4,Tropicana Field,Will Little
+71,567364,2019-04-02,nym,mia,6,5,Marlins Park,Dan Iassogna
+72,566767,2019-04-02,hou,tex,4,6,Globe Life Park in Arlington,Jerry Meals
+73,565705,2019-04-02,min,kc,5,4,Kauffman Stadium,Mark Ripperger
+74,566091,2019-04-02,bos,oak,0,1,Oakland Coliseum,Greg Gibson
+75,566280,2019-04-02,ari,sd,8,5,Petco Park,Bill Welke
+76,566377,2019-04-02,laa,sea,1,2,T-Mobile Park,Jim Reynolds
+77,565804,2019-04-02,sf,lad,5,6,Dodger Stadium,Alfonso Marquez
+78,565225,2019-04-03,mil,cin,1,0,Great American Ball Park,Tony Randazzo
+79,565899,2019-04-03,phi,wsh,8,9,Nationals Park,Bruce Dreckman
+80,566670,2019-04-03,col,tb,1,0,Tropicana Field,Joe West
+81,565317,2019-04-03,cws,cle,8,3,Progressive Field,Angel Hernandez
+82,565706,2019-04-03,min,kc,7,6,Kauffman Stadium,Jeff Kellogg
+83,566281,2019-04-03,ari,sd,1,4,Petco Park,Chris Guccione
+84,567461,2019-04-03,det,nyy,2,1,Yankee Stadium,Jeremie Rehak
+85,566870,2019-04-03,bal,tor,3,5,Rogers Centre,Jansen Visconti
+86,567365,2019-04-03,nym,mia,6,4,Marlins Park,Jim Wolf
+87,566181,2019-04-03,stl,pit,5,4,PNC Park,Hunter Wendelstedt
+88,567158,2019-04-03,chc,atl,4,6,SunTrust Park,Marvin Hudson
+89,566768,2019-04-03,hou,tex,0,4,Globe Life Park in Arlington,Ron Kulpa
+90,566092,2019-04-03,bos,oak,6,3,Oakland Coliseum,Tripp Gibson
+91,565805,2019-04-03,sf,lad,3,5,Dodger Stadium,Dan Bellino
+92,565510,2019-04-04,kc,det,4,5,Comerica Park,Doug Eddings
+93,565990,2019-04-04,wsh,nym,4,0,Citi Field,Pat Hoberg
+94,564930,2019-04-04,nyy,bal,8,4,Oriole Park at Camden Yards,Ed Hickox
+95,566093,2019-04-04,bos,oak,3,7,Oakland Coliseum,Nic Lentz
+96,565318,2019-04-04,tor,cle,1,4,Progressive Field,Manny Gonzalez
+97,566182,2019-04-04,cin,pit,0,2,PNC Park,Brian O'Nora
+98,567159,2019-04-04,chc,atl,4,9,SunTrust Park,Adrian Johnson
+99,564734,2019-04-04,tex,laa,11,4,Angel Stadium,David Rackley
+100,567263,2019-04-04,sea,cws,8,10,Guaranteed Rate Field,Chad Fairchild
+101,566567,2019-04-04,sd,stl,5,3,Busch Stadium,Alan Porter
+102,567263,2019-04-05,sea,cws,8,10,Guaranteed Rate Field,Chad Fairchild
+103,565413,2019-04-05,lad,col,10,6,Coors Field,Lance Barrett
+104,566567,2019-04-05,sd,stl,5,3,Busch Stadium,Alan Porter
+105,566471,2019-04-05,tb,sf,5,2,Oracle Park,Kerwin Danley
+106,566183,2019-04-05,cin,pit,0,2,PNC Park,James Hoye
+107,567062,2019-04-05,min,phi,4,10,Citizens Bank Park,Cory Blaser
+108,564833,2019-04-05,bos,ari,8,15,Chase Field,Marty Foster
+109,565319,2019-04-05,tor,cle,2,3,Progressive Field,Sam Holbrook
+110,567160,2019-04-05,mia,atl,0,4,SunTrust Park,Eric Cooper
+111,565606,2019-04-05,oak,hou,2,3,Minute Maid Park,Quinn Wolcott
+112,567556,2019-04-05,chc,mil,10,13,Miller Park,Jordan Baker
+113,564735,2019-04-05,tex,laa,1,3,Angel Stadium,Larry Vanover
+114,565511,2019-04-06,kc,det,4,7,Comerica Park,Chris Conroy
+115,565991,2019-04-06,wsh,nym,5,6,Citi Field,Gerry Davis
+116,566184,2019-04-06,cin,pit,5,6,PNC Park,Mark Ripperger
+117,567063,2019-04-06,min,phi,6,2,Citizens Bank Park,Jeff Nelson
+118,567264,2019-04-06,sea,cws,9,2,Guaranteed Rate Field,Mike Estabrook
+119,566568,2019-04-06,sd,stl,6,4,Busch Stadium,Stu Scheurwater
+120,566472,2019-04-06,tb,sf,4,6,Oracle Park,Greg Gibson
+121,564736,2019-04-06,tex,laa,1,5,Angel Stadium,Alfonso Marquez
+122,565320,2019-04-06,tor,cle,2,7,Progressive Field,Dan Iassogna
+123,564931,2019-04-06,nyy,bal,6,4,Oriole Park at Camden Yards,Carlos Torres
+124,565607,2019-04-06,oak,hou,0,6,Minute Maid Park,Gary Cederstrom
+125,567557,2019-04-06,chc,mil,14,8,Miller Park,Vic Carapazza
+126,567161,2019-04-06,mia,atl,4,2,SunTrust Park,Andy Fletcher
+127,564834,2019-04-06,bos,ari,4,5,Chase Field,Gabe Morales
+128,565414,2019-04-06,lad,col,7,2,Coors Field,Mike Everitt
+129,567064,2019-04-07,min,phi,1,2,Citizens Bank Park,Laz Diaz
+130,564932,2019-04-07,nyy,bal,15,3,Oriole Park at Camden Yards,Dana DeMuth
+131,565512,2019-04-07,kc,det,1,3,Comerica Park,Bill Miller
+132,565992,2019-04-07,wsh,nym,12,9,Citi Field,Brian Knight
+133,565321,2019-04-07,tor,cle,1,3,Progressive Field,Jim Wolf
+134,567162,2019-04-07,mia,atl,3,4,SunTrust Park,Will Little
+135,566185,2019-04-07,cin,pit,5,7,PNC Park,Jeff Kellogg
+136,565608,2019-04-07,oak,hou,8,9,Minute Maid Park,Marvin Hudson
+137,567265,2019-04-07,sea,cws,12,5,Guaranteed Rate Field,Paul Emmel
+138,567558,2019-04-07,chc,mil,2,4,Miller Park,Jerry Layne
+139,566569,2019-04-07,sd,stl,1,4,Busch Stadium,Mark Wegner
+140,566473,2019-04-07,tb,sf,3,0,Oracle Park,Tripp Gibson
+141,564737,2019-04-07,tex,laa,2,7,Angel Stadium,Dan Bellino
+142,564835,2019-04-07,bos,ari,1,0,Chase Field,Jerry Meals
+143,565415,2019-04-07,lad,col,12,6,Coors Field,Bill Welke
+144,567266,2019-04-08,tb,cws,5,1,Guaranteed Rate Field,Hunter Wendelstedt
+145,565124,2019-04-08,pit,chc,0,10,Wrigley Field,Bruce Dreckman
+146,564933,2019-04-08,oak,bal,4,12,Oriole Park at Camden Yards,Sam Holbrook
+147,567065,2019-04-08,wsh,phi,3,4,Citizens Bank Park,Jim Reynolds
+148,565609,2019-04-08,nyy,hou,3,4,Minute Maid Park,David Rackley
+149,566570,2019-04-08,lad,stl,3,4,Busch Stadium,Jansen Visconti
+150,565707,2019-04-08,sea,kc,13,5,Kauffman Stadium,Quinn Wolcott
+151,565416,2019-04-08,atl,col,8,6,Coors Field,Ron Kulpa
+152,566474,2019-04-08,sd,sf,6,5,Oracle Park,Jeremie Rehak
+153,564738,2019-04-08,mil,laa,2,5,Angel Stadium,Adam Hamari
+154,565513,2019-04-09,cle,det,8,2,Comerica Park,Ted Barrett
+155,565027,2019-04-09,tor,bos,7,5,Fenway Park,Chris Guccione
+156,567267,2019-04-09,tb,cws,10,5,Guaranteed Rate Field,Jordan Baker
+157,565226,2019-04-09,mia,cin,0,14,Great American Ball Park,Nic Lentz
+158,564934,2019-04-09,oak,bal,13,2,Oriole Park at Camden Yards,Chad Fairchild
+159,567066,2019-04-09,wsh,phi,10,6,Citizens Bank Park,Alan Porter
+160,565993,2019-04-09,min,nym,14,8,Citi Field,Mike Muchlinski
+161,566571,2019-04-09,lad,stl,0,4,Busch Stadium,Doug Eddings
+162,565610,2019-04-09,nyy,hou,3,6,Minute Maid Park,Larry Vanover
+163,565708,2019-04-09,sea,kc,6,3,Kauffman Stadium,Gary Cederstrom
+164,565417,2019-04-09,atl,col,7,1,Coors Field,Marty Foster
+165,564836,2019-04-09,tex,ari,4,5,Chase Field,D.J. Reyburn
+166,566475,2019-04-09,sd,sf,2,7,Oracle Park,Pat Hoberg
+167,564739,2019-04-09,mil,laa,8,11,Angel Stadium,Tom Hallion
+168,565514,2019-04-10,cle,det,1,4,Comerica Park,Sean Barber
+169,567268,2019-04-10,tb,cws,9,1,Guaranteed Rate Field,Vic Carapazza
+170,566476,2019-04-10,sd,sf,3,1,Oracle Park,Gerry Davis
+171,565227,2019-04-10,mia,cin,1,2,Great American Ball Park,Kerwin Danley
+172,564935,2019-04-10,oak,bal,10,3,Oriole Park at Camden Yards,Chad Whitson
+173,567067,2019-04-10,wsh,phi,15,1,Citizens Bank Park,Stu Scheurwater
+174,565994,2019-04-10,min,nym,6,9,Citi Field,Mike Winters
+175,565611,2019-04-10,nyy,hou,6,8,Minute Maid Park,Alfonso Marquez
+176,566572,2019-04-10,lad,stl,2,7,Busch Stadium,Chris Conroy
+177,565125,2019-04-10,pit,chc,5,2,Wrigley Field,Manny Gonzalez
+178,565709,2019-04-10,sea,kc,6,5,Kauffman Stadium,Ramon De Jesus
+179,564837,2019-04-10,tex,ari,5,2,Chase Field,Fieldin Culbreth
+180,564740,2019-04-10,mil,laa,2,4,Angel Stadium,Phil Cuzzi
+181,565418,2019-04-10,atl,col,1,3,Coors Field,Nic Lentz
+182,564936,2019-04-11,oak,bal,8,5,Oriole Park at Camden Yards,Jim Wolf
+183,565228,2019-04-11,mia,cin,0,5,Great American Ball Park,Greg Gibson
+184,565515,2019-04-11,cle,det,4,0,Comerica Park,Lance Barksdale
+185,565710,2019-04-11,sea,kc,7,6,Kauffman Stadium,Marvin Hudson
+186,566573,2019-04-11,lad,stl,7,11,Busch Stadium,Bill Miller
+187,565028,2019-04-11,tor,bos,6,7,Fenway Park,Lance Barrett
+188,567163,2019-04-11,nym,atl,6,3,SunTrust Park,Dan Bellino
+189,565126,2019-04-11,pit,chc,0,2,Wrigley Field,Mike Estabrook
+190,564838,2019-04-11,sd,ari,7,6,Chase Field,Tim Timmons
+191,566477,2019-04-11,col,sf,0,1,Oracle Park,Paul Nauert
+192,565127,2019-04-12,laa,chc,1,5,Wrigley Field,Gabe Morales
+193,565900,2019-04-12,pit,wsh,6,3,Nationals Park,Scott Barry
+194,567462,2019-04-12,cws,nyy,9,6,Yankee Stadium,John Tumpane
+195,566871,2019-04-12,tb,tor,11,7,Rogers Centre,Quinn Wolcott
+196,565029,2019-04-12,bal,bos,4,6,Fenway Park,Mark Wegner
+197,567366,2019-04-12,phi,mia,9,1,Marlins Park,Jerry Layne
+198,567164,2019-04-12,nym,atl,6,2,SunTrust Park,Chris Segal
+199,566769,2019-04-12,oak,tex,8,6,Globe Life Park in Arlington,Jansen Visconti
+200,565711,2019-04-12,cle,kc,1,8,Kauffman Stadium,Paul Emmel
+201,564839,2019-04-12,sd,ari,2,1,Chase Field,Rob Drake
+202,566378,2019-04-12,hou,sea,10,6,T-Mobile Park,Adam Hamari
+203,565806,2019-04-12,mil,lad,8,5,Dodger Stadium,Brian Knight
+204,566478,2019-04-12,col,sf,2,3,Oracle Park,CB Bucknor
+205,566965,2019-04-12,det,min,3,8,Target Field,Chad Whitson
+206,565030,2019-04-13,bal,bos,9,5,Fenway Park,Jim Reynolds
+207,567463,2019-04-13,cws,nyy,0,4,Yankee Stadium,Ted Barrett
+208,566966,2019-04-13,det,min,3,4,Target Field,Mike Everitt
+209,565128,2019-04-13,laa,chc,6,5,Wrigley Field,Jerry Meals
+210,566872,2019-04-13,tb,tor,1,3,Rogers Centre,Gary Cederstrom
+211,565901,2019-04-13,pit,wsh,2,3,Nationals Park,Nic Lentz
+212,566479,2019-04-13,col,sf,2,5,Oracle Park,D.J. Reyburn
+213,567367,2019-04-13,phi,mia,3,10,Marlins Park,Hunter Wendelstedt
+214,565229,2019-04-13,stl,cin,2,5,Estadio de Beisbol Monterrey,Dan Iassogna
+215,565712,2019-04-13,cle,kc,0,3,Kauffman Stadium,Bruce Dreckman
+216,567165,2019-04-13,nym,atl,7,11,SunTrust Park,Alfonso Marquez
+217,564840,2019-04-13,sd,ari,5,4,Chase Field,Mike Muchlinski
+218,566379,2019-04-13,hou,sea,3,1,T-Mobile Park,Jordan Baker
+219,565807,2019-04-13,mil,lad,4,1,Dodger Stadium,Jeremie Rehak
+220,566770,2019-04-13,oak,tex,5,10,Globe Life Park in Arlington,Brian Knight
+221,565031,2019-04-14,bal,bos,0,4,Fenway Park,Ben May
+222,567464,2019-04-14,cws,nyy,5,2,Yankee Stadium,Sean Barber
+223,566873,2019-04-14,tb,tor,8,4,Rogers Centre,Ramon De Jesus
+224,567368,2019-04-14,phi,mia,3,1,Marlins Park,Ryan Additon
+225,565902,2019-04-14,pit,wsh,4,3,Nationals Park,Kerwin Danley
+226,566967,2019-04-14,det,min,4,6,Target Field,Bill Welke
+227,565713,2019-04-14,cle,kc,8,9,Kauffman Stadium,Manny Gonzalez
+228,566771,2019-04-14,oak,tex,7,8,Globe Life Park in Arlington,Doug Eddings
+229,566480,2019-04-14,col,sf,4,0,Oracle Park,Fieldin Culbreth
+230,564841,2019-04-14,sd,ari,4,8,Chase Field,Mike Winters
+231,566380,2019-04-14,hou,sea,3,2,T-Mobile Park,Todd Tichenor
+232,565230,2019-04-14,stl,cin,9,5,Estadio de Beisbol Monterrey,Sam Holbrook
+233,565808,2019-04-14,mil,lad,1,7,Dodger Stadium,Gerry Davis
+234,567166,2019-04-14,nym,atl,3,7,SunTrust Park,Alan Porter
+235,565129,2019-04-14,laa,chc,1,8,Wrigley Field,Jerry Meals
+236,565032,2019-04-15,bal,bos,8,1,Fenway Park,Stu Scheurwater
+237,567068,2019-04-15,nym,phi,7,6,Citizens Bank Park,Lance Barksdale
+238,567369,2019-04-15,chc,mia,7,2,Marlins Park,Brian O'Nora
+239,566968,2019-04-15,tor,min,5,3,Target Field,Mike Estabrook
+240,567559,2019-04-15,stl,mil,7,10,Miller Park,Ron Kulpa
+241,566772,2019-04-15,laa,tex,7,12,Globe Life Park in Arlington,Greg Gibson
+242,567269,2019-04-15,kc,cws,4,5,Guaranteed Rate Field,Joe West
+243,565809,2019-04-15,cin,lad,3,4,Dodger Stadium,Angel Hernandez
+244,566282,2019-04-15,col,sd,5,2,Petco Park,Phil Cuzzi
+245,566381,2019-04-15,cle,sea,6,4,T-Mobile Park,Tim Timmons
+246,567465,2019-04-16,bos,nyy,0,8,Yankee Stadium,Marvin Hudson
+247,565516,2019-04-16,pit,det,5,3,Comerica Park,Chad Fairchild
+248,565903,2019-04-16,sf,wsh,7,3,Nationals Park,Tony Randazzo
+249,567069,2019-04-16,nym,phi,3,14,Citizens Bank Park,John Tumpane
+250,566671,2019-04-16,bal,tb,2,4,Tropicana Field,Paul Nauert
+251,567370,2019-04-16,chc,mia,4,0,Marlins Park,James Hoye
+252,567167,2019-04-16,ari,atl,9,6,SunTrust Park,Mark Wegner
+253,566969,2019-04-16,tor,min,6,5,Target Field,Paul Emmel
+254,567560,2019-04-16,stl,mil,4,8,Miller Park,Marty Foster
+255,566773,2019-04-16,laa,tex,0,5,Globe Life Park in Arlington,Carlos Torres
+256,567270,2019-04-16,kc,cws,1,5,Guaranteed Rate Field,Eric Cooper
+257,566283,2019-04-16,col,sd,8,2,Petco Park,Chad Whitson
+258,566094,2019-04-16,hou,oak,9,1,Oakland Coliseum,Chris Guccione
+259,565810,2019-04-16,cin,lad,1,6,Dodger Stadium,Ed Hickox
+260,566382,2019-04-16,cle,sea,4,2,T-Mobile Park,Rob Drake
+261,567070,2019-04-17,nym,phi,2,3,Citizens Bank Park,Ted Barrett
+262,567561,2019-04-17,stl,mil,6,3,Miller Park,Nic Lentz
+263,567271,2019-04-17,kc,cws,4,3,Guaranteed Rate Field,Jansen Visconti
+264,565811,2019-04-17,cin,lad,2,3,Dodger Stadium,Nick Mahrley
+265,567466,2019-04-17,bos,nyy,3,5,Yankee Stadium,Adrian Johnson
+266,565517,2019-04-17,pit,det,3,2,Comerica Park,Jim Wolf
+267,566383,2019-04-17,cle,sea,1,0,T-Mobile Park,Mike Muchlinski
+268,565904,2019-04-17,sf,wsh,6,9,Nationals Park,Jeff Nelson
+269,566672,2019-04-17,bal,tb,1,8,Tropicana Field,CB Bucknor
+270,567371,2019-04-17,chc,mia,6,0,Marlins Park,Mark Ripperger
+271,567168,2019-04-17,ari,atl,3,2,SunTrust Park,Jim Reynolds
+272,566970,2019-04-17,tor,min,1,4,Target Field,Bruce Dreckman
+273,566774,2019-04-17,laa,tex,4,5,Globe Life Park in Arlington,Jeremie Rehak
+274,566095,2019-04-17,hou,oak,1,2,Oakland Coliseum,Lance Barrett
+275,567169,2019-04-18,ari,atl,4,1,SunTrust Park,Ramon De Jesus
+276,565905,2019-04-18,sf,wsh,2,4,Nationals Park,Ryan Additon
+277,566971,2019-04-18,tor,min,7,4,Target Field,Sean Barber
+278,565518,2019-04-18,cws,det,7,9,Comerica Park,Adam Hamari
+279,567467,2019-04-18,kc,nyy,6,1,Yankee Stadium,Jerry Meals
+280,566673,2019-04-18,bal,tb,6,5,Tropicana Field,D.J. Reyburn
+281,567562,2019-04-18,lad,mil,3,1,Miller Park,Jeff Kellogg
+282,565419,2019-04-18,phi,col,2,6,Coors Field,Will Little
+283,564741,2019-04-18,sea,laa,11,10,Angel Stadium,Dana DeMuth
+284,566284,2019-04-18,cin,sd,4,1,Petco Park,Mike Everitt
+285,565130,2019-04-19,ari,chc,1,5,Wrigley Field,Dan Iassogna
+286,566186,2019-04-19,sf,pit,1,4,PNC Park,Kerwin Danley
+287,567468,2019-04-19,kc,nyy,2,6,Yankee Stadium,Marty Foster
+288,566674,2019-04-19,bos,tb,6,4,Tropicana Field,Mike Winters
+289,565519,2019-04-19,cws,det,7,3,Comerica Park,Todd Tichenor
+290,567372,2019-04-19,wsh,mia,2,3,Marlins Park,Fieldin Culbreth
+291,566775,2019-04-19,hou,tex,7,2,Globe Life Park in Arlington,Stu Scheurwater
+292,567563,2019-04-19,lad,mil,5,3,Miller Park,Brian O'Nora
+293,566574,2019-04-19,nym,stl,5,4,Busch Stadium,Mike Estabrook
+294,565420,2019-04-19,phi,col,3,4,Coors Field,Joe West
+295,564742,2019-04-19,sea,laa,5,3,Angel Stadium,Angel Hernandez
+296,566096,2019-04-19,tor,oak,5,1,Oakland Coliseum,Laz Diaz
+297,566285,2019-04-19,cin,sd,3,2,Petco Park,Bill Welke
+298,564937,2019-04-19,min,bal,16,7,Oriole Park at Camden Yards,Gary Cederstrom
+299,565322,2019-04-19,atl,cle,8,7,Progressive Field,Greg Gibson
+300,567469,2019-04-20,kc,nyy,2,9,Yankee Stadium,Nic Lentz
+301,566575,2019-04-20,nym,stl,2,10,Busch Stadium,Paul Emmel
+302,565131,2019-04-20,ari,chc,6,0,Wrigley Field,Sam Holbrook
+303,566187,2019-04-20,sf,pit,1,3,PNC Park,Lance Barksdale
+304,564938,2019-04-20,min,bal,6,5,Oriole Park at Camden Yards,Quinn Wolcott
+305,564937,2019-04-20,min,bal,16,7,Oriole Park at Camden Yards,Gary Cederstrom
+306,566097,2019-04-20,tor,oak,10,1,Oakland Coliseum,Cory Blaser
+307,565323,2019-04-20,atl,cle,4,8,Progressive Field,Gerry Davis
+308,565322,2019-04-20,atl,cle,8,7,Progressive Field,Greg Gibson
+309,566675,2019-04-20,bos,tb,6,5,Tropicana Field,Tim Timmons
+310,567373,2019-04-20,wsh,mia,3,9,Marlins Park,Paul Nauert
+311,567564,2019-04-20,lad,mil,0,5,Miller Park,James Hoye
+312,566776,2019-04-20,hou,tex,4,9,Globe Life Park in Arlington,Mark Wegner
+313,565421,2019-04-20,phi,col,8,5,Coors Field,Eric Cooper
+314,566286,2019-04-20,cin,sd,4,2,Petco Park,Chris Guccione
+315,564743,2019-04-20,sea,laa,6,5,Angel Stadium,Ed Hickox
+316,565520,2019-04-20,cws,det,5,3,Comerica Park,Bill Welke
+317,564939,2019-04-21,min,bal,4,3,Oriole Park at Camden Yards,Marvin Hudson
+318,567470,2019-04-21,kc,nyy,6,7,Yankee Stadium,Ron Kulpa
+319,565521,2019-04-21,cws,det,3,4,Comerica Park,Phil Cuzzi
+320,567374,2019-04-21,wsh,mia,5,0,Marlins Park,CB Bucknor
+321,566188,2019-04-21,sf,pit,3,2,PNC Park,John Tumpane
+322,566676,2019-04-21,bos,tb,4,3,Tropicana Field,Rob Drake
+323,567565,2019-04-21,lad,mil,6,5,Miller Park,Mark Ripperger
+324,566576,2019-04-21,nym,stl,4,6,Busch Stadium,Bruce Dreckman
+325,565132,2019-04-21,ari,chc,1,2,Wrigley Field,Chad Fairchild
+326,566777,2019-04-21,hou,tex,10,11,Globe Life Park in Arlington,Hunter Wendelstedt
+327,565422,2019-04-21,phi,col,1,4,Coors Field,Andy Fletcher
+328,564744,2019-04-21,sea,laa,6,8,Angel Stadium,Nick Mahrley
+329,566098,2019-04-21,tor,oak,5,4,Oakland Coliseum,Tony Randazzo
+330,566287,2019-04-21,cin,sd,3,4,Petco Park,Lance Barrett
+331,565324,2019-04-21,atl,cle,11,5,Progressive Field,Carlos Torres
+332,566189,2019-04-22,ari,pit,12,4,PNC Park,Jeremie Rehak
+333,564940,2019-04-22,cws,bal,12,2,Oriole Park at Camden Yards,Sean Barber
+334,566677,2019-04-22,kc,tb,3,6,Tropicana Field,Jeff Kellogg
+335,565995,2019-04-22,phi,nym,1,5,Citi Field,Mark Carlson
+336,566577,2019-04-22,mil,stl,5,13,Busch Stadium,Jim Reynolds
+337,565612,2019-04-22,min,hou,9,5,Minute Maid Park,Dana DeMuth
+338,565423,2019-04-22,wsh,col,5,7,Coors Field,Vic Carapazza
+339,566099,2019-04-22,tex,oak,1,6,Oakland Coliseum,Will Little
+340,564745,2019-04-22,nyy,laa,4,3,Angel Stadium,Mike Everitt
+341,565033,2019-04-22,det,bos,7,4,Fenway Park,David Rackley
+342,565033,2019-04-23,det,bos,7,4,Fenway Park,David Rackley
+343,565034,2019-04-23,det,bos,4,2,Fenway Park,Dan Bellino
+344,565325,2019-04-23,mia,cle,3,1,Progressive Field,Bill Miller
+345,565231,2019-04-23,atl,cin,6,7,Great American Ball Park,Adam Hamari
+346,566190,2019-04-23,ari,pit,2,1,PNC Park,Gerry Davis
+347,564941,2019-04-23,cws,bal,1,9,Oriole Park at Camden Yards,Kerwin Danley
+348,566874,2019-04-23,sf,tor,7,6,Rogers Centre,Jim Wolf
+349,566678,2019-04-23,kc,tb,2,5,Tropicana Field,Brian O'Nora
+350,565996,2019-04-23,phi,nym,0,9,Citi Field,Scott Barry
+351,566578,2019-04-23,mil,stl,3,4,Busch Stadium,Alan Porter
+352,565133,2019-04-23,lad,chc,2,7,Wrigley Field,Ted Barrett
+353,565613,2019-04-23,min,hou,4,10,Minute Maid Park,Angel Hernandez
+354,565424,2019-04-23,wsh,col,6,3,Coors Field,Jerry Layne
+355,566100,2019-04-23,tex,oak,5,11,Oakland Coliseum,Joe West
+356,564746,2019-04-23,nyy,laa,7,5,Angel Stadium,Bill Welke
+357,566288,2019-04-23,sea,sd,3,6,Petco Park,Jeff Nelson
+358,566679,2019-04-24,kc,tb,10,2,Tropicana Field,James Hoye
+359,565326,2019-04-24,mia,cle,2,6,Progressive Field,Manny Gonzalez
+360,566579,2019-04-24,mil,stl,2,5,Busch Stadium,Mark Wegner
+361,565425,2019-04-24,wsh,col,5,9,Coors Field,Hunter Wendelstedt
+362,566101,2019-04-24,tex,oak,5,6,Oakland Coliseum,Eric Cooper
+363,566289,2019-04-24,sea,sd,0,1,Petco Park,Laz Diaz
+364,566875,2019-04-24,sf,tor,4,0,Rogers Centre,Dan Iassogna
+365,565232,2019-04-24,atl,cin,3,1,Great American Ball Park,Todd Tichenor
+366,566191,2019-04-24,ari,pit,11,2,PNC Park,Chris Conroy
+367,564942,2019-04-24,cws,bal,3,4,Oriole Park at Camden Yards,Chad Fairchild
+368,565035,2019-04-24,det,bos,4,11,Fenway Park,Alfonso Marquez
+369,565997,2019-04-24,phi,nym,6,0,Citi Field,Brian Gorman
+370,565134,2019-04-24,lad,chc,6,7,Wrigley Field,Chad Whitson
+371,565614,2019-04-24,min,hou,1,7,Minute Maid Park,Ed Hickox
+372,564747,2019-04-24,nyy,laa,6,5,Angel Stadium,Chris Guccione
+373,566192,2019-04-25,ari,pit,5,0,PNC Park,Pat Hoberg
+374,565135,2019-04-25,lad,chc,2,1,Wrigley Field,Lance Barksdale
+375,565233,2019-04-25,atl,cin,2,4,Great American Ball Park,Phil Cuzzi
+376,567071,2019-04-25,mia,phi,3,1,Citizens Bank Park,Mike Estabrook
+377,565036,2019-04-25,det,bos,3,7,Fenway Park,Larry Vanover
+378,565615,2019-04-25,cle,hou,2,1,Minute Maid Park,Mark Ripperger
+379,564748,2019-04-25,nyy,laa,5,11,Angel Stadium,Ryan Blakney
+380,566384,2019-04-25,tex,sea,2,14,T-Mobile Park,Tripp Gibson
+381,565906,2019-04-26,sd,wsh,4,3,Nationals Park,Andy Fletcher
+382,567072,2019-04-26,mia,phi,0,4,Citizens Bank Park,Nic Lentz
+383,566876,2019-04-26,oak,tor,2,4,Rogers Centre,David Rackley
+384,565998,2019-04-26,mil,nym,10,2,Citi Field,Tom Hallion
+385,567170,2019-04-26,col,atl,8,4,SunTrust Park,Carlos Torres
+386,565616,2019-04-26,cle,hou,6,3,Minute Maid Park,Jeff Kellogg
+387,566972,2019-04-26,bal,min,1,6,Target Field,Jeremie Rehak
+388,567272,2019-04-26,det,cws,11,12,Guaranteed Rate Field,Cory Blaser
+389,565714,2019-04-26,laa,kc,5,1,Kauffman Stadium,Jordan Baker
+390,566580,2019-04-26,cin,stl,12,1,Busch Stadium,John Tumpane
+391,564842,2019-04-26,chc,ari,3,8,Chase Field,Mike Everitt
+392,565812,2019-04-26,pit,lad,2,6,Dodger Stadium,Paul Emmel
+393,566385,2019-04-26,tex,sea,4,5,T-Mobile Park,Mark Carlson
+394,566481,2019-04-26,nyy,sf,7,3,Oracle Park,Ramon De Jesus
+395,565037,2019-04-26,tb,bos,1,5,Fenway Park,Laz Diaz
+396,566973,2019-04-27,bal,min,2,9,Target Field,Gerry Davis
+397,566581,2019-04-27,cin,stl,3,6,Busch Stadium,Ted Barrett
+398,566877,2019-04-27,oak,tor,1,7,Rogers Centre,Dan Bellino
+399,565617,2019-04-27,cle,hou,3,4,Minute Maid Park,Brian O'Nora
+400,565907,2019-04-27,sd,wsh,8,3,Nationals Park,Will Little
+401,565038,2019-04-27,tb,bos,2,1,Fenway Park,Chris Segal
+402,566482,2019-04-27,nyy,sf,6,4,Oracle Park,Jim Reynolds
+403,567073,2019-04-27,mia,phi,9,12,Citizens Bank Park,Jim Wolf
+404,565999,2019-04-27,mil,nym,8,6,Citi Field,Adam Hamari
+405,565715,2019-04-27,laa,kc,4,9,Kauffman Stadium,Jerry Layne
+406,567171,2019-04-27,col,atl,9,5,SunTrust Park,Dana DeMuth
+407,564843,2019-04-27,chc,ari,9,1,Chase Field,Bill Welke
+408,565813,2019-04-27,pit,lad,1,3,Dodger Stadium,Bruce Dreckman
+409,566386,2019-04-27,tex,sea,15,1,T-Mobile Park,Scott Barry
+410,567273,2019-04-27,det,cws,5,7,Guaranteed Rate Field,Bill Miller
+411,565039,2019-04-28,tb,bos,5,2,Fenway Park,Doug Eddings
+412,567074,2019-04-28,mia,phi,1,5,Citizens Bank Park,Dan Iassogna
+413,566878,2019-04-28,oak,tor,4,5,Rogers Centre,Alfonso Marquez
+414,566000,2019-04-28,mil,nym,2,5,Citi Field,Todd Tichenor
+415,567172,2019-04-28,col,atl,7,8,SunTrust Park,Angel Hernandez
+416,565908,2019-04-28,sd,wsh,6,7,Nationals Park,Joe West
+417,566974,2019-04-28,bal,min,1,4,Target Field,Chris Conroy
+418,567274,2019-04-28,det,cws,1,4,Guaranteed Rate Field,Tony Randazzo
+419,565716,2019-04-28,laa,kc,7,3,Kauffman Stadium,Chad Whitson
+420,566582,2019-04-28,cin,stl,2,5,Busch Stadium,Kerwin Danley
+421,566483,2019-04-28,nyy,sf,11,5,Oracle Park,Alan Porter
+422,564844,2019-04-28,chc,ari,6,5,Chase Field,Chris Guccione
+423,565814,2019-04-28,pit,lad,6,7,Dodger Stadium,Sean Barber
+424,566387,2019-04-28,tex,sea,14,1,T-Mobile Park,Brian Gorman
+425,565618,2019-04-28,cle,hou,1,4,Minute Maid Park,James Hoye
+426,565909,2019-04-29,stl,wsh,6,3,Nationals Park,Quinn Wolcott
+427,566001,2019-04-29,cin,nym,5,4,Citi Field,Gabe Morales
+428,565040,2019-04-29,oak,bos,4,9,Fenway Park,Phil Cuzzi
+429,567173,2019-04-29,sd,atl,1,3,SunTrust Park,Hunter Wendelstedt
+430,566975,2019-04-29,hou,min,0,1,Target Field,Adrian Johnson
+431,567566,2019-04-29,col,mil,1,5,Miller Park,Jeff Nelson
+432,567275,2019-04-29,bal,cws,3,5,Guaranteed Rate Field,Larry Vanover
+433,565717,2019-04-29,tb,kc,8,5,Kauffman Stadium,John Tumpane
+434,566484,2019-04-29,lad,sf,2,3,Oracle Park,Mike Muchlinski
+435,565910,2019-04-30,stl,wsh,3,2,Nationals Park,Gary Cederstrom
+436,567075,2019-04-30,det,phi,3,1,Citizens Bank Park,D.J. Reyburn
+437,566002,2019-04-30,cin,nym,3,4,Citi Field,Jerry Meals
+438,565041,2019-04-30,oak,bos,1,5,Fenway Park,Tom Hallion
+439,567375,2019-04-30,cle,mia,7,4,Marlins Park,Ryan Blakney
+440,567179,2019-04-30,sd,atl,4,3,SunTrust Park,Jordan Baker
+441,566976,2019-04-30,hou,min,11,0,Target Field,Bill Miller
+442,567567,2019-04-30,col,mil,3,4,Miller Park,Jansen Visconti
+443,566778,2019-04-30,pit,tex,6,4,Globe Life Park in Arlington,Ed Hickox
+444,564845,2019-04-30,nyy,ari,1,3,Chase Field,Chad Fairchild
+445,566485,2019-04-30,lad,sf,10,3,Oracle Park,Mike Winters
+446,564749,2019-04-30,tor,laa,3,4,Angel Stadium,Tripp Gibson
+447,566388,2019-04-30,chc,sea,6,5,T-Mobile Park,Mark Wegner
+448,567276,2019-04-30,bal,cws,6,7,Guaranteed Rate Field,Dan Bellino
+449,565718,2019-04-30,tb,kc,2,8,Kauffman Stadium,Ted Barrett
+450,565042,2019-05-01,oak,bos,3,7,Fenway Park,Adam Hamari
+451,565719,2019-05-01,tb,kc,2,3,Kauffman Stadium,Nic Lentz
+452,565718,2019-05-01,tb,kc,2,8,Kauffman Stadium,Ted Barrett
+453,566779,2019-05-01,pit,tex,7,5,Globe Life Park in Arlington,Carlos Torres
+454,564846,2019-05-01,nyy,ari,2,3,Chase Field,Paul Emmel
+455,567277,2019-05-01,bal,cws,5,4,Guaranteed Rate Field,David Rackley
+456,567276,2019-05-01,bal,cws,6,7,Guaranteed Rate Field,Dan Bellino
+457,566389,2019-05-01,chc,sea,11,0,T-Mobile Park,Stu Scheurwater
+458,565911,2019-05-01,stl,wsh,5,1,Nationals Park,Nick Mahrley
+459,567076,2019-05-01,det,phi,3,7,Citizens Bank Park,Fieldin Culbreth
+460,566003,2019-05-01,cin,nym,1,0,Citi Field,Ron Kulpa
+461,567376,2019-05-01,cle,mia,2,4,Marlins Park,Mike Everitt
+462,567180,2019-05-01,sd,atl,1,5,SunTrust Park,Paul Nauert
+463,567568,2019-05-01,col,mil,11,4,Miller Park,Laz Diaz
+464,566977,2019-05-01,hou,min,2,6,Target Field,Chris Segal
+465,566486,2019-05-01,lad,sf,1,2,Oracle Park,Tim Timmons
+466,564750,2019-05-01,tor,laa,3,6,Angel Stadium,Mark Carlson
+467,566004,2019-05-02,cin,nym,0,1,Citi Field,Marty Foster
+468,567181,2019-05-02,sd,atl,11,2,SunTrust Park,Chad Whitson
+469,566978,2019-05-02,hou,min,2,8,Target Field,Doug Eddings
+470,567569,2019-05-02,col,mil,11,6,Miller Park,Chris Conroy
+471,565720,2019-05-02,tb,kc,3,1,Kauffman Stadium,Kerwin Danley
+472,565912,2019-05-02,stl,wsh,1,2,Nationals Park,Marvin Hudson
+473,567278,2019-05-02,bos,cws,4,6,Guaranteed Rate Field,Ben May
+474,564751,2019-05-02,tor,laa,2,6,Angel Stadium,Scott Barry
+475,565136,2019-05-03,stl,chc,0,4,Wrigley Field,Alfonso Marquez
+476,566193,2019-05-03,oak,pit,14,1,PNC Park,Jerry Meals
+477,564943,2019-05-03,tb,bal,7,0,Oriole Park at Camden Yards,Bill Welke
+478,567077,2019-05-03,wsh,phi,2,4,Citizens Bank Park,Bill Miller
+479,567471,2019-05-03,min,nyy,3,6,Yankee Stadium,Rob Drake
+480,565522,2019-05-03,kc,det,3,4,Comerica Park,Adrian Johnson
+481,565327,2019-05-03,sea,cle,1,2,Progressive Field,Todd Tichenor
+482,565234,2019-05-03,sf,cin,12,11,Great American Ball Park,Hunter Wendelstedt
+483,567377,2019-05-03,atl,mia,7,2,Marlins Park,Jeff Nelson
+484,566780,2019-05-03,tor,tex,1,0,Globe Life Park in Arlington,Mike Estabrook
+485,567279,2019-05-03,bos,cws,6,1,Guaranteed Rate Field,CB Bucknor
+486,567570,2019-05-03,nym,mil,1,3,Miller Park,Dana DeMuth
+487,565426,2019-05-03,ari,col,10,9,Coors Field,Brian Gorman
+488,566290,2019-05-03,lad,sd,4,3,Petco Park,Jim Reynolds
+489,567472,2019-05-04,min,nyy,7,3,Yankee Stadium,Mike Muchlinski
+490,565137,2019-05-04,stl,chc,5,6,Wrigley Field,Larry Vanover
+491,565523,2019-05-04,kc,det,15,3,Comerica Park,Quinn Wolcott
+492,565328,2019-05-04,sea,cle,4,5,Progressive Field,Phil Cuzzi
+493,567378,2019-05-04,atl,mia,9,2,Marlins Park,Jansen Visconti
+494,566194,2019-05-04,oak,pit,4,6,PNC Park,Gabe Morales
+495,564944,2019-05-04,tb,bal,0,3,Oriole Park at Camden Yards,Lance Barrett
+496,567078,2019-05-04,wsh,phi,10,8,Citizens Bank Park,Chris Segal
+497,564752,2019-05-04,hou,laa,14,2,Estadio de Beisbol Monterrey,Lance Barksdale
+498,565235,2019-05-04,sf,cin,2,9,Great American Ball Park,Jordan Baker
+499,567280,2019-05-04,bos,cws,15,2,Guaranteed Rate Field,D.J. Reyburn
+500,567571,2019-05-04,nym,mil,3,4,Miller Park,Angel Hernandez
+501,566781,2019-05-04,tor,tex,5,8,Globe Life Park in Arlington,Bruce Dreckman
+502,565427,2019-05-04,ari,col,9,2,Coors Field,Tripp Gibson
+503,566291,2019-05-04,lad,sd,7,6,Petco Park,Alan Porter
+504,565524,2019-05-05,kc,det,2,5,Comerica Park,Gary Cederstrom
+505,565329,2019-05-05,sea,cle,10,0,Progressive Field,Tom Hallion
+506,567379,2019-05-05,atl,mia,3,1,Marlins Park,Tony Randazzo
+507,566195,2019-05-05,oak,pit,3,5,PNC Park,Ron Kulpa
+508,567079,2019-05-05,wsh,phi,1,7,Citizens Bank Park,Chris Conroy
+509,567281,2019-05-05,bos,cws,9,2,Guaranteed Rate Field,Fieldin Culbreth
+510,567572,2019-05-05,nym,mil,2,3,Miller Park,Ed Hickox
+511,566782,2019-05-05,tor,tex,2,10,Globe Life Park in Arlington,Chad Fairchild
+512,565428,2019-05-05,ari,col,7,8,Coors Field,Mark Carlson
+513,567473,2019-05-05,min,nyy,1,4,Yankee Stadium,Mike Winters
+514,564753,2019-05-05,hou,laa,10,4,Estadio de Beisbol Monterrey,John Tumpane
+515,566292,2019-05-05,lad,sd,5,8,Petco Park,Ramon De Jesus
+516,565236,2019-05-05,sf,cin,6,5,Great American Ball Park,Paul Nauert
+517,565138,2019-05-05,stl,chc,5,13,Wrigley Field,David Rackley
+518,564945,2019-05-05,tb,bal,1,2,Oriole Park at Camden Yards,Manny Gonzalez
+519,565237,2019-05-06,sf,cin,4,12,Great American Ball Park,Chad Whitson
+520,565330,2019-05-06,cws,cle,9,1,Progressive Field,Marty Foster
+521,567474,2019-05-06,sea,nyy,3,7,Yankee Stadium,Carlos Torres
+522,564946,2019-05-06,bos,bal,1,4,Oriole Park at Camden Yards,Tim Timmons
+523,566879,2019-05-06,min,tor,8,0,Rogers Centre,Adam Hamari
+524,566680,2019-05-06,ari,tb,1,12,Tropicana Field,Sam Holbrook
+525,567573,2019-05-06,wsh,mil,3,5,Miller Park,Ben May
+526,566583,2019-05-06,phi,stl,0,6,Busch Stadium,Laz Diaz
+527,565139,2019-05-06,mia,chc,6,5,Wrigley Field,Marvin Hudson
+528,565619,2019-05-06,kc,hou,4,6,Minute Maid Park,Pat Hoberg
+529,566293,2019-05-06,nym,sd,0,4,Petco Park,Doug Eddings
+530,565815,2019-05-06,atl,lad,3,5,Dodger Stadium,Eric Cooper
+531,565331,2019-05-07,cws,cle,2,0,Progressive Field,Jerry Meals
+532,567475,2019-05-07,sea,nyy,4,5,Yankee Stadium,Dana DeMuth
+533,564947,2019-05-07,bos,bal,8,5,Oriole Park at Camden Yards,Ryan Additon
+534,566196,2019-05-07,tex,pit,4,5,PNC Park,Hunter Wendelstedt
+535,566880,2019-05-07,min,tor,3,0,Rogers Centre,Todd Tichenor
+536,565525,2019-05-07,laa,det,5,2,Comerica Park,Stu Scheurwater
+537,566681,2019-05-07,ari,tb,3,6,Tropicana Field,Manny Gonzalez
+538,567574,2019-05-07,wsh,mil,0,6,Miller Park,CB Bucknor
+539,566584,2019-05-07,phi,stl,11,1,Busch Stadium,Jeff Nelson
+540,565140,2019-05-07,mia,chc,2,5,Wrigley Field,Adrian Johnson
+541,565620,2019-05-07,kc,hou,12,2,Minute Maid Park,Greg Gibson
+542,565429,2019-05-07,sf,col,14,4,Coors Field,Ted Barrett
+543,566102,2019-05-07,cin,oak,0,2,Oakland Coliseum,Mark Ripperger
+544,566294,2019-05-07,nym,sd,7,6,Petco Park,Bill Miller
+545,565816,2019-05-07,atl,lad,0,9,Dodger Stadium,Andy Fletcher
+546,566197,2019-05-08,tex,pit,9,6,PNC Park,Jordan Baker
+547,566682,2019-05-08,ari,tb,3,2,Tropicana Field,Jim Wolf
+548,567575,2019-05-08,wsh,mil,3,7,Miller Park,D.J. Reyburn
+549,566585,2019-05-08,phi,stl,5,0,Busch Stadium,Jansen Visconti
+550,566295,2019-05-08,nym,sd,2,3,Petco Park,Rob Drake
+551,565332,2019-05-08,cws,cle,3,5,Progressive Field,Gabe Morales
+552,567476,2019-05-08,sea,nyy,10,1,Yankee Stadium,Angel Hernandez
+553,564948,2019-05-08,bos,bal,2,1,Oriole Park at Camden Yards,Mike Muchlinski
+554,566881,2019-05-08,min,tor,9,1,Rogers Centre,Phil Cuzzi
+555,565526,2019-05-08,laa,det,3,10,Comerica Park,Mark Wegner
+556,565141,2019-05-08,mia,chc,2,3,Wrigley Field,Quinn Wolcott
+557,565621,2019-05-08,kc,hou,0,9,Minute Maid Park,Brian Knight
+558,566103,2019-05-08,cin,oak,4,5,Oakland Coliseum,Jeff Kellogg
+559,565817,2019-05-08,atl,lad,4,9,Dodger Stadium,Will Little
+560,565430,2019-05-08,sf,col,19,2,Coors Field,David Rackley
+561,565527,2019-05-09,laa,det,13,0,Comerica Park,Alan Porter
+562,565333,2019-05-09,cws,cle,0,5,Progressive Field,Ron Kulpa
+563,565142,2019-05-09,mia,chc,1,4,Wrigley Field,Gary Cederstrom
+564,565431,2019-05-09,sf,col,11,12,Coors Field,Nic Lentz
+565,566104,2019-05-09,cin,oak,3,0,Oakland Coliseum,Ryan Blakney
+566,567477,2019-05-09,sea,nyy,1,3,Yankee Stadium,Ed Hickox
+567,566586,2019-05-09,pit,stl,4,17,Busch Stadium,Mike Winters
+568,565622,2019-05-09,tex,hou,2,4,Minute Maid Park,Dan Iassogna
+569,564847,2019-05-09,atl,ari,2,3,Chase Field,Chris Segal
+570,565818,2019-05-09,wsh,lad,6,0,Dodger Stadium,Gerry Davis
+571,565143,2019-05-10,mil,chc,7,0,Wrigley Field,Joe West
+572,564949,2019-05-10,laa,bal,8,3,Oriole Park at Camden Yards,Tom Hallion
+573,566882,2019-05-10,cws,tor,3,4,Rogers Centre,Carlos Torres
+574,565043,2019-05-10,sea,bos,1,14,Fenway Park,Marvin Hudson
+575,566005,2019-05-10,mia,nym,2,11,Citi Field,Ramon De Jesus
+576,566683,2019-05-10,nyy,tb,4,3,Tropicana Field,Cory Blaser
+577,565623,2019-05-10,tex,hou,0,3,Minute Maid Park,Sam Holbrook
+578,566979,2019-05-10,det,min,0,6,Target Field,Paul Nauert
+579,566587,2019-05-10,pit,stl,2,1,Busch Stadium,Tim Timmons
+580,565721,2019-05-10,phi,kc,1,5,Kauffman Stadium,Dan Bellino
+581,565432,2019-05-10,sd,col,2,12,Coors Field,Brian O'Nora
+582,566105,2019-05-10,cle,oak,3,4,Oakland Coliseum,Lance Barksdale
+583,564848,2019-05-10,atl,ari,2,1,Chase Field,Doug Eddings
+584,565819,2019-05-10,wsh,lad,0,5,Dodger Stadium,Pat Hoberg
+585,566487,2019-05-10,cin,sf,7,0,Oracle Park,Fieldin Culbreth
+586,565044,2019-05-11,sea,bos,5,9,Fenway Park,Adrian Johnson
+587,566980,2019-05-11,det,min,5,3,Target Field,Hunter Wendelstedt
+588,566965,2019-05-11,det,min,3,8,Target Field,Chad Whitson
+589,566588,2019-05-11,pit,stl,2,1,Busch Stadium,Ryan Additon
+590,565144,2019-05-11,mil,chc,1,2,Wrigley Field,Eric Cooper
+591,566883,2019-05-11,cws,tor,7,2,Rogers Centre,Dana DeMuth
+592,564950,2019-05-11,laa,bal,7,2,Oriole Park at Camden Yards,Adam Hamari
+593,566106,2019-05-11,cle,oak,2,3,Oakland Coliseum,Ted Barrett
+594,566684,2019-05-11,nyy,tb,2,7,Tropicana Field,Laz Diaz
+595,566006,2019-05-11,mia,nym,1,4,Citi Field,Stu Scheurwater
+596,565722,2019-05-11,phi,kc,7,0,Kauffman Stadium,Phil Cuzzi
+597,565433,2019-05-11,sd,col,4,3,Coors Field,James Hoye
+598,565624,2019-05-11,tex,hou,4,11,Minute Maid Park,Manny Gonzalez
+599,564849,2019-05-11,atl,ari,6,4,Chase Field,Bill Miller
+600,566488,2019-05-11,cin,sf,5,4,Oracle Park,Ben May
+601,565820,2019-05-11,wsh,lad,5,2,Dodger Stadium,Jeremie Rehak
+602,564951,2019-05-12,laa,bal,1,5,Oriole Park at Camden Yards,Nick Mahrley
+603,565045,2019-05-12,sea,bos,2,11,Fenway Park,Quinn Wolcott
+604,566884,2019-05-12,cws,tor,5,1,Rogers Centre,Angel Hernandez
+605,566685,2019-05-12,nyy,tb,7,1,Tropicana Field,Tony Randazzo
+606,565625,2019-05-12,tex,hou,5,15,Minute Maid Park,Jim Wolf
+607,566981,2019-05-12,det,min,5,3,Target Field,Jordan Baker
+608,566589,2019-05-12,pit,stl,10,6,Busch Stadium,Mike Muchlinski
+609,565723,2019-05-12,phi,kc,6,1,Kauffman Stadium,Gabe Morales
+610,565434,2019-05-12,sd,col,7,10,Coors Field,Mark Ripperger
+611,566489,2019-05-12,cin,sf,5,6,Oracle Park,CB Bucknor
+612,566107,2019-05-12,cle,oak,5,3,Oakland Coliseum,Nic Lentz
+613,565821,2019-05-12,wsh,lad,0,6,Dodger Stadium,Brian Knight
+614,564850,2019-05-12,atl,ari,5,3,Chase Field,Rob Drake
+615,565145,2019-05-12,mil,chc,1,4,Wrigley Field,Andy Fletcher
+616,566007,2019-05-12,mia,nym,4,5,Citi Field,Chris Segal
+617,567080,2019-05-13,mil,phi,4,7,Citizens Bank Park,Lance Barrett
+618,565528,2019-05-13,hou,det,8,1,Comerica Park,Paul Emmel
+619,566982,2019-05-13,laa,min,5,4,Target Field,Will Little
+620,567282,2019-05-13,cle,cws,2,5,Guaranteed Rate Field,Mike Winters
+621,564851,2019-05-13,pit,ari,3,9,Chase Field,Kerwin Danley
+622,566390,2019-05-13,oak,sea,5,6,T-Mobile Park,D.J. Reyburn
+623,567478,2019-05-13,bal,nyy,1,3,Yankee Stadium,Chad Whitson
+624,567283,2019-05-14,cle,cws,9,0,Guaranteed Rate Field,Tim Timmons
+625,565238,2019-05-14,chc,cin,3,1,Great American Ball Park,Ed Hickox
+626,565913,2019-05-14,nym,wsh,6,2,Nationals Park,Jeff Nelson
+627,567081,2019-05-14,mil,phi,6,1,Citizens Bank Park,Ramon De Jesus
+628,565046,2019-05-14,col,bos,5,4,Fenway Park,Dan Bellino
+629,565529,2019-05-14,hou,det,11,4,Comerica Park,Mike Estabrook
+630,567380,2019-05-14,tb,mia,4,0,Marlins Park,Gerry Davis
+631,567182,2019-05-14,stl,atl,14,3,SunTrust Park,Dan Iassogna
+632,566983,2019-05-14,laa,min,3,4,Target Field,Joe West
+633,565724,2019-05-14,tex,kc,5,11,Kauffman Stadium,Jeff Kellogg
+634,564852,2019-05-14,pit,ari,6,2,Chase Field,Lance Barksdale
+635,566490,2019-05-14,tor,sf,7,3,Oracle Park,Doug Eddings
+636,565822,2019-05-14,sd,lad,3,6,Dodger Stadium,Alfonso Marquez
+637,566391,2019-05-14,oak,sea,3,4,T-Mobile Park,Fieldin Culbreth
+638,567479,2019-05-14,bal,nyy,5,8,Yankee Stadium,Ryan Blakney
+639,566984,2019-05-15,laa,min,7,8,Target Field,Eric Cooper
+640,567480,2019-05-15,bal,nyy,3,5,Yankee Stadium,Chris Guccione
+641,567478,2019-05-15,bal,nyy,1,3,Yankee Stadium,Chad Whitson
+642,564853,2019-05-15,pit,ari,1,11,Chase Field,Ted Barrett
+643,566491,2019-05-15,tor,sf,3,4,Oracle Park,Adrian Johnson
+644,565239,2019-05-15,chc,cin,5,6,Great American Ball Park,Roberto Ortiz
+645,565914,2019-05-15,nym,wsh,1,5,Nationals Park,Cory Blaser
+646,567082,2019-05-15,mil,phi,5,2,Citizens Bank Park,Mike Everitt
+647,565047,2019-05-15,col,bos,5,6,Fenway Park,Sean Barber
+648,565530,2019-05-15,hou,det,5,1,Comerica Park,Bruce Dreckman
+649,567381,2019-05-15,tb,mia,1,0,Marlins Park,Pat Hoberg
+650,567183,2019-05-15,stl,atl,0,4,SunTrust Park,Sam Holbrook
+651,565725,2019-05-15,tex,kc,6,1,Kauffman Stadium,Brian O'Nora
+652,565823,2019-05-15,sd,lad,0,2,Dodger Stadium,Scott Barry
+653,565915,2019-05-16,nym,wsh,6,7,Nationals Park,Laz Diaz
+654,567083,2019-05-16,mil,phi,11,3,Citizens Bank Park,Bill Welke
+655,565531,2019-05-16,oak,det,17,3,Comerica Park,Rob Drake
+656,565726,2019-05-16,tex,kc,16,1,Kauffman Stadium,James Hoye
+657,565334,2019-05-16,bal,cle,7,14,Progressive Field,Chad Fairchild
+658,565240,2019-05-16,chc,cin,2,4,Great American Ball Park,Dana DeMuth
+659,567184,2019-05-16,stl,atl,2,10,SunTrust Park,Jim Wolf
+660,567284,2019-05-16,tor,cws,2,4,Guaranteed Rate Field,Ryan Additon
+661,566296,2019-05-16,pit,sd,3,4,Petco Park,Paul Nauert
+662,566392,2019-05-16,min,sea,11,6,T-Mobile Park,Tripp Gibson
+663,565916,2019-05-17,chc,wsh,14,6,Nationals Park,Dan Iassogna
+664,567084,2019-05-17,col,phi,4,5,Citizens Bank Park,Angel Hernandez
+665,567481,2019-05-17,tb,nyy,3,4,Yankee Stadium,John Tumpane
+666,565335,2019-05-17,bal,cle,5,1,Progressive Field,Paul Emmel
+667,565048,2019-05-17,hou,bos,3,1,Fenway Park,Tony Randazzo
+668,565241,2019-05-17,lad,cin,6,0,Great American Ball Park,Larry Vanover
+669,565532,2019-05-17,oak,det,7,2,Comerica Park,Mike Muchlinski
+670,567382,2019-05-17,nym,mia,6,8,Marlins Park,Hunter Wendelstedt
+671,567185,2019-05-17,mil,atl,8,12,SunTrust Park,Mark Ripperger
+672,566783,2019-05-17,stl,tex,3,7,Globe Life Park in Arlington,Bill Miller
+673,567285,2019-05-17,tor,cws,10,2,Guaranteed Rate Field,Brian Knight
+674,564854,2019-05-17,sf,ari,0,7,Chase Field,Andy Fletcher
+675,564754,2019-05-17,kc,laa,2,5,Angel Stadium,Lance Barrett
+676,566297,2019-05-17,pit,sd,5,3,Petco Park,CB Bucknor
+677,566393,2019-05-17,min,sea,7,1,T-Mobile Park,Jansen Visconti
+678,567482,2019-05-18,tb,nyy,2,1,Yankee Stadium,Kerwin Danley
+679,567286,2019-05-18,tor,cws,1,4,Guaranteed Rate Field,Gerry Davis
+680,566784,2019-05-18,stl,tex,8,2,Globe Life Park in Arlington,Chris Conroy
+681,567085,2019-05-18,col,phi,1,2,Citizens Bank Park,Ed Hickox
+682,565336,2019-05-18,bal,cle,1,4,Progressive Field,Mike Estabrook
+683,565242,2019-05-18,lad,cin,0,4,Great American Ball Park,David Rackley
+684,565533,2019-05-18,oak,det,4,1,Comerica Park,Mike Winters
+685,567383,2019-05-18,nym,mia,0,2,Marlins Park,Mark Carlson
+686,565049,2019-05-18,hou,bos,7,3,Fenway Park,Jeff Nelson
+687,565917,2019-05-18,chc,wsh,2,5,Nationals Park,Sam Holbrook
+688,567186,2019-05-18,mil,atl,3,4,SunTrust Park,Jeff Kellogg
+689,566298,2019-05-18,pit,sd,7,2,Petco Park,D.J. Reyburn
+690,564755,2019-05-18,kc,laa,3,6,Angel Stadium,Chris Guccione
+691,564855,2019-05-18,sf,ari,8,5,Chase Field,Will Little
+692,566394,2019-05-18,min,sea,18,4,T-Mobile Park,Alfonso Marquez
+693,565050,2019-05-19,hou,bos,3,4,Fenway Park,Cory Blaser
+694,567086,2019-05-19,col,phi,5,7,Citizens Bank Park,Roberto Ortiz
+695,567483,2019-05-19,tb,nyy,5,13,Yankee Stadium,Lance Barksdale
+696,565337,2019-05-19,bal,cle,0,10,Progressive Field,Bruce Dreckman
+697,565243,2019-05-19,lad,cin,8,3,Great American Ball Park,Dan Bellino
+698,565534,2019-05-19,oak,det,7,3,Oakland Coliseum,Tim Timmons
+699,567384,2019-05-19,nym,mia,0,3,Marlins Park,Jordan Baker
+700,567187,2019-05-19,mil,atl,3,2,SunTrust Park,Brian O'Nora
+701,567287,2019-05-19,tor,cws,5,2,Guaranteed Rate Field,Pat Hoberg
+702,566785,2019-05-19,stl,tex,4,5,Globe Life Park in Arlington,Jeremie Rehak
+703,564756,2019-05-19,kc,laa,5,1,Angel Stadium,Mike Everitt
+704,566299,2019-05-19,pit,sd,6,4,Petco Park,Fieldin Culbreth
+705,564856,2019-05-19,sf,ari,3,2,Chase Field,Joe West
+706,566395,2019-05-19,min,sea,4,7,T-Mobile Park,Scott Barry
+707,565918,2019-05-19,chc,wsh,6,5,Nationals Park,Jim Wolf
+708,566885,2019-05-20,bos,tor,12,2,Rogers Centre,Mark Wegner
+709,565338,2019-05-20,oak,cle,6,4,Progressive Field,Nic Lentz
+710,564952,2019-05-20,nyy,bal,10,7,Oriole Park at Camden Yards,Sean Barber
+711,566008,2019-05-20,wsh,nym,3,5,Citi Field,Paul Emmel
+712,566786,2019-05-20,sea,tex,9,10,Globe Life Park in Arlington,Eric Cooper
+713,565146,2019-05-20,phi,chc,5,4,Wrigley Field,Vic Carapazza
+714,565626,2019-05-20,cws,hou,0,3,Minute Maid Park,James Hoye
+715,566492,2019-05-20,atl,sf,4,1,Oracle Park,Bill Welke
+716,564757,2019-05-20,min,laa,3,1,Angel Stadium,Gary Cederstrom
+717,566300,2019-05-20,ari,sd,1,2,Petco Park,Marty Foster
+718,565339,2019-05-21,oak,cle,5,3,Progressive Field,Dana DeMuth
+719,566198,2019-05-21,col,pit,5,0,PNC Park,Todd Tichenor
+720,565147,2019-05-21,phi,chc,2,3,Wrigley Field,Hunter Wendelstedt
+721,564953,2019-05-21,nyy,bal,11,4,Oriole Park at Camden Yards,Larry Vanover
+722,566886,2019-05-21,bos,tor,3,10,Rogers Centre,Alan Porter
+723,566009,2019-05-21,wsh,nym,5,6,Citi Field,Mike Estabrook
+724,566686,2019-05-21,lad,tb,7,3,Tropicana Field,Doug Eddings
+725,565535,2019-05-21,mia,det,5,4,Comerica Park,Paul Nauert
+726,567576,2019-05-21,cin,mil,3,0,Miller Park,Chad Whitson
+727,566787,2019-05-21,sea,tex,3,5,Globe Life Park in Arlington,Andy Fletcher
+728,565627,2019-05-21,cws,hou,1,5,Minute Maid Park,Mark Ripperger
+729,566493,2019-05-21,atl,sf,3,4,Oracle Park,Lance Barrett
+730,564758,2019-05-21,min,laa,8,3,Angel Stadium,Marvin Hudson
+731,566301,2019-05-21,ari,sd,2,3,Petco Park,Jerry Meals
+732,566590,2019-05-21,kc,stl,3,10,Busch Stadium,Jansen Visconti
+733,565340,2019-05-22,oak,cle,7,2,Progressive Field,Angel Hernandez
+734,567577,2019-05-22,cin,mil,9,11,Miller Park,Mike Muchlinski
+735,566591,2019-05-22,kc,stl,8,2,Busch Stadium,Tripp Gibson
+736,566590,2019-05-22,kc,stl,3,10,Busch Stadium,Jansen Visconti
+737,566788,2019-05-22,sea,tex,1,2,Globe Life Park in Arlington,Will Little
+738,566302,2019-05-22,ari,sd,2,5,Petco Park,Ron Kulpa
+739,566199,2019-05-22,col,pit,9,3,PNC Park,Tom Hallion
+740,564954,2019-05-22,nyy,bal,7,5,Oriole Park at Camden Yards,David Rackley
+741,566887,2019-05-22,bos,tor,6,5,Rogers Centre,Roberto Ortiz
+742,566010,2019-05-22,wsh,nym,1,6,Citi Field,Ryan Blakney
+743,566687,2019-05-22,lad,tb,1,8,Tropicana Field,Bill Miller
+744,565536,2019-05-22,mia,det,6,3,Comerica Park,CB Bucknor
+745,565148,2019-05-22,phi,chc,4,8,Wrigley Field,Chris Segal
+746,565628,2019-05-22,cws,hou,9,4,Minute Maid Park,Jeff Kellogg
+747,566494,2019-05-22,atl,sf,9,2,Oracle Park,Chris Guccione
+748,564759,2019-05-22,min,laa,16,7,Angel Stadium,Adrian Johnson
+749,566011,2019-05-23,wsh,nym,4,6,Citi Field,Bruce Dreckman
+750,566200,2019-05-23,col,pit,6,14,PNC Park,Adam Hamari
+751,564955,2019-05-23,nyy,bal,6,5,Oriole Park at Camden Yards,Jim Reynolds
+752,566888,2019-05-23,bos,tor,8,2,Rogers Centre,Stu Scheurwater
+753,565537,2019-05-23,mia,det,5,2,Comerica Park,D.J. Reyburn
+754,565149,2019-05-23,phi,chc,9,7,Wrigley Field,Mark Carlson
+755,566495,2019-05-23,atl,sf,5,4,Oracle Park,Mike Everitt
+756,564759,2019-05-23,min,laa,16,7,Angel Stadium,Adrian Johnson
+757,565341,2019-05-23,tb,cle,7,2,Progressive Field,Joe West
+758,565629,2019-05-23,cws,hou,4,0,Minute Maid Park,Brian O'Nora
+759,565150,2019-05-24,cin,chc,6,5,Wrigley Field,Chris Conroy
+760,566201,2019-05-24,lad,pit,10,2,PNC Park,Carlos Torres
+761,565919,2019-05-24,mia,wsh,10,12,Nationals Park,Mike Winters
+762,566889,2019-05-24,sd,tor,6,3,Rogers Centre,Phil Cuzzi
+763,566012,2019-05-24,det,nym,9,8,Citi Field,Gabe Morales
+764,565342,2019-05-24,tb,cle,1,3,Progressive Field,Eric Cooper
+765,565630,2019-05-24,bos,hou,3,4,Minute Maid Park,Alfonso Marquez
+766,566985,2019-05-24,cws,min,4,11,Target Field,Sean Barber
+767,567578,2019-05-24,phi,mil,6,4,Miller Park,Paul Emmel
+768,566592,2019-05-24,atl,stl,5,2,Busch Stadium,Jordan Baker
+769,565435,2019-05-24,bal,col,6,8,Coors Field,Quinn Wolcott
+770,566108,2019-05-24,sea,oak,2,6,Oakland Coliseum,Bill Welke
+771,564760,2019-05-24,tex,laa,4,3,Angel Stadium,Mark Wegner
+772,566496,2019-05-24,ari,sf,18,2,Oracle Park,James Hoye
+773,565727,2019-05-24,nyy,kc,6,5,Kauffman Stadium,Ramon De Jesus
+774,566986,2019-05-25,cws,min,1,8,Target Field,Larry Vanover
+775,565728,2019-05-25,nyy,kc,7,3,Kauffman Stadium,CB Bucknor
+776,565727,2019-05-25,nyy,kc,6,5,Kauffman Stadium,Ramon De Jesus
+777,565151,2019-05-25,cin,chc,6,8,Wrigley Field,Jeremie Rehak
+778,566890,2019-05-25,sd,tor,19,4,Rogers Centre,Todd Tichenor
+779,566497,2019-05-25,ari,sf,10,4,Oracle Park,Mark Ripperger
+780,565920,2019-05-25,mia,wsh,0,5,Nationals Park,Tim Timmons
+781,566109,2019-05-25,sea,oak,5,6,Oakland Coliseum,Lance Barrett
+782,566013,2019-05-25,det,nym,4,5,Citi Field,Marty Foster
+783,565343,2019-05-25,tb,cle,6,2,Progressive Field,Andy Fletcher
+784,567579,2019-05-25,phi,mil,7,2,Miller Park,Mike Estabrook
+785,565631,2019-05-25,bos,hou,3,4,Minute Maid Park,Scott Barry
+786,566202,2019-05-25,lad,pit,7,2,PNC Park,Nic Lentz
+787,566593,2019-05-25,atl,stl,3,6,Busch Stadium,Vic Carapazza
+788,565436,2019-05-25,bal,col,9,6,Coors Field,Gary Cederstrom
+789,564761,2019-05-25,tex,laa,2,3,Angel Stadium,Alan Porter
+790,566891,2019-05-26,sd,tor,1,10,Rogers Centre,Tom Hallion
+791,566014,2019-05-26,det,nym,3,4,Citi Field,Jerry Meals
+792,565344,2019-05-26,tb,cle,6,3,Progressive Field,Will Little
+793,566203,2019-05-26,lad,pit,11,7,PNC Park,Dana DeMuth
+794,565921,2019-05-26,mia,wsh,6,9,Nationals Park,Chad Whitson
+795,565632,2019-05-26,bos,hou,4,1,Minute Maid Park,Tripp Gibson
+796,566987,2019-05-26,cws,min,0,7,Target Field,David Rackley
+797,567580,2019-05-26,phi,mil,1,9,Miller Park,Ryan Blakney
+798,565729,2019-05-26,nyy,kc,7,8,Kauffman Stadium,Fieldin Culbreth
+799,565152,2019-05-26,cin,chc,10,2,Wrigley Field,Doug Eddings
+800,565437,2019-05-26,bal,col,7,8,Coors Field,Marvin Hudson
+801,566498,2019-05-26,ari,sf,6,2,Oracle Park,Tom Woodring
+802,566110,2019-05-26,sea,oak,1,7,Oakland Coliseum,Chris Guccione
+803,564762,2019-05-26,tex,laa,6,7,Angel Stadium,Roberto Ortiz
+804,566594,2019-05-26,atl,stl,4,3,Busch Stadium,Hunter Wendelstedt
+805,564956,2019-05-27,det,bal,3,5,Oriole Park at Camden Yards,Adam Hamari
+806,565922,2019-05-27,mia,wsh,3,2,Nationals Park,Mike Muchlinski
+807,567484,2019-05-27,sd,nyy,2,5,Yankee Stadium,Joe West
+808,565244,2019-05-27,pit,cin,8,5,Great American Ball Park,Laz Diaz
+809,565221,2019-05-27,pit,cin,1,8,Great American Ball Park,Jansen Visconti
+810,566688,2019-05-27,tor,tb,3,8,Tropicana Field,Chad Fairchild
+811,565633,2019-05-27,chc,hou,5,6,Minute Maid Park,Paul Nauert
+812,567288,2019-05-27,kc,cws,1,2,Guaranteed Rate Field,Bill Miller
+813,565438,2019-05-27,ari,col,3,4,Coors Field,Brian Knight
+814,565051,2019-05-27,cle,bos,5,12,Fenway Park,Ron Kulpa
+815,566111,2019-05-27,laa,oak,5,8,Oakland Coliseum,Brian O'Nora
+816,566988,2019-05-27,mil,min,5,4,Target Field,Ted Barrett
+817,565824,2019-05-27,nym,lad,5,9,Dodger Stadium,Stu Scheurwater
+818,566396,2019-05-27,tex,sea,2,6,T-Mobile Park,Manny Gonzalez
+819,567288,2019-05-28,kc,cws,1,2,Guaranteed Rate Field,Bill Miller
+820,567485,2019-05-28,sd,nyy,5,4,Yankee Stadium,Eric Cooper
+821,565245,2019-05-28,pit,cin,6,11,Great American Ball Park,Jeff Nelson
+822,564957,2019-05-28,det,bal,3,0,Oriole Park at Camden Yards,Phil Cuzzi
+823,567087,2019-05-28,stl,phi,3,4,Citizens Bank Park,Rob Drake
+824,565052,2019-05-28,cle,bos,7,5,Fenway Park,Gabe Morales
+825,566689,2019-05-28,tor,tb,1,3,Tropicana Field,Brian Gorman
+826,567385,2019-05-28,sf,mia,3,11,Marlins Park,Adrian Johnson
+827,567188,2019-05-28,wsh,atl,5,4,SunTrust Park,Dan Bellino
+828,565634,2019-05-28,chc,hou,6,9,Minute Maid Park,D.J. Reyburn
+829,567289,2019-05-28,kc,cws,3,4,Guaranteed Rate Field,Chris Conroy
+830,566989,2019-05-28,mil,min,3,5,Target Field,John Tumpane
+831,565439,2019-05-28,ari,col,2,6,Coors Field,John Libka
+832,566112,2019-05-28,laa,oak,6,4,Oakland Coliseum,James Hoye
+833,565825,2019-05-28,nym,lad,7,3,Dodger Stadium,Mark Wegner
+834,566397,2019-05-28,tex,sea,11,4,T-Mobile Park,Dan Iassogna
+835,565246,2019-05-29,pit,cin,7,2,Great American Ball Park,Cory Blaser
+836,567486,2019-05-29,sd,nyy,0,7,Yankee Stadium,Andy Fletcher
+837,566113,2019-05-29,laa,oak,12,7,Oakland Coliseum,Mark Ripperger
+838,566398,2019-05-29,tex,sea,8,7,T-Mobile Park,Sam Holbrook
+839,565053,2019-05-29,cle,bos,14,9,Fenway Park,Marty Foster
+840,564958,2019-05-29,det,bal,4,2,Oriole Park at Camden Yards,Todd Tichenor
+841,567088,2019-05-29,stl,phi,4,11,Citizens Bank Park,Tim Timmons
+842,566690,2019-05-29,tor,tb,3,4,Tropicana Field,Scott Barry
+843,567386,2019-05-29,sf,mia,2,4,Marlins Park,Quinn Wolcott
+844,567189,2019-05-29,wsh,atl,14,4,SunTrust Park,Sean Barber
+845,565635,2019-05-29,chc,hou,2,1,Minute Maid Park,CB Bucknor
+846,567290,2019-05-29,kc,cws,7,8,Guaranteed Rate Field,Mark Carlson
+847,565440,2019-05-29,ari,col,4,5,Coors Field,Gerry Davis
+848,565826,2019-05-29,nym,lad,8,9,Dodger Stadium,Alan Porter
+849,567089,2019-05-30,stl,phi,5,3,Citizens Bank Park,Kerwin Danley
+850,567387,2019-05-30,sf,mia,3,1,Marlins Park,Gary Cederstrom
+851,565441,2019-05-30,ari,col,10,11,Coors Field,Pat Hoberg
+852,566204,2019-05-30,mil,pit,11,5,PNC Park,Alfonso Marquez
+853,566691,2019-05-30,min,tb,3,14,Tropicana Field,Jerry Meals
+854,566789,2019-05-30,kc,tex,4,2,Globe Life Park in Arlington,Tom Hallion
+855,567291,2019-05-30,cle,cws,4,10,Guaranteed Rate Field,Fieldin Culbreth
+856,565827,2019-05-30,nym,lad,0,2,Dodger Stadium,Jim Reynolds
+857,566399,2019-05-30,laa,sea,9,3,T-Mobile Park,Ramon De Jesus
+858,567487,2019-05-30,bos,nyy,4,6,Yankee Stadium,Bruce Dreckman
+859,564959,2019-05-31,sf,bal,6,9,Oriole Park at Camden Yards,Mike Muchlinski
+860,567488,2019-05-31,bos,nyy,1,4,Yankee Stadium,Jeremie Rehak
+861,566205,2019-05-31,mil,pit,4,9,PNC Park,Dan Bellino
+862,565247,2019-05-31,wsh,cin,3,9,Great American Ball Park,Nic Lentz
+863,566692,2019-05-31,min,tb,5,3,Tropicana Field,Ron Kulpa
+864,567190,2019-05-31,det,atl,8,2,SunTrust Park,Marvin Hudson
+865,566790,2019-05-31,kc,tex,2,6,Globe Life Park in Arlington,Adam Hamari
+866,567292,2019-05-31,cle,cws,1,6,Guaranteed Rate Field,Paul Nauert
+867,566595,2019-05-31,chc,stl,1,2,Busch Stadium,Laz Diaz
+868,565442,2019-05-31,tor,col,6,13,Coors Field,Tom Woodring
+869,564857,2019-05-31,nym,ari,5,4,Chase Field,Jim Wolf
+870,566114,2019-05-31,hou,oak,3,2,Oakland Coliseum,Stu Scheurwater
+871,566400,2019-05-31,laa,sea,3,4,T-Mobile Park,Lance Barksdale
+872,565828,2019-05-31,phi,lad,3,6,Dodger Stadium,Tripp Gibson
+873,566303,2019-05-31,mia,sd,2,5,Petco Park,Brian Knight
+874,566693,2019-06-01,min,tb,6,2,Tropicana Field,Gabe Morales
+875,567293,2019-06-01,cle,cws,5,2,Guaranteed Rate Field,D.J. Reyburn
+876,564960,2019-06-01,sf,bal,8,2,Oriole Park at Camden Yards,Rob Drake
+877,566791,2019-06-01,kc,tex,2,6,Globe Life Park in Arlington,Ryan Blakney
+878,566206,2019-06-01,mil,pit,12,10,PNC Park,Phil Cuzzi
+879,565248,2019-06-01,wsh,cin,5,2,Great American Ball Park,Joe West
+880,567191,2019-06-01,det,atl,5,10,SunTrust Park,Adrian Johnson
+881,566401,2019-06-01,laa,sea,6,3,T-Mobile Park,Ted Barrett
+882,566596,2019-06-01,chc,stl,4,7,Busch Stadium,Mike Estabrook
+883,567489,2019-06-01,bos,nyy,3,5,Yankee Stadium,Bill Miller
+884,565443,2019-06-01,tor,col,2,4,Coors Field,Brian O'Nora
+885,566115,2019-06-01,hou,oak,5,1,Oakland Coliseum,Roberto Ortiz
+886,564858,2019-06-01,nym,ari,5,6,Chase Field,Dan Iassogna
+887,565829,2019-06-01,phi,lad,3,4,Dodger Stadium,Chad Fairchild
+888,566304,2019-06-01,mia,sd,9,3,Petco Park,John Libka
+889,564961,2019-06-02,sf,bal,8,1,Oriole Park at Camden Yards,Chris Segal
+890,565249,2019-06-02,wsh,cin,4,1,Great American Ball Park,Eric Cooper
+891,566694,2019-06-02,min,tb,9,7,Tropicana Field,Marty Foster
+892,567192,2019-06-02,det,atl,4,7,SunTrust Park,Quinn Wolcott
+893,566207,2019-06-02,mil,pit,4,2,PNC Park,Sean Barber
+894,567294,2019-06-02,cle,cws,0,2,Guaranteed Rate Field,CB Bucknor
+895,566597,2019-06-02,chc,stl,1,2,Busch Stadium,Jeff Nelson
+896,566792,2019-06-02,kc,tex,1,5,Globe Life Park in Arlington,Todd Tichenor
+897,565444,2019-06-02,tor,col,1,5,Coors Field,James Hoye
+898,566116,2019-06-02,hou,oak,6,4,Oakland Coliseum,Alan Porter
+899,564859,2019-06-02,nym,ari,1,7,Chase Field,Sam Holbrook
+900,566402,2019-06-02,laa,sea,13,3,T-Mobile Park,John Tumpane
+901,565830,2019-06-02,phi,lad,0,8,Dodger Stadium,Jansen Visconti
+902,566305,2019-06-02,mia,sd,9,3,Petco Park,Gerry Davis
+903,567490,2019-06-02,bos,nyy,8,5,Yankee Stadium,Chris Conroy
+904,565129,2019-06-03,laa,chc,1,8,Wrigley Field,Jerry Meals
+905,564860,2019-06-03,lad,ari,3,1,Chase Field,Gary Cederstrom
+906,566403,2019-06-03,hou,sea,4,2,T-Mobile Park,Pat Hoberg
+907,566306,2019-06-03,phi,sd,2,8,Petco Park,Ramon De Jesus
+908,566208,2019-06-04,atl,pit,12,5,PNC Park,Mike Winters
+909,565923,2019-06-04,cws,wsh,5,9,Nationals Park,Mike Everitt
+910,566892,2019-06-04,nyy,tor,3,4,Rogers Centre,Angel Hernandez
+911,566015,2019-06-04,sf,nym,9,3,Citi Field,Tom Hallion
+912,565538,2019-06-04,tb,det,6,9,Comerica Park,Bruce Dreckman
+913,565345,2019-06-04,min,cle,2,5,Progressive Field,Cory Blaser
+914,567581,2019-06-04,mia,mil,16,0,Miller Park,Brian Gorman
+915,565153,2019-06-04,col,chc,3,6,Wrigley Field,Ron Kulpa
+916,566793,2019-06-04,bal,tex,12,11,Globe Life Park in Arlington,Mark Ripperger
+917,565730,2019-06-04,bos,kc,8,3,Kauffman Stadium,Jim Wolf
+918,566598,2019-06-04,cin,stl,4,1,Busch Stadium,Larry Vanover
+919,564861,2019-06-04,lad,ari,9,0,Chase Field,Marvin Hudson
+920,564763,2019-06-04,oak,laa,4,2,Angel Stadium,Andy Fletcher
+921,566404,2019-06-04,hou,sea,11,5,T-Mobile Park,Brian Knight
+922,566307,2019-06-04,phi,sd,9,6,Petco Park,Lance Barksdale
+923,565924,2019-06-05,cws,wsh,4,6,Nationals Park,Bill Welke
+924,564862,2019-06-05,lad,ari,2,3,Chase Field,Adrian Johnson
+925,566308,2019-06-05,phi,sd,7,5,Petco Park,Ted Barrett
+926,566209,2019-06-05,atl,pit,4,7,PNC Park,Tim Timmons
+927,566893,2019-06-05,nyy,tor,7,11,Rogers Centre,Ed Hickox
+928,566016,2019-06-05,sf,nym,0,7,Citi Field,Jordan Baker
+929,565539,2019-06-05,tb,det,4,0,Comerica Park,Paul Emmel
+930,565346,2019-06-05,min,cle,7,9,Progressive Field,Laz Diaz
+931,567582,2019-06-05,mia,mil,8,3,Miller Park,Tripp Gibson
+932,565154,2019-06-05,col,chc,8,9,Wrigley Field,Gabe Morales
+933,566794,2019-06-05,bal,tex,1,2,Globe Life Park in Arlington,Brian O'Nora
+934,565731,2019-06-05,bos,kc,8,0,Kauffman Stadium,Manny Gonzalez
+935,564764,2019-06-05,oak,laa,9,10,Angel Stadium,Will Little
+936,566405,2019-06-05,hou,sea,1,14,T-Mobile Park,John Libka
+937,566599,2019-06-05,cin,stl,6,10,Busch Stadium,Chris Conroy
+938,566017,2019-06-06,sf,nym,3,7,Citi Field,Hunter Wendelstedt
+939,566210,2019-06-06,atl,pit,1,6,PNC Park,Rob Drake
+940,565540,2019-06-06,tb,det,6,1,Comerica Park,Mike Estabrook
+941,565732,2019-06-06,bos,kc,7,5,Kauffman Stadium,Dan Iassogna
+942,566600,2019-06-06,cin,stl,1,3,Busch Stadium,Dan Bellino
+943,567583,2019-06-06,mia,mil,1,5,Miller Park,Chad Whitson
+944,565155,2019-06-06,col,chc,3,1,Wrigley Field,Marty Foster
+945,566406,2019-06-06,hou,sea,8,7,T-Mobile Park,Gerry Davis
+946,566894,2019-06-06,nyy,tor,6,2,Rogers Centre,Carlos Torres
+947,565347,2019-06-06,min,cle,5,4,Progressive Field,Roberto Ortiz
+948,566795,2019-06-06,bal,tex,3,4,Globe Life Park in Arlington,Jeff Kellogg
+949,564765,2019-06-06,oak,laa,7,4,Angel Stadium,Kerwin Danley
+950,566309,2019-06-06,wsh,sd,4,5,Petco Park,Quinn Wolcott
+951,565156,2019-06-07,stl,chc,1,3,Wrigley Field,Mark Carlson
+952,567090,2019-06-07,cin,phi,2,4,Citizens Bank Park,Angel Hernandez
+953,566895,2019-06-07,ari,tor,8,2,Rogers Centre,Lance Barrett
+954,566018,2019-06-07,col,nym,5,1,Citi Field,Chris Segal
+955,565054,2019-06-07,tb,bos,5,1,Fenway Park,Jeff Nelson
+956,565541,2019-06-07,min,det,6,3,Comerica Park,James Hoye
+957,567388,2019-06-07,atl,mia,7,1,Marlins Park,Dana DeMuth
+958,565348,2019-06-07,nyy,cle,2,5,Progressive Field,David Rackley
+959,566796,2019-06-07,oak,tex,5,3,Globe Life Park in Arlington,Pat Hoberg
+960,565636,2019-06-07,bal,hou,3,4,Minute Maid Park,John Tumpane
+961,567584,2019-06-07,pit,mil,4,10,Miller Park,Sam Holbrook
+962,565733,2019-06-07,cws,kc,4,6,Kauffman Stadium,Chad Fairchild
+963,564766,2019-06-07,sea,laa,6,2,Angel Stadium,Jerry Meals
+964,566310,2019-06-07,wsh,sd,4,5,Petco Park,Gary Cederstrom
+965,566499,2019-06-07,lad,sf,1,2,Oracle Park,Eric Cooper
+966,565055,2019-06-08,tb,bos,9,2,Fenway Park,Cory Blaser
+967,565037,2019-06-08,tb,bos,1,5,Fenway Park,Laz Diaz
+968,566770,2019-06-08,oak,tex,5,10,Globe Life Park in Arlington,Brian Knight
+969,566797,2019-06-08,oak,tex,1,3,Globe Life Park in Arlington,John Libka
+970,565734,2019-06-08,cws,kc,2,0,Kauffman Stadium,Bruce Dreckman
+971,566896,2019-06-08,ari,tor,6,0,Rogers Centre,Chris Guccione
+972,567091,2019-06-08,cin,phi,1,4,Citizens Bank Park,Vic Carapazza
+973,565637,2019-06-08,bal,hou,4,1,Minute Maid Park,Ramon De Jesus
+974,565542,2019-06-08,min,det,3,9,Comerica Park,Chad Whitson
+975,567389,2019-06-08,atl,mia,1,0,Marlins Park,Ryan Blakney
+976,565349,2019-06-08,nyy,cle,4,8,Progressive Field,Sean Barber
+977,567585,2019-06-08,pit,mil,3,5,Miller Park,Jim Wolf
+978,566019,2019-06-08,col,nym,3,5,Citi Field,Mike Winters
+979,566500,2019-06-08,lad,sf,7,2,Oracle Park,Andy Fletcher
+980,565157,2019-06-08,stl,chc,4,9,Wrigley Field,Manny Gonzalez
+981,564767,2019-06-08,sea,laa,3,12,Angel Stadium,Ron Kulpa
+982,566311,2019-06-08,wsh,sd,4,1,Petco Park,Marvin Hudson
+983,565056,2019-06-09,tb,bos,6,1,Fenway Park,Roberto Ortiz
+984,567092,2019-06-09,cin,phi,4,3,Citizens Bank Park,Jordan Baker
+985,566897,2019-06-09,ari,tor,8,2,Rogers Centre,Mike Everitt
+986,566020,2019-06-09,col,nym,1,6,Citi Field,Tim Timmons
+987,565543,2019-06-09,min,det,12,2,Comerica Park,Brian O'Nora
+988,567390,2019-06-09,atl,mia,7,6,Marlins Park,Ed Hickox
+989,565350,2019-06-09,nyy,cle,7,6,Progressive Field,Larry Vanover
+990,565638,2019-06-09,bal,hou,0,4,Minute Maid Park,Lance Barksdale
+991,567586,2019-06-09,pit,mil,2,5,Miller Park,Mark Ripperger
+992,565735,2019-06-09,cws,kc,5,2,Kauffman Stadium,Paul Emmel
+993,566798,2019-06-09,oak,tex,9,8,Globe Life Park in Arlington,Gerry Davis
+994,566501,2019-06-09,lad,sf,1,0,Oracle Park,Will Little
+995,564768,2019-06-09,sea,laa,9,3,Angel Stadium,Jeremie Rehak
+996,566312,2019-06-09,wsh,sd,5,2,Petco Park,Adrian Johnson
+997,565158,2019-06-09,stl,chc,1,5,Wrigley Field,Tripp Gibson
+998,567093,2019-06-10,ari,phi,13,8,Citizens Bank Park,Carlos Torres
+999,566695,2019-06-10,oak,tb,2,6,Tropicana Field,Dan Bellino
+1000,565057,2019-06-10,tex,bos,4,3,Fenway Park,Hunter Wendelstedt
+1001,567391,2019-06-10,stl,mia,4,1,Marlins Park,Sam Holbrook
+1002,567193,2019-06-10,pit,atl,7,13,SunTrust Park,Brian Gorman
+1003,567295,2019-06-10,wsh,cws,12,1,Guaranteed Rate Field,Jeff Kellogg
+1004,565445,2019-06-10,chc,col,5,6,Coors Field,Quinn Wolcott
+1005,564769,2019-06-10,lad,laa,3,5,Angel Stadium,Phil Cuzzi
+1006,567491,2019-06-10,nym,nyy,5,12,Yankee Stadium,Paul Nauert
+1007,567491,2019-06-11,nym,nyy,5,12,Yankee Stadium,Paul Nauert
+1008,567492,2019-06-11,nym,nyy,10,4,Yankee Stadium,D.J. Reyburn
+1009,564962,2019-06-11,tor,bal,2,4,Oriole Park at Camden Yards,Jim Reynolds
+1010,567094,2019-06-11,ari,phi,4,7,Citizens Bank Park,Dana DeMuth
+1011,565351,2019-06-11,cin,cle,1,2,Progressive Field,Bill Welke
+1012,566696,2019-06-11,oak,tb,4,3,Tropicana Field,David Rackley
+1013,565058,2019-06-11,tex,bos,9,5,Fenway Park,Angel Hernandez
+1014,567392,2019-06-11,stl,mia,7,1,Marlins Park,Chris Segal
+1015,567199,2019-06-11,pit,atl,5,7,SunTrust Park,Mark Carlson
+1016,566990,2019-06-11,sea,min,5,6,Target Field,Mike Estabrook
+1017,567296,2019-06-11,wsh,cws,5,7,Guaranteed Rate Field,Chad Whitson
+1018,565639,2019-06-11,mil,hou,8,10,Minute Maid Park,Doug Eddings
+1019,565736,2019-06-11,det,kc,2,3,Kauffman Stadium,Joe West
+1020,565446,2019-06-11,chc,col,3,10,Coors Field,Gary Cederstrom
+1021,566502,2019-06-11,sd,sf,5,6,Oracle Park,Gabe Morales
+1022,564770,2019-06-11,lad,laa,3,5,Angel Stadium,Nic Lentz
+1023,566697,2019-06-12,oak,tb,6,2,Tropicana Field,Sean Barber
+1024,565352,2019-06-12,cin,cle,7,2,Progressive Field,Lance Barrett
+1025,565447,2019-06-12,chc,col,10,1,Coors Field,Roberto Ortiz
+1026,565059,2019-06-12,tex,bos,3,4,Fenway Park,Vic Carapazza
+1027,564963,2019-06-12,tor,bal,8,6,Oriole Park at Camden Yards,Stu Scheurwater
+1028,567095,2019-06-12,ari,phi,2,0,Citizens Bank Park,Ryan Blakney
+1029,567393,2019-06-12,stl,mia,0,9,Marlins Park,Jim Wolf
+1030,567200,2019-06-12,pit,atl,7,8,SunTrust Park,Jansen Visconti
+1031,566991,2019-06-12,sea,min,9,6,Target Field,Chad Fairchild
+1032,565640,2019-06-12,mil,hou,6,3,Minute Maid Park,Ryan Additon
+1033,565737,2019-06-12,det,kc,3,2,Kauffman Stadium,Eric Cooper
+1034,566503,2019-06-12,sd,sf,2,4,Oracle Park,Marty Foster
+1035,567201,2019-06-13,pit,atl,5,6,SunTrust Park,Tripp Gibson
+1036,566992,2019-06-13,sea,min,5,10,Target Field,Bruce Dreckman
+1037,565925,2019-06-13,ari,wsh,5,0,Nationals Park,Alfonso Marquez
+1038,564964,2019-06-13,tor,bal,12,3,Oriole Park at Camden Yards,Mark Wegner
+1039,566021,2019-06-13,stl,nym,5,4,Citi Field,Mark Ripperger
+1040,566698,2019-06-13,laa,tb,5,3,Tropicana Field,Chris Conroy
+1041,565060,2019-06-13,tex,bos,6,7,Fenway Park,Jordan Baker
+1042,565738,2019-06-13,det,kc,3,7,TD Ameritrade Park,Alan Porter
+1043,567297,2019-06-13,nyy,cws,4,5,Guaranteed Rate Field,Adam Hamari
+1044,565448,2019-06-13,sd,col,6,9,Coors Field,Chris Guccione
+1045,565831,2019-06-13,chc,lad,3,7,Dodger Stadium,Fieldin Culbreth
+1046,566021,2019-06-14,stl,nym,5,4,Citi Field,Mark Ripperger
+1047,564965,2019-06-14,bos,bal,13,2,Oriole Park at Camden Yards,Mark Carlson
+1048,565926,2019-06-14,ari,wsh,3,7,Nationals Park,Dan Bellino
+1049,565544,2019-06-14,cle,det,13,4,Comerica Park,Dan Iassogna
+1050,566022,2019-06-14,stl,nym,9,5,Citi Field,Jeff Kellogg
+1051,566699,2019-06-14,laa,tb,4,9,Tropicana Field,James Hoye
+1052,565250,2019-06-14,tex,cin,7,1,Great American Ball Park,Jerry Meals
+1053,567394,2019-06-14,pit,mia,11,0,Marlins Park,Adrian Johnson
+1054,567202,2019-06-14,phi,atl,8,9,SunTrust Park,Jeremie Rehak
+1055,565641,2019-06-14,tor,hou,2,15,Minute Maid Park,Joe West
+1056,566993,2019-06-14,kc,min,0,2,Target Field,Hunter Wendelstedt
+1057,567298,2019-06-14,nyy,cws,2,10,Guaranteed Rate Field,Todd Tichenor
+1058,565449,2019-06-14,sd,col,16,12,Coors Field,Mike Everitt
+1059,566117,2019-06-14,sea,oak,9,2,Oakland Coliseum,Ed Hickox
+1060,565832,2019-06-14,chc,lad,3,5,Dodger Stadium,CB Bucknor
+1061,566504,2019-06-14,mil,sf,3,5,Oracle Park,Paul Emmel
+1062,566700,2019-06-15,laa,tb,5,3,Tropicana Field,Doug Eddings
+1063,564966,2019-06-15,bos,bal,7,2,Oriole Park at Camden Yards,Jansen Visconti
+1064,565927,2019-06-15,ari,wsh,10,3,Nationals Park,David Rackley
+1065,566505,2019-06-15,mil,sf,7,8,Oracle Park,Mike Estabrook
+1066,565642,2019-06-15,tor,hou,2,7,Minute Maid Park,Eric Cooper
+1067,565545,2019-06-15,cle,det,4,2,Comerica Park,Manny Gonzalez
+1068,567395,2019-06-15,pit,mia,3,4,Marlins Park,Quinn Wolcott
+1069,566023,2019-06-15,stl,nym,7,8,Citi Field,Brian O'Nora
+1070,565251,2019-06-15,tex,cin,4,3,Great American Ball Park,Ron Kulpa
+1071,566994,2019-06-15,kc,min,4,5,Target Field,Angel Hernandez
+1072,567299,2019-06-15,nyy,cws,8,4,Guaranteed Rate Field,Phil Cuzzi
+1073,567203,2019-06-15,phi,atl,6,5,SunTrust Park,Jim Reynolds
+1074,565450,2019-06-15,sd,col,8,14,Coors Field,Bill Welke
+1075,566118,2019-06-15,sea,oak,2,11,Oakland Coliseum,Carlos Torres
+1076,565833,2019-06-15,chc,lad,2,1,Dodger Stadium,Chris Segal
+1077,564967,2019-06-16,bos,bal,8,6,Oriole Park at Camden Yards,Tripp Gibson
+1078,565546,2019-06-16,cle,det,8,0,Comerica Park,Sam Holbrook
+1079,566024,2019-06-16,stl,nym,4,3,Citi Field,Ramon De Jesus
+1080,566701,2019-06-16,laa,tb,5,6,Tropicana Field,Ryan Additon
+1081,565252,2019-06-16,tex,cin,3,11,Great American Ball Park,Gabe Morales
+1082,567396,2019-06-16,pit,mia,5,4,Marlins Park,Gary Cederstrom
+1083,567204,2019-06-16,phi,atl,1,15,SunTrust Park,Stu Scheurwater
+1084,565928,2019-06-16,ari,wsh,5,15,Nationals Park,Sean Barber
+1085,565643,2019-06-16,tor,hou,12,0,Minute Maid Park,Tom Woodring
+1086,566995,2019-06-16,kc,min,8,6,Target Field,Vic Carapazza
+1087,567300,2019-06-16,nyy,cws,10,3,Guaranteed Rate Field,Nic Lentz
+1088,565451,2019-06-16,sd,col,14,13,Coors Field,Lance Barrett
+1089,566506,2019-06-16,mil,sf,5,3,Oracle Park,Chad Fairchild
+1090,566119,2019-06-16,sea,oak,6,3,Oakland Coliseum,Dana DeMuth
+1091,565834,2019-06-16,chc,lad,2,3,Dodger Stadium,D.J. Reyburn
+1092,567493,2019-06-17,tb,nyy,0,3,Yankee Stadium,Marty Foster
+1093,566898,2019-06-17,laa,tor,10,5,Rogers Centre,Rob Drake
+1094,565253,2019-06-17,hou,cin,2,3,Great American Ball Park,Roberto Ortiz
+1095,567205,2019-06-17,nym,atl,3,12,SunTrust Park,Dan Iassogna
+1096,566799,2019-06-17,cle,tex,2,7,Globe Life Park in Arlington,Chris Conroy
+1097,566996,2019-06-17,bos,min,2,0,Target Field,Mark Wegner
+1098,566601,2019-06-17,mia,stl,0,5,Busch Stadium,Adam Hamari
+1099,566120,2019-06-17,bal,oak,2,3,Oakland Coliseum,John Libka
+1100,566407,2019-06-17,kc,sea,6,4,T-Mobile Park,Chris Guccione
+1101,565835,2019-06-17,sf,lad,3,2,Dodger Stadium,Ryan Blakney
+1102,566313,2019-06-17,mil,sd,0,2,Petco Park,Fieldin Culbreth
+1103,565929,2019-06-17,phi,wsh,2,6,Nationals Park,Paul Nauert
+1104,566211,2019-06-18,det,pit,5,4,PNC Park,Alfonso Marquez
+1105,567494,2019-06-18,tb,nyy,3,6,Yankee Stadium,Jerry Meals
+1106,566899,2019-06-18,laa,tor,3,1,Rogers Centre,Mike Muchlinski
+1107,565254,2019-06-18,hou,cin,3,4,Great American Ball Park,Adrian Johnson
+1108,567206,2019-06-18,nym,atl,10,2,SunTrust Park,Manny Gonzalez
+1109,566800,2019-06-18,cle,tex,10,3,Globe Life Park in Arlington,Alan Porter
+1110,565159,2019-06-18,cws,chc,3,1,Wrigley Field,Jeff Nelson
+1111,566997,2019-06-18,bos,min,3,4,Target Field,Jeremie Rehak
+1112,566602,2019-06-18,mia,stl,6,0,Busch Stadium,Todd Tichenor
+1113,564863,2019-06-18,col,ari,8,1,Chase Field,Ted Barrett
+1114,566121,2019-06-18,bal,oak,2,16,Oakland Coliseum,Paul Emmel
+1115,566408,2019-06-18,kc,sea,9,0,T-Mobile Park,Mike Everitt
+1116,565836,2019-06-18,sf,lad,0,9,Dodger Stadium,Ed Hickox
+1117,566314,2019-06-18,mil,sd,1,4,Petco Park,CB Bucknor
+1118,565930,2019-06-18,phi,wsh,1,4,Nationals Park,Alan Porter
+1119,565255,2019-06-19,hou,cin,2,3,Great American Ball Park,Quinn Wolcott
+1120,565929,2019-06-19,phi,wsh,2,6,Nationals Park,Paul Nauert
+1121,565931,2019-06-19,phi,wsh,0,2,Nationals Park,Ramon De Jesus
+1122,567495,2019-06-19,tb,nyy,1,12,Yankee Stadium,Tom Woodring
+1123,566122,2019-06-19,bal,oak,3,8,Oakland Coliseum,Mike Estabrook
+1124,566315,2019-06-19,mil,sd,7,8,Petco Park,Chris Segal
+1125,566409,2019-06-19,kc,sea,2,8,T-Mobile Park,Bill Welke
+1126,566212,2019-06-19,det,pit,7,8,PNC Park,Dan Bellino
+1127,566900,2019-06-19,laa,tor,11,6,Rogers Centre,Mike Winters
+1128,567207,2019-06-19,nym,atl,2,7,SunTrust Park,Sean Barber
+1129,566801,2019-06-19,cle,tex,10,4,Globe Life Park in Arlington,Bill Miller
+1130,565160,2019-06-19,cws,chc,3,7,Wrigley Field,Cory Blaser
+1131,566998,2019-06-19,bos,min,9,4,Target Field,Jim Reynolds
+1132,566603,2019-06-19,mia,stl,1,2,Busch Stadium,Phil Cuzzi
+1133,564864,2019-06-19,col,ari,6,4,Chase Field,Angel Hernandez
+1134,565837,2019-06-19,sf,lad,2,9,Dodger Stadium,Carlos Torres
+1135,566802,2019-06-20,cle,tex,2,4,Globe Life Park in Arlington,Doug Eddings
+1136,564865,2019-06-20,col,ari,6,4,Chase Field,John Tumpane
+1137,565932,2019-06-20,phi,wsh,4,7,Nationals Park,Kerwin Danley
+1138,567496,2019-06-20,hou,nyy,6,10,Yankee Stadium,Sam Holbrook
+1139,566901,2019-06-20,laa,tor,5,7,Rogers Centre,Tim Timmons
+1140,566604,2019-06-20,mia,stl,7,6,Busch Stadium,Tom Hallion
+1141,565161,2019-06-20,nym,chc,4,7,Wrigley Field,David Rackley
+1142,567587,2019-06-20,cin,mil,7,1,Miller Park,Laz Diaz
+1143,565739,2019-06-20,min,kc,1,4,Kauffman Stadium,Gabe Morales
+1144,566123,2019-06-20,tb,oak,4,5,Oakland Coliseum,Stu Scheurwater
+1145,566410,2019-06-20,bal,sea,2,5,T-Mobile Park,D.J. Reyburn
+1146,565838,2019-06-20,sf,lad,8,9,Dodger Stadium,Dana DeMuth
+1147,565162,2019-06-21,nym,chc,5,4,Wrigley Field,Larry Vanover
+1148,566213,2019-06-21,sd,pit,1,2,PNC Park,Rob Drake
+1149,565933,2019-06-21,atl,wsh,3,4,Nationals Park,Chris Conroy
+1150,567096,2019-06-21,mia,phi,2,1,Citizens Bank Park,Lance Barrett
+1151,567497,2019-06-21,hou,nyy,1,4,Yankee Stadium,Dan Iassogna
+1152,565353,2019-06-21,det,cle,6,7,Progressive Field,Marvin Hudson
+1153,565061,2019-06-21,tor,bos,5,7,Fenway Park,Adam Hamari
+1154,566803,2019-06-21,cws,tex,5,4,Globe Life Park in Arlington,Ryan Blakney
+1155,567588,2019-06-21,cin,mil,11,7,Miller Park,Jansen Visconti
+1156,566605,2019-06-21,laa,stl,1,5,Busch Stadium,Lance Barksdale
+1157,565740,2019-06-21,min,kc,8,7,Kauffman Stadium,Marty Foster
+1158,564866,2019-06-21,sf,ari,11,5,Chase Field,Pat Hoberg
+1159,566124,2019-06-21,tb,oak,5,3,Oakland Coliseum,Mark Wegner
+1160,565839,2019-06-21,col,lad,2,4,Dodger Stadium,Chad Fairchild
+1161,566411,2019-06-21,bal,sea,9,10,T-Mobile Park,Fieldin Culbreth
+1162,566606,2019-06-22,laa,stl,2,4,Busch Stadium,Ted Barrett
+1163,565741,2019-06-22,min,kc,5,3,Kauffman Stadium,Jerry Meals
+1164,565163,2019-06-22,nym,chc,10,2,Wrigley Field,Alfonso Marquez
+1165,566214,2019-06-22,sd,pit,3,6,PNC Park,Mike Muchlinski
+1166,565062,2019-06-22,tor,bos,8,7,Fenway Park,Todd Tichenor
+1167,567097,2019-06-22,mia,phi,5,3,Citizens Bank Park,Chris Guccione
+1168,566125,2019-06-22,tb,oak,2,4,Oakland Coliseum,Jeremie Rehak
+1169,565354,2019-06-22,det,cle,0,2,Progressive Field,Roberto Ortiz
+1170,566412,2019-06-22,bal,sea,8,4,T-Mobile Park,CB Bucknor
+1171,567589,2019-06-22,cin,mil,5,6,Miller Park,Jeff Nelson
+1172,565840,2019-06-22,col,lad,4,5,Dodger Stadium,John Libka
+1173,565934,2019-06-22,atl,wsh,13,9,Nationals Park,Alan Porter
+1174,567498,2019-06-22,hou,nyy,5,7,Yankee Stadium,Manny Gonzalez
+1175,566804,2019-06-22,cws,tex,5,6,Globe Life Park in Arlington,Ed Hickox
+1176,564867,2019-06-22,sf,ari,7,4,Chase Field,Paul Nauert
+1177,565063,2019-06-23,tor,bos,6,1,Fenway Park,Phil Cuzzi
+1178,567098,2019-06-23,mia,phi,6,4,Citizens Bank Park,Mike Everitt
+1179,565355,2019-06-23,det,cle,3,8,Progressive Field,Adrian Johnson
+1180,566215,2019-06-23,sd,pit,10,11,PNC Park,Mike Winters
+1181,565935,2019-06-23,atl,wsh,4,3,Nationals Park,Bill Miller
+1182,567499,2019-06-23,hou,nyy,9,4,Yankee Stadium,Sean Barber
+1183,567590,2019-06-23,cin,mil,5,7,Miller Park,Cory Blaser
+1184,565742,2019-06-23,min,kc,1,6,Kauffman Stadium,Tom Woodring
+1185,565164,2019-06-23,nym,chc,3,5,Wrigley Field,Dan Bellino
+1186,566805,2019-06-23,cws,tex,4,7,Globe Life Park in Arlington,Carlos Torres
+1187,566126,2019-06-23,tb,oak,8,2,Oakland Coliseum,Jim Reynolds
+1188,565841,2019-06-23,col,lad,3,6,Dodger Stadium,Paul Emmel
+1189,566413,2019-06-23,bal,sea,3,13,T-Mobile Park,Chris Segal
+1190,564868,2019-06-23,sf,ari,2,3,Chase Field,Ramon De Jesus
+1191,566607,2019-06-23,laa,stl,6,4,Busch Stadium,Angel Hernandez
+1192,567099,2019-06-24,nym,phi,7,13,Citizens Bank Park,Will Little
+1193,567500,2019-06-24,tor,nyy,8,10,Yankee Stadium,Laz Diaz
+1194,565356,2019-06-24,kc,cle,2,3,Progressive Field,Tim Timmons
+1195,565064,2019-06-24,cws,bos,5,6,Fenway Park,Bill Welke
+1196,565165,2019-06-24,atl,chc,3,8,Wrigley Field,John Tumpane
+1197,564869,2019-06-24,lad,ari,5,8,Chase Field,Stu Scheurwater
+1198,566507,2019-06-24,col,sf,2,0,Oracle Park,Vic Carapazza
+1199,564968,2019-06-25,sd,bal,8,3,Oriole Park at Camden Yards,Dana DeMuth
+1200,567100,2019-06-25,nym,phi,5,7,Citizens Bank Park,Joe West
+1201,567501,2019-06-25,tor,nyy,3,4,Yankee Stadium,Chris Guccione
+1202,565357,2019-06-25,kc,cle,8,6,Progressive Field,Rob Drake
+1203,565547,2019-06-25,tex,det,5,3,Comerica Park,James Hoye
+1204,565065,2019-06-25,cws,bos,3,6,Fenway Park,Lance Barrett
+1205,567397,2019-06-25,wsh,mia,6,1,Marlins Park,Mike Estabrook
+1206,565166,2019-06-25,atl,chc,3,2,Wrigley Field,Lance Barksdale
+1207,565644,2019-06-25,pit,hou,1,5,Minute Maid Park,Mark Ripperger
+1208,566999,2019-06-25,tb,min,4,9,Target Field,Tom Hallion
+1209,567591,2019-06-25,sea,mil,8,3,Miller Park,Sam Holbrook
+1210,566608,2019-06-25,oak,stl,7,3,Busch Stadium,Gabe Morales
+1211,564870,2019-06-25,lad,ari,3,2,Chase Field,Mark Wegner
+1212,566508,2019-06-25,col,sf,2,4,Oracle Park,Jansen Visconti
+1213,564771,2019-06-25,cin,laa,1,5,Angel Stadium,Kerwin Danley
+1214,565066,2019-06-26,cws,bos,8,7,Fenway Park,Roberto Ortiz
+1215,567502,2019-06-26,tor,nyy,7,8,Yankee Stadium,Cory Blaser
+1216,565358,2019-06-26,kc,cle,3,5,Progressive Field,Mike Muchlinski
+1217,564969,2019-06-26,sd,bal,10,5,Oriole Park at Camden Yards,Angel Hernandez
+1218,564871,2019-06-26,lad,ari,2,8,Chase Field,Alan Porter
+1219,566509,2019-06-26,col,sf,6,3,Oracle Park,Jordan Baker
+1220,567101,2019-06-26,nym,phi,4,5,Citizens Bank Park,Eric Cooper
+1221,565548,2019-06-26,tex,det,4,1,Comerica Park,Mark Carlson
+1222,567398,2019-06-26,wsh,mia,7,5,Marlins Park,Bruce Dreckman
+1223,566609,2019-06-26,oak,stl,2,0,Busch Stadium,Ron Kulpa
+1224,565167,2019-06-26,atl,chc,5,3,Wrigley Field,Ted Barrett
+1225,564772,2019-06-26,cin,laa,1,5,Angel Stadium,Pat Hoberg
+1226,565645,2019-06-26,pit,hou,14,2,Minute Maid Park,Brennan Miller
+1227,567000,2019-06-26,tb,min,4,6,Target Field,Jeff Nelson
+1228,567592,2019-06-26,sea,mil,4,2,Miller Park,Jim Wolf
+1229,567102,2019-06-27,nym,phi,3,6,Citizens Bank Park,Ryan Blakney
+1230,565549,2019-06-27,tex,det,3,1,Comerica Park,Tripp Gibson
+1231,567001,2019-06-27,tb,min,5,2,Target Field,Adam Hamari
+1232,565646,2019-06-27,pit,hou,10,0,Minute Maid Park,Jeff Kellogg
+1233,567593,2019-06-27,sea,mil,2,4,Miller Park,Chad Whitson
+1234,565168,2019-06-27,atl,chc,7,9,Wrigley Field,Nic Lentz
+1235,567399,2019-06-27,wsh,mia,8,5,Marlins Park,John Libka
+1236,565452,2019-06-27,lad,col,12,8,Coors Field,Tony Randazzo
+1237,566512,2019-06-27,ari,sf,5,1,Oracle Park,Dan Iassogna
+1238,564773,2019-06-27,oak,laa,3,8,Angel Stadium,Phil Cuzzi
+1239,564970,2019-06-28,cle,bal,0,13,Oriole Park at Camden Yards,Andy Fletcher
+1240,566902,2019-06-28,kc,tor,2,6,Rogers Centre,Chris Segal
+1241,565256,2019-06-28,chc,cin,3,6,Great American Ball Park,Stu Scheurwater
+1242,565550,2019-06-28,wsh,det,3,1,Comerica Park,Brian O'Nora
+1243,566702,2019-06-28,tex,tb,5,0,Tropicana Field,Paul Emmel
+1244,566025,2019-06-28,atl,nym,6,2,Citi Field,Mike Everitt
+1245,567400,2019-06-28,phi,mia,2,6,Marlins Park,John Tumpane
+1246,565647,2019-06-28,sea,hou,1,2,Minute Maid Park,Jerry Meals
+1247,567301,2019-06-28,min,cws,4,6,Guaranteed Rate Field,Manny Gonzalez
+1248,567594,2019-06-28,pit,mil,3,2,Miller Park,Todd Tichenor
+1249,565453,2019-06-28,lad,col,9,13,Coors Field,Laz Diaz
+1250,564774,2019-06-28,oak,laa,7,2,Angel Stadium,Jansen Visconti
+1251,566316,2019-06-28,stl,sd,1,3,Petco Park,Gerry Davis
+1252,566510,2019-06-28,ari,sf,3,6,Oracle Park,Jeremie Rehak
+1253,565067,2019-06-29,nyy,bos,17,13,London Stadium,Ed Hickox
+1254,564971,2019-06-29,cle,bal,0,13,Oriole Park at Camden Yards,Will Little
+1255,566903,2019-06-29,kc,tor,5,7,Rogers Centre,James Hoye
+1256,565257,2019-06-29,chc,cin,6,0,Great American Ball Park,Mark Wegner
+1257,565551,2019-06-29,wsh,det,5,7,Comerica Park,Mark Ripperger
+1258,566703,2019-06-29,tex,tb,2,5,Tropicana Field,Mike Estabrook
+1259,566026,2019-06-29,atl,nym,5,4,Citi Field,Bill Welke
+1260,567401,2019-06-29,phi,mia,6,9,Marlins Park,Lance Barksdale
+1261,567302,2019-06-29,min,cws,10,3,Guaranteed Rate Field,Sam Holbrook
+1262,565454,2019-06-29,lad,col,3,5,Coors Field,Chris Guccione
+1263,565648,2019-06-29,sea,hou,5,6,Minute Maid Park,Tom Woodring
+1264,567595,2019-06-29,pit,mil,1,3,Miller Park,Tom Hallion
+1265,566511,2019-06-29,ari,sf,4,3,Oracle Park,Rob Drake
+1266,564775,2019-06-29,oak,laa,4,0,Angel Stadium,Jeff Nelson
+1267,566317,2019-06-29,stl,sd,2,12,Petco Park,Vic Carapazza
+1268,565068,2019-06-30,nyy,bos,12,8,London Stadium,Carlos Torres
+1269,564972,2019-06-30,cle,bal,2,0,Oriole Park at Camden Yards,Joe West
+1270,566904,2019-06-30,kc,tor,7,6,Rogers Centre,Mark Carlson
+1271,565258,2019-06-30,chc,cin,6,8,Great American Ball Park,Alan Porter
+1272,565552,2019-06-30,wsh,det,2,1,Comerica Park,Brennan Miller
+1273,566704,2019-06-30,tex,tb,2,6,Tropicana Field,Bruce Dreckman
+1274,567402,2019-06-30,phi,mia,13,6,Marlins Park,Ted Barrett
+1275,565649,2019-06-30,sea,hou,1,6,Minute Maid Park,Gabe Morales
+1276,567303,2019-06-30,min,cws,3,4,Guaranteed Rate Field,Jim Wolf
+1277,567596,2019-06-30,pit,mil,1,2,Miller Park,Sean Barber
+1278,565455,2019-06-30,lad,col,10,5,Coors Field,Cory Blaser
+1279,566513,2019-06-30,ari,sf,4,10,Oracle Park,Mike Muchlinski
+1280,564776,2019-06-30,oak,laa,12,3,Angel Stadium,Jordan Baker
+1281,566318,2019-06-30,stl,sd,5,3,Petco Park,Kerwin Danley
+1282,566027,2019-06-30,atl,nym,5,8,Citi Field,Lance Barrett
+1283,566905,2019-07-01,kc,tor,4,11,Rogers Centre,Tripp Gibson
+1284,566216,2019-07-01,chc,pit,5,18,PNC Park,Eric Cooper
+1285,566705,2019-07-01,bal,tb,3,6,Tropicana Field,Nic Lentz
+1286,565259,2019-07-01,mil,cin,8,6,Great American Ball Park,John Libka
+1287,566319,2019-07-01,sf,sd,13,2,Petco Park,Ryan Blakney
+1288,566806,2019-07-01,laa,tex,5,1,Globe Life Park in Arlington,Todd Tichenor
+1289,566217,2019-07-02,chc,pit,1,5,PNC Park,Andy Fletcher
+1290,565936,2019-07-02,mia,wsh,2,3,Nationals Park,Chris Segal
+1291,566906,2019-07-02,bos,tor,10,6,Rogers Centre,David Rackley
+1292,566706,2019-07-02,bal,tb,3,6,Tropicana Field,John Tumpane
+1293,566028,2019-07-02,nyy,nym,2,4,Citi Field,Gary Cederstrom
+1294,565260,2019-07-02,mil,cin,4,5,Great American Ball Park,Chad Fairchild
+1295,567208,2019-07-02,phi,atl,2,0,SunTrust Park,D.J. Reyburn
+1296,566807,2019-07-02,laa,tex,9,4,Globe Life Park in Arlington,Ron Kulpa
+1297,565456,2019-07-02,hou,col,9,8,Coors Field,Adam Hamari
+1298,565743,2019-07-02,cle,kc,9,5,Kauffman Stadium,Pat Hoberg
+1299,566127,2019-07-02,min,oak,6,8,Oakland Coliseum,Mike Everitt
+1300,565842,2019-07-02,ari,lad,4,5,Dodger Stadium,Hunter Wendelstedt
+1301,566320,2019-07-02,sf,sd,10,4,Petco Park,Tony Randazzo
+1302,566414,2019-07-02,stl,sea,4,5,T-Mobile Park,Tim Timmons
+1303,567304,2019-07-02,det,cws,0,0,Guaranteed Rate Field,
+1304,567273,2019-07-03,det,cws,5,7,Guaranteed Rate Field,Bill Miller
+1305,567305,2019-07-03,det,cws,6,9,Guaranteed Rate Field,Doug Eddings
+1306,565937,2019-07-03,mia,wsh,1,3,Nationals Park,Chris Guccione
+1307,566218,2019-07-03,chc,pit,5,6,PNC Park,Will Little
+1308,566907,2019-07-03,bos,tor,3,6,Rogers Centre,Larry Vanover
+1309,566707,2019-07-03,bal,tb,9,6,Tropicana Field,Lance Barksdale
+1310,566029,2019-07-03,nyy,nym,5,1,Citi Field,Marvin Hudson
+1311,565261,2019-07-03,mil,cin,0,3,Great American Ball Park,Mike Estabrook
+1312,567209,2019-07-03,phi,atl,2,9,SunTrust Park,Fieldin Culbreth
+1313,566808,2019-07-03,laa,tex,6,2,Globe Life Park in Arlington,Marty Foster
+1314,565457,2019-07-03,hou,col,4,2,Coors Field,Todd Tichenor
+1315,565744,2019-07-03,cle,kc,4,0,Kauffman Stadium,Gerry Davis
+1316,566128,2019-07-03,min,oak,4,3,Oakland Coliseum,Roberto Ortiz
+1317,566321,2019-07-03,sf,sd,7,5,Petco Park,Jeff Nelson
+1318,565843,2019-07-03,ari,lad,4,5,Dodger Stadium,Vic Carapazza
+1319,566415,2019-07-03,stl,sea,5,2,T-Mobile Park,Jeremie Rehak
+1320,565938,2019-07-04,mia,wsh,2,5,Nationals Park,Mark Carlson
+1321,565745,2019-07-04,cle,kc,8,4,Kauffman Stadium,Brian Knight
+1322,567306,2019-07-04,det,cws,11,5,Guaranteed Rate Field,Jansen Visconti
+1323,565262,2019-07-04,mil,cin,0,1,Great American Ball Park,Bruce Dreckman
+1324,566219,2019-07-04,chc,pit,11,3,PNC Park,Joe West
+1325,566129,2019-07-04,min,oak,2,7,Oakland Coliseum,Lance Barrett
+1326,566416,2019-07-04,stl,sea,5,4,T-Mobile Park,Rob Drake
+1327,566708,2019-07-04,nyy,tb,8,4,Tropicana Field,Ted Barrett
+1328,566908,2019-07-04,bos,tor,8,7,Rogers Centre,Chad Whitson
+1329,567210,2019-07-04,phi,atl,6,12,SunTrust Park,Paul Nauert
+1330,566809,2019-07-04,laa,tex,3,9,Globe Life Park in Arlington,Tom Woodring
+1331,565844,2019-07-04,sd,lad,1,5,Dodger Stadium,Tom Hallion
+1332,565939,2019-07-05,kc,wsh,7,4,Nationals Park,Nic Lentz
+1333,566220,2019-07-05,mil,pit,7,6,PNC Park,Chris Conroy
+1334,566909,2019-07-05,bal,tor,4,1,Rogers Centre,Adrian Johnson
+1335,565553,2019-07-05,bos,det,9,6,Comerica Park,Eric Cooper
+1336,566030,2019-07-05,phi,nym,7,2,Citi Field,Brian Gorman
+1337,566709,2019-07-05,nyy,tb,8,4,Tropicana Field,Hunter Wendelstedt
+1338,567211,2019-07-05,mia,atl,0,1,SunTrust Park,Gabe Morales
+1339,565650,2019-07-05,laa,hou,5,4,Minute Maid Park,John Libka
+1340,567002,2019-07-05,tex,min,6,15,Target Field,Brennan Miller
+1341,564872,2019-07-05,col,ari,0,8,Chase Field,CB Bucknor
+1342,565845,2019-07-05,sd,lad,3,2,Dodger Stadium,Sean Barber
+1343,566417,2019-07-05,oak,sea,5,2,T-Mobile Park,Cory Blaser
+1344,566514,2019-07-05,stl,sf,9,4,Oracle Park,Alfonso Marquez
+1345,567003,2019-07-06,tex,min,4,7,Target Field,Pat Hoberg
+1346,566910,2019-07-06,bal,tor,8,1,Rogers Centre,Quinn Wolcott
+1347,565940,2019-07-06,kc,wsh,0,6,Nationals Park,John Tumpane
+1348,566221,2019-07-06,mil,pit,2,12,PNC Park,Jordan Baker
+1349,565263,2019-07-06,cle,cin,7,2,Great American Ball Park,Dan Bellino
+1350,565554,2019-07-06,bos,det,10,6,Comerica Park,Andy Fletcher
+1351,567212,2019-07-06,mia,atl,5,4,SunTrust Park,Ron Kulpa
+1352,566710,2019-07-06,nyy,tb,3,4,Tropicana Field,Jeff Nelson
+1353,565651,2019-07-06,laa,hou,0,4,Minute Maid Park,Chad Fairchild
+1354,566031,2019-07-06,phi,nym,5,6,Citi Field,Tripp Gibson
+1355,567307,2019-07-06,chc,cws,6,3,Guaranteed Rate Field,Mike Muchlinski
+1356,566515,2019-07-06,stl,sf,4,8,Oracle Park,Mike Everitt
+1357,564873,2019-07-06,col,ari,2,4,Chase Field,Bill Miller
+1358,565846,2019-07-06,sd,lad,3,1,Dodger Stadium,Adam Hamari
+1359,566418,2019-07-06,oak,sea,3,6,T-Mobile Park,Kerwin Danley
+1360,566911,2019-07-07,bal,tor,1,6,Rogers Centre,Gary Cederstrom
+1361,565264,2019-07-07,cle,cin,11,1,Great American Ball Park,David Rackley
+1362,565555,2019-07-07,bos,det,6,3,Comerica Park,Will Little
+1363,566032,2019-07-07,phi,nym,8,3,Citi Field,Chris Guccione
+1364,566711,2019-07-07,nyy,tb,1,2,Tropicana Field,Vic Carapazza
+1365,567213,2019-07-07,mia,atl,3,4,SunTrust Park,Marty Foster
+1366,565941,2019-07-07,kc,wsh,2,5,Nationals Park,Lance Barksdale
+1367,566222,2019-07-07,mil,pit,5,6,PNC Park,D.J. Reyburn
+1368,565652,2019-07-07,laa,hou,10,11,Minute Maid Park,Mike Estabrook
+1369,567004,2019-07-07,tex,min,4,1,Target Field,Gerry Davis
+1370,567308,2019-07-07,chc,cws,1,3,Guaranteed Rate Field,Tim Timmons
+1371,566516,2019-07-07,stl,sf,0,1,Oracle Park,Roberto Ortiz
+1372,564874,2019-07-07,col,ari,3,5,Chase Field,Doug Eddings
+1373,565847,2019-07-07,sd,lad,5,3,Dodger Stadium,Todd Tichenor
+1374,566419,2019-07-07,oak,sea,7,4,T-Mobile Park,Ryan Blakney
+1375,567633,2019-07-09,nl,al,3,4,Progressive Field,Mark Wegner
+1376,566810,2019-07-11,hou,tex,0,5,Globe Life Park in Arlington,Mike Winters
+1377,565169,2019-07-12,pit,chc,3,4,Wrigley Field,Ted Barrett
+1378,567103,2019-07-12,wsh,phi,4,0,Citizens Bank Park,Dan Iassogna
+1379,564973,2019-07-12,tb,bal,16,4,Oriole Park at Camden Yards,Sam Holbrook
+1380,567503,2019-07-12,tor,nyy,0,4,Yankee Stadium,Joe West
+1381,565069,2019-07-12,lad,bos,1,8,Fenway Park,Phil Cuzzi
+1382,565359,2019-07-12,min,cle,5,3,Progressive Field,Jerry Meals
+1383,567403,2019-07-12,nym,mia,4,8,Marlins Park,Chris Conroy
+1384,566811,2019-07-12,hou,tex,8,9,Globe Life Park in Arlington,Rob Drake
+1385,567597,2019-07-12,sf,mil,10,7,Miller Park,Brian Gorman
+1386,565746,2019-07-12,det,kc,5,8,Kauffman Stadium,Marvin Hudson
+1387,566610,2019-07-12,ari,stl,4,2,Busch Stadium,Tom Hallion
+1388,565458,2019-07-12,cin,col,2,3,Coors Field,Eric Cooper
+1389,564777,2019-07-12,sea,laa,0,13,Angel Stadium,Paul Nauert
+1390,566130,2019-07-12,cws,oak,1,5,Oakland Coliseum,Larry Vanover
+1391,566322,2019-07-12,atl,sd,5,3,Petco Park,Dana DeMuth
+1392,564945,2019-07-13,tb,bal,1,2,Oriole Park at Camden Yards,Manny Gonzalez
+1393,564974,2019-07-13,tb,bal,12,4,Oriole Park at Camden Yards,Jim Wolf
+1394,567504,2019-07-13,tor,nyy,2,1,Yankee Stadium,Andy Fletcher
+1395,565170,2019-07-13,pit,chc,4,10,Wrigley Field,Nic Lentz
+1396,566131,2019-07-13,cws,oak,2,13,Oakland Coliseum,Alfonso Marquez
+1397,567404,2019-07-13,nym,mia,4,2,Marlins Park,Jansen Visconti
+1398,565360,2019-07-13,min,cle,6,2,Progressive Field,Gabe Morales
+1399,565747,2019-07-13,det,kc,1,4,Kauffman Stadium,Adrian Johnson
+1400,565070,2019-07-13,lad,bos,11,2,Fenway Park,Brennan Miller
+1401,566611,2019-07-13,ari,stl,2,4,Busch Stadium,John Libka
+1402,567104,2019-07-13,wsh,phi,4,3,Citizens Bank Park,Lance Barrett
+1403,567598,2019-07-13,sf,mil,4,5,Miller Park,Ben May
+1404,566812,2019-07-13,hou,tex,7,6,Globe Life Park in Arlington,Mike Muchlinski
+1405,565459,2019-07-13,cin,col,17,9,Coors Field,James Hoye
+1406,566323,2019-07-13,atl,sd,7,5,Petco Park,Chris Segal
+1407,564778,2019-07-13,sea,laa,2,9,Angel Stadium,CB Bucknor
+1408,564975,2019-07-14,tb,bal,4,1,Oriole Park at Camden Yards,Sean Barber
+1409,567105,2019-07-14,wsh,phi,3,4,Citizens Bank Park,Chris Guccione
+1410,567505,2019-07-14,tor,nyy,2,4,Yankee Stadium,Ryan Blakney
+1411,565361,2019-07-14,min,cle,3,4,Progressive Field,Ron Kulpa
+1412,567405,2019-07-14,nym,mia,6,2,Marlins Park,Bill Miller
+1413,567599,2019-07-14,sf,mil,8,3,Miller Park,Mark Carlson
+1414,565748,2019-07-14,det,kc,12,8,Kauffman Stadium,Quinn Wolcott
+1415,566612,2019-07-14,ari,stl,2,5,Busch Stadium,Adam Hamari
+1416,565171,2019-07-14,pit,chc,3,8,Wrigley Field,John Tumpane
+1417,566813,2019-07-14,hou,tex,12,4,Globe Life Park in Arlington,Tim Timmons
+1418,565460,2019-07-14,cin,col,9,10,Coors Field,Jeremie Rehak
+1419,564779,2019-07-14,sea,laa,3,6,Angel Stadium,Ramon De Jesus
+1420,566132,2019-07-14,cws,oak,2,3,Oakland Coliseum,Chad Whitson
+1421,566324,2019-07-14,atl,sd,4,1,Petco Park,Carlos Torres
+1422,565071,2019-07-14,lad,bos,7,4,Fenway Park,Pat Hoberg
+1423,565430,2019-07-15,sf,col,19,2,Coors Field,David Rackley
+1424,565461,2019-07-15,sf,col,2,1,Coors Field,Dan Bellino
+1425,567106,2019-07-15,lad,phi,16,2,Citizens Bank Park,Doug Eddings
+1426,567506,2019-07-15,tb,nyy,5,4,Yankee Stadium,Gerry Davis
+1427,565362,2019-07-15,det,cle,6,8,Progressive Field,Laz Diaz
+1428,565072,2019-07-15,tor,bos,8,10,Fenway Park,Roberto Ortiz
+1429,565172,2019-07-15,cin,chc,6,3,Wrigley Field,Sam Holbrook
+1430,567600,2019-07-15,atl,mil,4,2,Miller Park,Jordan Baker
+1431,566613,2019-07-15,pit,stl,0,7,Busch Stadium,Gary Cederstrom
+1432,565749,2019-07-15,cws,kc,2,5,Kauffman Stadium,Todd Tichenor
+1433,564780,2019-07-15,hou,laa,6,9,Angel Stadium,Jim Reynolds
+1434,564976,2019-07-16,wsh,bal,8,1,Oriole Park at Camden Yards,Chad Fairchild
+1435,567107,2019-07-16,lad,phi,8,9,Citizens Bank Park,Chris Conroy
+1436,567507,2019-07-16,tb,nyy,3,8,Yankee Stadium,Phil Cuzzi
+1437,565363,2019-07-16,det,cle,0,8,Progressive Field,Tony Randazzo
+1438,565073,2019-07-16,tor,bos,10,4,Fenway Park,Dan Iassogna
+1439,567406,2019-07-16,sd,mia,7,12,Marlins Park,Fieldin Culbreth
+1440,565173,2019-07-16,cin,chc,3,4,Wrigley Field,Manny Gonzalez
+1441,566814,2019-07-16,ari,tex,9,2,Globe Life Park in Arlington,Angel Hernandez
+1442,567005,2019-07-16,nym,min,3,2,Target Field,Mike Winters
+1443,567601,2019-07-16,atl,mil,1,13,Miller Park,Marvin Hudson
+1444,566614,2019-07-16,pit,stl,3,1,Busch Stadium,Bruce Dreckman
+1445,565750,2019-07-16,cws,kc,0,11,Kauffman Stadium,Tom Hallion
+1446,565462,2019-07-16,sf,col,8,4,Coors Field,Chad Whitson
+1447,564781,2019-07-16,hou,laa,2,7,Angel Stadium,Stu Scheurwater
+1448,566133,2019-07-16,sea,oak,2,9,Oakland Coliseum,Brian O'Nora
+1449,567006,2019-07-17,nym,min,14,4,Target Field,Rob Drake
+1450,566615,2019-07-17,pit,stl,5,6,Busch Stadium,Adrian Johnson
+1451,567602,2019-07-17,atl,mil,4,5,Miller Park,Nic Lentz
+1452,565174,2019-07-17,cin,chc,2,5,Wrigley Field,Jim Wolf
+1453,565463,2019-07-17,sf,col,11,8,Coors Field,Larry Vanover
+1454,566134,2019-07-17,sea,oak,2,10,Oakland Coliseum,Mark Ripperger
+1455,564977,2019-07-17,wsh,bal,2,9,Oriole Park at Camden Yards,Mike Estabrook
+1456,567108,2019-07-17,lad,phi,7,2,Citizens Bank Park,Jansen Visconti
+1457,565364,2019-07-17,det,cle,2,7,Progressive Field,Ben May
+1458,565074,2019-07-17,tor,bos,4,5,Fenway Park,Lance Barrett
+1459,567407,2019-07-17,sd,mia,3,2,Marlins Park,D.J. Reyburn
+1460,566815,2019-07-17,ari,tex,19,4,Globe Life Park in Arlington,Ed Hickox
+1461,565751,2019-07-17,cws,kc,5,7,Kauffman Stadium,John Libka
+1462,564782,2019-07-17,hou,laa,11,2,Angel Stadium,Mark Wegner
+1463,567508,2019-07-17,tb,nyy,1,5,Yankee Stadium,Pat Hoberg
+1464,567408,2019-07-18,sd,mia,3,4,Marlins Park,Paul Nauert
+1465,567109,2019-07-18,lad,phi,6,7,Citizens Bank Park,Bill Miller
+1466,565075,2019-07-18,tor,bos,0,5,Fenway Park,Chris Guccione
+1467,565752,2019-07-18,cws,kc,5,6,Kauffman Stadium,Adam Hamari
+1468,567509,2019-07-18,tb,nyy,2,6,Yankee Stadium,Brennan Miller
+1469,567508,2019-07-18,tb,nyy,1,5,Yankee Stadium,Pat Hoberg
+1470,565365,2019-07-18,det,cle,3,6,Progressive Field,Cory Blaser
+1471,565265,2019-07-18,stl,cin,7,4,Great American Ball Park,Chris Segal
+1472,567214,2019-07-18,wsh,atl,13,4,SunTrust Park,Mike Muchlinski
+1473,567007,2019-07-18,oak,min,3,6,Target Field,Quinn Wolcott
+1474,564783,2019-07-18,hou,laa,6,2,Angel Stadium,Alan Porter
+1475,564875,2019-07-18,mil,ari,5,1,Chase Field,Sean Barber
+1476,566517,2019-07-18,nym,sf,2,3,Oracle Park,Jeremie Rehak
+1477,565175,2019-07-19,sd,chc,5,6,Wrigley Field,Dan Bellino
+1478,564978,2019-07-19,bos,bal,2,11,Oriole Park at Camden Yards,Todd Tichenor
+1479,566223,2019-07-19,phi,pit,6,1,PNC Park,Laz Diaz
+1480,567510,2019-07-19,col,nyy,2,8,Yankee Stadium,Doug Eddings
+1481,565366,2019-07-19,kc,cle,5,10,Progressive Field,Alfonso Marquez
+1482,565266,2019-07-19,stl,cin,12,11,Great American Ball Park,Carlos Torres
+1483,565556,2019-07-19,tor,det,12,1,Comerica Park,Gerry Davis
+1484,566712,2019-07-19,cws,tb,9,2,Tropicana Field,CB Bucknor
+1485,567215,2019-07-19,wsh,atl,3,4,SunTrust Park,Tim Timmons
+1486,565653,2019-07-19,tex,hou,3,4,Minute Maid Park,Dan Iassogna
+1487,567008,2019-07-19,oak,min,5,3,Target Field,Gary Cederstrom
+1488,564876,2019-07-19,mil,ari,7,10,Chase Field,Sam Holbrook
+1489,566420,2019-07-19,laa,sea,0,10,T-Mobile Park,Vic Carapazza
+1490,565848,2019-07-19,mia,lad,1,2,Dodger Stadium,Jim Reynolds
+1491,566518,2019-07-19,nym,sf,0,1,Oracle Park,James Hoye
+1492,567511,2019-07-20,col,nyy,5,11,Yankee Stadium,Chris Conroy
+1493,565176,2019-07-20,sd,chc,5,6,Wrigley Field,David Rackley
+1494,566519,2019-07-20,nym,sf,11,4,Oracle Park,Brian O'Nora
+1495,565557,2019-07-20,tor,det,7,5,Comerica Park,Phil Cuzzi
+1496,566713,2019-07-20,cws,tb,2,1,Tropicana Field,Fieldin Culbreth
+1497,564979,2019-07-20,bos,bal,17,6,Oriole Park at Camden Yards,Tom Hallion
+1498,566224,2019-07-20,phi,pit,1,5,PNC Park,Tony Randazzo
+1499,565367,2019-07-20,kc,cle,1,0,Progressive Field,Ryan Blakney
+1500,565267,2019-07-20,stl,cin,2,3,Great American Ball Park,Angel Hernandez
+1501,565654,2019-07-20,tex,hou,1,6,Minute Maid Park,Lance Barrett
+1502,567009,2019-07-20,oak,min,5,4,Target Field,Adrian Johnson
+1503,567216,2019-07-20,wsh,atl,5,3,SunTrust Park,Mike Winters
+1504,564877,2019-07-20,mil,ari,8,3,Chase Field,Manny Gonzalez
+1505,566421,2019-07-20,laa,sea,6,2,T-Mobile Park,Jordan Baker
+1506,565849,2019-07-20,mia,lad,6,10,Dodger Stadium,Stu Scheurwater
+1507,564980,2019-07-21,bos,bal,0,5,Oriole Park at Camden Yards,John Libka
+1508,567512,2019-07-21,col,nyy,8,4,Yankee Stadium,Jansen Visconti
+1509,565368,2019-07-21,kc,cle,4,5,Progressive Field,Chad Fairchild
+1510,565268,2019-07-21,stl,cin,3,1,Great American Ball Park,Ed Hickox
+1511,565558,2019-07-21,tor,det,3,4,Comerica Park,Brennan Miller
+1512,566714,2019-07-21,cws,tb,2,4,Tropicana Field,D.J. Reyburn
+1513,566225,2019-07-21,phi,pit,2,1,PNC Park,Ben May
+1514,565655,2019-07-21,tex,hou,3,5,Minute Maid Park,Chris Guccione
+1515,567010,2019-07-21,oak,min,6,7,Target Field,Ryan Additon
+1516,565177,2019-07-21,sd,chc,5,1,Wrigley Field,Chad Whitson
+1517,566520,2019-07-21,nym,sf,2,3,Oracle Park,Mark Ripperger
+1518,566422,2019-07-21,laa,sea,9,3,T-Mobile Park,Marvin Hudson
+1519,565850,2019-07-21,mia,lad,0,9,Dodger Stadium,Mark Wegner
+1520,564878,2019-07-21,mil,ari,7,4,Chase Field,Jim Wolf
+1521,567217,2019-07-21,wsh,atl,1,7,SunTrust Park,Rob Drake
+1522,566226,2019-07-22,stl,pit,6,5,PNC Park,Mike Estabrook
+1523,566912,2019-07-22,cle,tor,7,3,Rogers Centre,Paul Nauert
+1524,566715,2019-07-22,bos,tb,9,4,Tropicana Field,Chris Segal
+1525,565656,2019-07-22,oak,hou,1,11,Minute Maid Park,Lance Barksdale
+1526,567309,2019-07-22,mia,cws,1,9,Guaranteed Rate Field,Marty Foster
+1527,567011,2019-07-22,nyy,min,6,8,Target Field,Larry Vanover
+1528,567603,2019-07-22,cin,mil,6,5,Miller Park,Pat Hoberg
+1529,564879,2019-07-22,bal,ari,3,6,Chase Field,Alan Porter
+1530,566521,2019-07-22,chc,sf,4,5,Oracle Park,Hunter Wendelstedt
+1531,566423,2019-07-22,tex,sea,3,7,T-Mobile Park,Will Little
+1532,565942,2019-07-22,col,wsh,2,3,Nationals Park,Ron Kulpa
+1533,565943,2019-07-23,col,wsh,1,11,Nationals Park,Jerry Meals
+1534,566227,2019-07-23,stl,pit,4,3,PNC Park,Bruce Dreckman
+1535,566913,2019-07-23,cle,tor,1,2,Rogers Centre,Nick Mahrley
+1536,566033,2019-07-23,sd,nym,2,5,Citi Field,Tripp Gibson
+1537,566716,2019-07-23,bos,tb,5,4,Tropicana Field,Carlos Torres
+1538,565559,2019-07-23,phi,det,3,2,Comerica Park,Jeremie Rehak
+1539,567218,2019-07-23,kc,atl,5,4,SunTrust Park,Cory Blaser
+1540,565657,2019-07-23,oak,hou,4,3,Minute Maid Park,Kerwin Danley
+1541,567310,2019-07-23,mia,cws,5,1,Guaranteed Rate Field,Gary Cederstrom
+1542,567012,2019-07-23,nyy,min,14,12,Target Field,Ramon De Jesus
+1543,567604,2019-07-23,cin,mil,14,6,Miller Park,Greg Gibson
+1544,564880,2019-07-23,bal,ari,7,2,Chase Field,Jim Reynolds
+1545,566522,2019-07-23,chc,sf,4,5,Oracle Park,Vic Carapazza
+1546,565851,2019-07-23,laa,lad,5,4,Dodger Stadium,Sean Barber
+1547,566424,2019-07-23,tex,sea,7,2,T-Mobile Park,Joe West
+1548,566717,2019-07-24,bos,tb,2,3,Tropicana Field,Angel Hernandez
+1549,565942,2019-07-24,col,wsh,2,3,Nationals Park,Ron Kulpa
+1550,565944,2019-07-24,col,wsh,0,2,Nationals Park,John Libka
+1551,565560,2019-07-24,phi,det,4,0,Comerica Park,James Hoye
+1552,565658,2019-07-24,oak,hou,2,4,Minute Maid Park,John Tumpane
+1553,567605,2019-07-24,cin,mil,4,5,Miller Park,Gerry Davis
+1554,564881,2019-07-24,bal,ari,2,5,Chase Field,Nic Lentz
+1555,566425,2019-07-24,tex,sea,3,5,T-Mobile Park,Andy Fletcher
+1556,566523,2019-07-24,chc,sf,4,1,Oracle Park,Jordan Baker
+1557,566228,2019-07-24,stl,pit,14,8,PNC Park,Alfonso Marquez
+1558,566914,2019-07-24,cle,tor,4,0,Rogers Centre,Fieldin Culbreth
+1559,566034,2019-07-24,sd,nym,7,2,Citi Field,Ryan Blakney
+1560,567219,2019-07-24,kc,atl,2,0,SunTrust Park,Jeff Nelson
+1561,567311,2019-07-24,mia,cws,2,0,Guaranteed Rate Field,Ryan Additon
+1562,567013,2019-07-24,nyy,min,10,7,Target Field,David Rackley
+1563,565852,2019-07-24,laa,lad,3,2,Dodger Stadium,Dan Iassogna
+1564,566035,2019-07-25,sd,nym,0,4,Citi Field,Brian Gorman
+1565,566229,2019-07-25,stl,pit,6,3,PNC Park,Chad Fairchild
+1566,565945,2019-07-25,col,wsh,8,7,Nationals Park,Gabe Morales
+1567,565076,2019-07-25,nyy,bos,3,19,Fenway Park,D.J. Reyburn
+1568,567312,2019-07-25,min,cws,10,3,Guaranteed Rate Field,Ed Hickox
+1569,565753,2019-07-25,cle,kc,5,4,Kauffman Stadium,Eric Cooper
+1570,564784,2019-07-25,bal,laa,10,8,Angel Stadium,Tony Randazzo
+1571,566135,2019-07-25,tex,oak,11,3,Oakland Coliseum,Sam Holbrook
+1572,566426,2019-07-25,det,sea,2,10,T-Mobile Park,Ted Barrett
+1573,565269,2019-07-26,col,cin,12,2,Great American Ball Park,Mark Wegner
+1574,565946,2019-07-26,lad,wsh,4,2,Nationals Park,Brian O'Nora
+1575,567110,2019-07-26,atl,phi,9,2,Citizens Bank Park,Mark Carlson
+1576,566915,2019-07-26,tb,tor,3,1,Rogers Centre,Jerry Meals
+1577,566036,2019-07-26,pit,nym,3,6,Citi Field,Marvin Hudson
+1578,567409,2019-07-26,ari,mia,2,3,Marlins Park,Mike Estabrook
+1579,565077,2019-07-26,nyy,bos,5,10,Fenway Park,Paul Nauert
+1580,567313,2019-07-26,min,cws,6,2,Guaranteed Rate Field,Chris Segal
+1581,567606,2019-07-26,chc,mil,2,3,Miller Park,Adrian Johnson
+1582,565754,2019-07-26,cle,kc,8,3,Kauffman Stadium,Larry Vanover
+1583,566616,2019-07-26,hou,stl,3,5,Busch Stadium,Brennan Miller
+1584,564785,2019-07-26,bal,laa,9,3,Angel Stadium,Laz Diaz
+1585,566136,2019-07-26,tex,oak,5,2,Oakland Coliseum,Manny Gonzalez
+1586,566427,2019-07-26,det,sea,2,3,T-Mobile Park,Lance Barksdale
+1587,566325,2019-07-26,sf,sd,2,1,Petco Park,Jansen Visconti
+1588,566916,2019-07-27,tb,tor,9,10,Rogers Centre,Vic Carapazza
+1589,565947,2019-07-27,lad,wsh,9,3,Nationals Park,Dan Bellino
+1590,565078,2019-07-27,nyy,bos,5,9,Fenway Park,Nick Mahrley
+1591,566428,2019-07-27,det,sea,1,8,T-Mobile Park,Kerwin Danley
+1592,567410,2019-07-27,ari,mia,9,2,Marlins Park,Bruce Dreckman
+1593,567111,2019-07-27,atl,phi,15,7,Citizens Bank Park,Tripp Gibson
+1594,565270,2019-07-27,col,cin,1,3,Great American Ball Park,Alan Porter
+1595,566037,2019-07-27,pit,nym,0,3,Citi Field,Hunter Wendelstedt
+1596,567314,2019-07-27,min,cws,1,5,Guaranteed Rate Field,Carlos Torres
+1597,567607,2019-07-27,chc,mil,3,5,Miller Park,Marty Foster
+1598,565755,2019-07-27,cle,kc,9,1,Kauffman Stadium,Ramon De Jesus
+1599,566617,2019-07-27,hou,stl,8,2,Busch Stadium,Pat Hoberg
+1600,566326,2019-07-27,sf,sd,1,5,Petco Park,Will Little
+1601,564786,2019-07-27,bal,laa,8,7,Angel Stadium,Cory Blaser
+1602,566137,2019-07-27,tex,oak,4,5,Oakland Coliseum,Sean Barber
+1603,567112,2019-07-28,atl,phi,4,9,Citizens Bank Park,Ryan Blakney
+1604,566917,2019-07-28,tb,tor,10,9,Rogers Centre,John Libka
+1605,565271,2019-07-28,col,cin,2,3,Great American Ball Park,Bill Miller
+1606,566038,2019-07-28,pit,nym,7,8,Citi Field,Todd Tichenor
+1607,567411,2019-07-28,ari,mia,1,5,Marlins Park,Alfonso Marquez
+1608,565948,2019-07-28,lad,wsh,4,11,Nationals Park,Jeremie Rehak
+1609,567315,2019-07-28,min,cws,11,1,Guaranteed Rate Field,Angel Hernandez
+1610,567608,2019-07-28,chc,mil,11,4,Miller Park,Gary Cederstrom
+1611,565756,2019-07-28,cle,kc,6,9,Kauffman Stadium,David Rackley
+1612,566618,2019-07-28,hou,stl,6,2,Busch Stadium,Greg Gibson
+1613,564787,2019-07-28,bal,laa,4,5,Angel Stadium,Jeff Nelson
+1614,566138,2019-07-28,tex,oak,5,6,Oakland Coliseum,Dan Iassogna
+1615,566429,2019-07-28,det,sea,2,3,T-Mobile Park,John Tumpane
+1616,566327,2019-07-28,sf,sd,7,6,Petco Park,Joe West
+1617,565079,2019-07-28,nyy,bos,9,6,Fenway Park,Fieldin Culbreth
+1618,565949,2019-07-29,atl,wsh,3,6,Nationals Park,Adam Hamari
+1619,565272,2019-07-29,pit,cin,6,11,Great American Ball Park,Eric Cooper
+1620,567412,2019-07-29,ari,mia,6,11,Marlins Park,Chad Fairchild
+1621,565757,2019-07-29,tor,kc,7,3,Kauffman Stadium,Doug Eddings
+1622,565464,2019-07-29,lad,col,1,9,Coors Field,Lance Barksdale
+1623,564788,2019-07-29,det,laa,7,2,Angel Stadium,Ron Kulpa
+1624,566328,2019-07-29,bal,sd,1,8,Petco Park,Sam Holbrook
+1625,566329,2019-07-30,bal,sd,8,5,Petco Park,Manny Gonzalez
+1626,567113,2019-07-30,sf,phi,2,4,Citizens Bank Park,Mike Estabrook
+1627,565950,2019-07-30,atl,wsh,11,8,Nationals Park,Ben May
+1628,567513,2019-07-30,ari,nyy,4,2,Yankee Stadium,Dan Bellino
+1629,565369,2019-07-30,hou,cle,2,0,Progressive Field,Laz Diaz
+1630,565273,2019-07-30,pit,cin,11,4,Great American Ball Park,Larry Vanover
+1631,565080,2019-07-30,tb,bos,6,5,Fenway Park,Tim Timmons
+1632,567413,2019-07-30,min,mia,2,1,Marlins Park,Bill Welke
+1633,566816,2019-07-30,sea,tex,8,5,Globe Life Park in Arlington,Mark Carlson
+1634,567316,2019-07-30,nym,cws,5,2,Guaranteed Rate Field,Nic Lentz
+1635,566619,2019-07-30,chc,stl,1,2,Busch Stadium,Andy Fletcher
+1636,565758,2019-07-30,tor,kc,9,2,Kauffman Stadium,Chris Conroy
+1637,565465,2019-07-30,lad,col,9,4,Coors Field,John Bacon
+1638,564789,2019-07-30,det,laa,1,6,Angel Stadium,Gabe Morales
+1639,566139,2019-07-30,mil,oak,2,3,Oakland Coliseum,Jim Wolf
+1640,565951,2019-07-31,atl,wsh,5,4,Nationals Park,Phil Cuzzi
+1641,565274,2019-07-31,pit,cin,1,4,Great American Ball Park,Ramon De Jesus
+1642,567514,2019-07-31,ari,nyy,5,7,Yankee Stadium,Brian O'Nora
+1643,565759,2019-07-31,tor,kc,4,1,Kauffman Stadium,Chad Whitson
+1644,565466,2019-07-31,lad,col,5,1,Coors Field,Kerwin Danley
+1645,564790,2019-07-31,det,laa,9,1,Angel Stadium,Jerry Meals
+1646,567114,2019-07-31,sf,phi,5,1,Citizens Bank Park,Bruce Dreckman
+1647,565370,2019-07-31,hou,cle,4,10,Progressive Field,Chris Segal
+1648,565081,2019-07-31,tb,bos,8,5,Fenway Park,Sean Barber
+1649,567414,2019-07-31,min,mia,7,4,Marlins Park,Mike Everitt
+1650,566817,2019-07-31,sea,tex,7,9,Globe Life Park in Arlington,Mike Muchlinski
+1651,567317,2019-07-31,nym,cws,4,2,Guaranteed Rate Field,Mark Wegner
+1652,566620,2019-07-31,chc,stl,2,0,Busch Stadium,Jansen Visconti
+1653,566140,2019-07-31,mil,oak,4,2,Oakland Coliseum,Nick Mahrley
+1654,567415,2019-08-01,min,mia,4,5,Marlins Park,Lance Barrett
+1655,567115,2019-08-01,sf,phi,2,10,Citizens Bank Park,Alfonso Marquez
+1656,567318,2019-08-01,nym,cws,4,0,Guaranteed Rate Field,Greg Gibson
+1657,566141,2019-08-01,mil,oak,3,5,Oakland Coliseum,Cory Blaser
+1658,564981,2019-08-01,tor,bal,11,2,Oriole Park at Camden Yards,Mark Ripperger
+1659,565371,2019-08-01,hou,cle,7,1,Progressive Field,Vic Carapazza
+1660,565082,2019-08-01,tb,bos,9,4,Fenway Park,Mike Winters
+1661,566621,2019-08-01,chc,stl,0,8,Busch Stadium,Will Little
+1662,567220,2019-08-01,cin,atl,1,4,SunTrust Park,Roberto Ortiz
+1663,565853,2019-08-01,sd,lad,2,8,Dodger Stadium,John Libka
+1664,565178,2019-08-02,mil,chc,2,6,Wrigley Field,John Tumpane
+1665,566230,2019-08-02,nym,pit,4,8,PNC Park,Ryan Additon
+1666,564982,2019-08-02,tor,bal,5,2,Oriole Park at Camden Yards,Jeremie Rehak
+1667,567116,2019-08-02,cws,phi,4,3,Citizens Bank Park,Rob Drake
+1668,567515,2019-08-02,bos,nyy,2,4,Yankee Stadium,Chad Fairchild
+1669,565372,2019-08-02,laa,cle,3,7,Progressive Field,Brian Gorman
+1670,567221,2019-08-02,cin,atl,5,2,SunTrust Park,Dan Iassogna
+1671,566818,2019-08-02,det,tex,4,5,Globe Life Park in Arlington,David Rackley
+1672,565659,2019-08-02,sea,hou,2,10,Minute Maid Park,Jeff Nelson
+1673,567014,2019-08-02,kc,min,9,11,Target Field,Joe West
+1674,565467,2019-08-02,sf,col,4,5,Coors Field,Todd Tichenor
+1675,564882,2019-08-02,wsh,ari,3,0,Chase Field,Bill Miller
+1676,565854,2019-08-02,sd,lad,5,2,Dodger Stadium,Ron Kulpa
+1677,567516,2019-08-03,bos,nyy,2,9,Yankee Stadium,Mike Estabrook
+1678,567487,2019-08-03,bos,nyy,4,6,Yankee Stadium,Bruce Dreckman
+1679,565179,2019-08-03,mil,chc,1,4,Wrigley Field,Lance Barksdale
+1680,566718,2019-08-03,mia,tb,6,8,Tropicana Field,Hunter Wendelstedt
+1681,566231,2019-08-03,nym,pit,7,5,PNC Park,Bill Welke
+1682,564983,2019-08-03,tor,bal,4,6,Oriole Park at Camden Yards,Chris Guccione
+1683,567117,2019-08-03,cws,phi,2,3,Citizens Bank Park,Tim Timmons
+1684,565373,2019-08-03,laa,cle,2,7,Progressive Field,Ryan Blakney
+1685,565660,2019-08-03,sea,hou,0,9,Minute Maid Park,Jim Wolf
+1686,567015,2019-08-03,kc,min,3,11,Target Field,Andy Fletcher
+1687,567222,2019-08-03,cin,atl,4,5,SunTrust Park,Sam Holbrook
+1688,566824,2019-08-03,det,tex,4,5,Globe Life Park in Arlington,Eric Cooper
+1689,564883,2019-08-03,wsh,ari,7,18,Chase Field,Doug Eddings
+1690,565468,2019-08-03,sf,col,6,5,Coors Field,Adam Hamari
+1691,566142,2019-08-03,stl,oak,3,8,Oakland Coliseum,Stu Scheurwater
+1692,565855,2019-08-03,sd,lad,1,4,Dodger Stadium,Gabe Morales
+1693,564984,2019-08-04,tor,bal,5,6,Oriole Park at Camden Yards,Brian O'Nora
+1694,567118,2019-08-04,cws,phi,10,5,Citizens Bank Park,Mike Muchlinski
+1695,565374,2019-08-04,laa,cle,2,6,Progressive Field,Mark Carlson
+1696,566719,2019-08-04,mia,tb,2,7,Tropicana Field,Jordan Baker
+1697,567223,2019-08-04,cin,atl,6,4,SunTrust Park,Manny Gonzalez
+1698,566232,2019-08-04,nym,pit,13,2,PNC Park,Mike Everitt
+1699,565661,2019-08-04,sea,hou,1,3,Minute Maid Park,Nick Mahrley
+1700,567016,2019-08-04,kc,min,0,3,Target Field,Jansen Visconti
+1701,565180,2019-08-04,mil,chc,2,7,Wrigley Field,John Bacon
+1702,566825,2019-08-04,det,tex,4,9,Globe Life Park in Arlington,Larry Vanover
+1703,565469,2019-08-04,sf,col,2,6,Coors Field,Ben May
+1704,566143,2019-08-04,stl,oak,2,4,Oakland Coliseum,Nic Lentz
+1705,564884,2019-08-04,wsh,ari,5,7,Chase Field,Chris Conroy
+1706,565856,2019-08-04,sd,lad,10,11,Dodger Stadium,Jerry Meals
+1707,567517,2019-08-04,bos,nyy,4,7,Yankee Stadium,Alfonso Marquez
+1708,566039,2019-08-05,mia,nym,2,6,Citi Field,Jim Wolf
+1709,566007,2019-08-05,mia,nym,4,5,Citi Field,Chris Segal
+1710,564985,2019-08-05,nyy,bal,9,6,Oriole Park at Camden Yards,Ed Hickox
+1711,566233,2019-08-05,mil,pit,9,7,PNC Park,Will Little
+1712,565275,2019-08-05,laa,cin,4,7,Great American Ball Park,Ted Barrett
+1713,565083,2019-08-05,kc,bos,5,7,Fenway Park,Tripp Gibson
+1714,565375,2019-08-05,tex,cle,1,0,Progressive Field,Mark Ripperger
+1715,566720,2019-08-05,tor,tb,2,0,Tropicana Field,Cory Blaser
+1716,565561,2019-08-05,cws,det,7,4,Comerica Park,Lance Barrett
+1717,565181,2019-08-05,oak,chc,5,6,Wrigley Field,CB Bucknor
+1718,567017,2019-08-05,atl,min,3,5,Target Field,Laz Diaz
+1719,564885,2019-08-05,phi,ari,7,3,Chase Field,Phil Cuzzi
+1720,566524,2019-08-05,wsh,sf,4,0,Oracle Park,Greg Gibson
+1721,565857,2019-08-05,stl,lad,0,8,Dodger Stadium,Chad Whitson
+1722,565520,2019-08-06,cws,det,5,3,Comerica Park,Bill Welke
+1723,565562,2019-08-06,cws,det,6,10,Comerica Park,Sean Barber
+1724,564986,2019-08-06,nyy,bal,9,4,Oriole Park at Camden Yards,Carlos Torres
+1725,566234,2019-08-06,mil,pit,4,3,PNC Park,Joe West
+1726,565276,2019-08-06,laa,cin,4,8,Great American Ball Park,John Tumpane
+1727,565084,2019-08-06,kc,bos,6,2,Fenway Park,Brian Gorman
+1728,566721,2019-08-06,tor,tb,6,7,Tropicana Field,Tony Randazzo
+1729,566040,2019-08-06,mia,nym,0,5,Citi Field,Dan Iassogna
+1730,565182,2019-08-06,oak,chc,11,4,Wrigley Field,D.J. Reyburn
+1731,565662,2019-08-06,col,hou,6,11,Minute Maid Park,Marvin Hudson
+1732,567018,2019-08-06,atl,min,12,7,Target Field,Vic Carapazza
+1733,564886,2019-08-06,phi,ari,4,8,Chase Field,Tom Hallion
+1734,566525,2019-08-06,wsh,sf,5,3,Oracle Park,Gerry Davis
+1735,566430,2019-08-06,sd,sea,9,4,T-Mobile Park,Mark Wegner
+1736,565858,2019-08-06,stl,lad,1,3,Dodger Stadium,Bill Miller
+1737,565376,2019-08-06,tex,cle,1,5,Progressive Field,Chris Guccione
+1738,566041,2019-08-07,mia,nym,2,7,Citi Field,Manny Gonzalez
+1739,565377,2019-08-07,tex,cle,0,2,Progressive Field,James Hoye
+1740,565376,2019-08-07,tex,cle,1,5,Progressive Field,Chris Guccione
+1741,566722,2019-08-07,tor,tb,4,3,Tropicana Field,Jeff Nelson
+1742,567019,2019-08-07,atl,min,11,7,Target Field,Jeremie Rehak
+1743,565563,2019-08-07,cws,det,8,1,Comerica Park,Mike Everitt
+1744,565663,2019-08-07,col,hou,3,14,Minute Maid Park,Adrian Johnson
+1745,565183,2019-08-07,oak,chc,1,10,Wrigley Field,Paul Nauert
+1746,565859,2019-08-07,stl,lad,1,2,Dodger Stadium,Doug Eddings
+1747,566526,2019-08-07,wsh,sf,4,1,Oracle Park,Brian Knight
+1748,566431,2019-08-07,sd,sea,2,3,T-Mobile Park,Jim Reynolds
+1749,564987,2019-08-07,nyy,bal,14,2,Oriole Park at Camden Yards,Angel Hernandez
+1750,566235,2019-08-07,mil,pit,8,3,PNC Park,Andy Fletcher
+1751,565085,2019-08-07,kc,bos,4,5,Fenway Park,Ryan Blakney
+1752,564887,2019-08-07,phi,ari,1,6,Chase Field,Adam Hamari
+1753,566918,2019-08-08,nyy,tor,12,6,Rogers Centre,Jim Wolf
+1754,565086,2019-08-08,laa,bos,0,3,Fenway Park,Brian O'Nora
+1755,565277,2019-08-08,chc,cin,12,5,Great American Ball Park,Jordan Baker
+1756,565564,2019-08-08,kc,det,8,10,Comerica Park,Hunter Wendelstedt
+1757,567416,2019-08-08,atl,mia,2,9,Marlins Park,Lance Barksdale
+1758,567020,2019-08-08,cle,min,7,5,Target Field,Gary Cederstrom
+1759,566527,2019-08-08,phi,sf,0,5,Oracle Park,Fieldin Culbreth
+1760,566330,2019-08-08,col,sd,3,9,Petco Park,Pat Hoberg
+1761,567319,2019-08-09,oak,cws,7,0,Guaranteed Rate Field,Jansen Visconti
+1762,564988,2019-08-09,hou,bal,3,2,Oriole Park at Camden Yards,Lance Barrett
+1763,566919,2019-08-09,nyy,tor,2,8,Rogers Centre,Chris Segal
+1764,565087,2019-08-09,laa,bos,4,16,Fenway Park,Mark Ripperger
+1765,565278,2019-08-09,chc,cin,2,5,Great American Ball Park,Ed Hickox
+1766,565565,2019-08-09,kc,det,2,5,Comerica Park,Laz Diaz
+1767,566042,2019-08-09,wsh,nym,6,7,Citi Field,Mark Carlson
+1768,567417,2019-08-09,atl,mia,8,4,Marlins Park,John Bacon
+1769,567021,2019-08-09,cle,min,6,2,Target Field,Quinn Wolcott
+1770,567609,2019-08-09,tex,mil,5,6,Miller Park,Stu Scheurwater
+1771,566622,2019-08-09,pit,stl,2,6,Busch Stadium,Ron Kulpa
+1772,565860,2019-08-09,ari,lad,3,2,Dodger Stadium,Ramon De Jesus
+1773,566331,2019-08-09,col,sd,1,7,Petco Park,Greg Gibson
+1774,566432,2019-08-09,tb,sea,5,3,T-Mobile Park,Chris Conroy
+1775,566528,2019-08-09,phi,sf,9,6,Oracle Park,CB Bucknor
+1776,566920,2019-08-10,nyy,tor,4,5,Rogers Centre,Dan Iassogna
+1777,565088,2019-08-10,laa,bos,12,4,Fenway Park,James Hoye
+1778,566529,2019-08-10,phi,sf,1,3,Oracle Park,Nic Lentz
+1779,565566,2019-08-10,kc,det,7,0,Comerica Park,Vic Carapazza
+1780,567418,2019-08-10,atl,mia,6,7,Marlins Park,Ted Barrett
+1781,564989,2019-08-10,hou,bal,23,2,Oriole Park at Camden Yards,Bill Welke
+1782,565279,2019-08-10,chc,cin,1,10,Great American Ball Park,Carlos Torres
+1783,566043,2019-08-10,wsh,nym,3,4,Citi Field,Tripp Gibson
+1784,567022,2019-08-10,cle,min,1,4,Target Field,Marvin Hudson
+1785,567320,2019-08-10,oak,cws,2,3,Guaranteed Rate Field,Will Little
+1786,567610,2019-08-10,tex,mil,2,3,Miller Park,Alan Porter
+1787,566623,2019-08-10,pit,stl,1,3,Busch Stadium,Phil Cuzzi
+1788,566332,2019-08-10,col,sd,5,8,Petco Park,Gerry Davis
+1789,565861,2019-08-10,ari,lad,0,4,Dodger Stadium,Cory Blaser
+1790,566433,2019-08-10,tb,sea,5,4,T-Mobile Park,Chad Whitson
+1791,565089,2019-08-11,laa,bos,5,4,Fenway Park,John Libka
+1792,564990,2019-08-11,hou,bal,7,8,Oriole Park at Camden Yards,Sean Barber
+1793,566921,2019-08-11,nyy,tor,1,0,Rogers Centre,Manny Gonzalez
+1794,565280,2019-08-11,chc,cin,6,3,Great American Ball Park,Angel Hernandez
+1795,565567,2019-08-11,kc,det,10,2,Comerica Park,Jeremie Rehak
+1796,566044,2019-08-11,wsh,nym,7,4,Citi Field,D.J. Reyburn
+1797,567419,2019-08-11,atl,mia,5,4,Marlins Park,John Tumpane
+1798,567023,2019-08-11,cle,min,7,3,Target Field,Adrian Johnson
+1799,567321,2019-08-11,oak,cws,2,0,Guaranteed Rate Field,Joe West
+1800,567611,2019-08-11,tex,mil,1,0,Miller Park,Mark Wegner
+1801,566624,2019-08-11,pit,stl,9,11,Busch Stadium,Tom Hallion
+1802,566333,2019-08-11,col,sd,8,3,Petco Park,Brian Knight
+1803,565862,2019-08-11,ari,lad,3,9,Dodger Stadium,Tony Randazzo
+1804,566434,2019-08-11,tb,sea,1,0,T-Mobile Park,Bill Miller
+1805,566530,2019-08-11,phi,sf,6,9,Oracle Park,Paul Nauert
+1806,567479,2019-08-12,bal,nyy,5,8,Yankee Stadium,Ryan Blakney
+1807,567518,2019-08-12,bal,nyy,8,11,Yankee Stadium,Tripp Gibson
+1808,565952,2019-08-12,cin,wsh,6,7,Nationals Park,Jim Reynolds
+1809,566922,2019-08-12,tex,tor,4,19,Rogers Centre,Gary Cederstrom
+1810,565378,2019-08-12,bos,cle,5,6,Progressive Field,Lance Barksdale
+1811,565470,2019-08-12,ari,col,8,6,Coors Field,Fieldin Culbreth
+1812,564791,2019-08-12,pit,laa,10,2,Angel Stadium,Jeff Nelson
+1813,566334,2019-08-12,tb,sd,10,4,Petco Park,Alfonso Marquez
+1814,567322,2019-08-12,hou,cws,1,4,Guaranteed Rate Field,Ben May
+1815,567323,2019-08-13,hou,cws,6,2,Guaranteed Rate Field,Todd Tichenor
+1816,567322,2019-08-13,hou,cws,1,4,Guaranteed Rate Field,Ben May
+1817,565953,2019-08-13,cin,wsh,1,3,Nationals Park,Stu Scheurwater
+1818,567119,2019-08-13,chc,phi,2,4,Citizens Bank Park,Marty Foster
+1819,567519,2019-08-13,bal,nyy,3,8,Yankee Stadium,Marvin Hudson
+1820,566923,2019-08-13,tex,tor,0,3,Rogers Centre,Quinn Wolcott
+1821,565379,2019-08-13,bos,cle,7,6,Progressive Field,John Bacon
+1822,565568,2019-08-13,sea,det,11,6,Comerica Park,Eric Cooper
+1823,567420,2019-08-13,lad,mia,15,1,Marlins Park,Chad Fairchild
+1824,567224,2019-08-13,nym,atl,3,5,SunTrust Park,Dan Bellino
+1825,567612,2019-08-13,min,mil,7,5,Miller Park,Rob Drake
+1826,565760,2019-08-13,stl,kc,2,0,Kauffman Stadium,Pat Hoberg
+1827,565471,2019-08-13,ari,col,9,3,Coors Field,CB Bucknor
+1828,566531,2019-08-13,oak,sf,2,3,Oracle Park,Doug Eddings
+1829,564792,2019-08-13,pit,laa,10,7,Angel Stadium,Laz Diaz
+1830,566335,2019-08-13,tb,sd,7,5,Petco Park,David Rackley
+1831,566924,2019-08-14,tex,tor,7,3,Rogers Centre,Sean Barber
+1832,567520,2019-08-14,bal,nyy,5,6,Yankee Stadium,Mark Carlson
+1833,565380,2019-08-14,bos,cle,5,1,Progressive Field,Ted Barrett
+1834,567324,2019-08-14,hou,cws,9,13,Guaranteed Rate Field,Phil Cuzzi
+1835,567613,2019-08-14,min,mil,5,6,Miller Park,Tim Timmons
+1836,565472,2019-08-14,ari,col,6,7,Coors Field,Chris Conroy
+1837,566336,2019-08-14,tb,sd,2,7,Petco Park,Jeremie Rehak
+1838,566532,2019-08-14,oak,sf,9,5,Oracle Park,Chris Segal
+1839,565954,2019-08-14,cin,wsh,7,17,Nationals Park,Alan Porter
+1840,567120,2019-08-14,chc,phi,1,11,Citizens Bank Park,Ron Kulpa
+1841,565569,2019-08-14,sea,det,2,3,Comerica Park,Jansen Visconti
+1842,567421,2019-08-14,lad,mia,9,1,Marlins Park,Mike Estabrook
+1843,567225,2019-08-14,nym,atl,4,6,SunTrust Park,Mark Ripperger
+1844,564793,2019-08-14,pit,laa,4,7,Angel Stadium,Cory Blaser
+1845,565761,2019-08-14,stl,kc,6,0,Kauffman Stadium,Greg Gibson
+1846,565570,2019-08-15,sea,det,7,2,Comerica Park,Will Little
+1847,567422,2019-08-15,lad,mia,7,13,Marlins Park,Nic Lentz
+1848,567121,2019-08-15,chc,phi,5,7,Citizens Bank Park,Gabe Morales
+1849,567521,2019-08-15,cle,nyy,19,5,Yankee Stadium,Tom Hallion
+1850,565281,2019-08-15,stl,cin,1,2,Great American Ball Park,Roberto Ortiz
+1851,567226,2019-08-15,nym,atl,10,8,SunTrust Park,James Hoye
+1852,566826,2019-08-15,min,tex,13,6,Globe Life Park in Arlington,Gerry Davis
+1853,564888,2019-08-15,sf,ari,7,0,Chase Field,Larry Vanover
+1854,566144,2019-08-15,hou,oak,6,7,Oakland Coliseum,Ryan Blakney
+1855,564794,2019-08-15,cws,laa,7,8,Angel Stadium,Chad Whitson
+1856,566236,2019-08-16,chc,pit,2,3,PNC Park,Mark Wegner
+1857,567122,2019-08-16,sd,phi,4,8,Citizens Bank Park,Adrian Johnson
+1858,567522,2019-08-16,cle,nyy,2,3,Yankee Stadium,Todd Tichenor
+1859,565955,2019-08-16,mil,wsh,1,2,Nationals Park,Kerwin Danley
+1860,566925,2019-08-16,sea,tor,3,7,Rogers Centre,John Tumpane
+1861,565090,2019-08-16,bal,bos,1,9,Fenway Park,Joe West
+1862,565282,2019-08-16,stl,cin,13,4,Great American Ball Park,Mike Muchlinski
+1863,566723,2019-08-16,det,tb,2,0,Tropicana Field,Bruce Dreckman
+1864,567227,2019-08-16,lad,atl,8,3,SunTrust Park,D.J. Reyburn
+1865,566827,2019-08-16,min,tex,4,3,Globe Life Park in Arlington,Brian Knight
+1866,565762,2019-08-16,nym,kc,1,4,Kauffman Stadium,Jerry Meals
+1867,565473,2019-08-16,mia,col,0,3,Coors Field,Tony Randazzo
+1868,564889,2019-08-16,sf,ari,10,9,Chase Field,Alfonso Marquez
+1869,566145,2019-08-16,hou,oak,2,3,Oakland Coliseum,Tripp Gibson
+1870,564795,2019-08-16,cws,laa,7,2,Angel Stadium,Bill Miller
+1871,567523,2019-08-17,cle,nyy,5,6,Yankee Stadium,Ben May
+1872,566237,2019-08-17,chc,pit,2,0,PNC Park,Jim Reynolds
+1873,566926,2019-08-17,sea,tor,4,3,Rogers Centre,Lance Barksdale
+1874,566146,2019-08-17,hou,oak,4,8,Oakland Coliseum,Chris Conroy
+1875,566724,2019-08-17,det,tb,0,1,Tropicana Field,Dan Bellino
+1876,565283,2019-08-17,stl,cin,1,6,Great American Ball Park,Rob Drake
+1877,567123,2019-08-17,sd,phi,5,3,Citizens Bank Park,Gary Cederstrom
+1878,565956,2019-08-17,mil,wsh,15,14,Nationals Park,Quinn Wolcott
+1879,565091,2019-08-17,bal,bos,0,4,Fenway Park,Eric Cooper
+1880,565763,2019-08-17,nym,kc,4,1,Kauffman Stadium,John Libka
+1881,567228,2019-08-17,lad,atl,3,4,SunTrust Park,Paul Nauert
+1882,566828,2019-08-17,min,tex,12,7,Globe Life Park in Arlington,Pat Hoberg
+1883,564890,2019-08-17,sf,ari,11,6,Chase Field,David Rackley
+1884,565474,2019-08-17,mia,col,4,11,Coors Field,Jeff Nelson
+1885,564796,2019-08-17,cws,laa,5,6,Angel Stadium,Doug Eddings
+1886,565092,2019-08-18,bal,bos,7,13,Fenway Park,Jansen Visconti
+1887,567124,2019-08-18,sd,phi,3,2,Citizens Bank Park,Tom Woodring
+1888,567524,2019-08-18,cle,nyy,8,4,Yankee Stadium,Phil Cuzzi
+1889,566927,2019-08-18,sea,tor,7,0,Rogers Centre,John Bacon
+1890,565284,2019-08-18,stl,cin,5,4,Great American Ball Park,Tim Timmons
+1891,566725,2019-08-18,det,tb,4,5,Tropicana Field,Laz Diaz
+1892,567229,2019-08-18,lad,atl,3,5,SunTrust Park,Fieldin Culbreth
+1893,565957,2019-08-18,mil,wsh,8,16,Nationals Park,Mark Ripperger
+1894,565764,2019-08-18,nym,kc,11,5,Kauffman Stadium,Ron Kulpa
+1895,566829,2019-08-18,min,tex,6,3,Globe Life Park in Arlington,Greg Gibson
+1896,565475,2019-08-18,mia,col,6,7,Coors Field,Ramon De Jesus
+1897,566147,2019-08-18,hou,oak,4,1,Oakland Coliseum,Mark Carlson
+1898,564797,2019-08-18,cws,laa,2,9,Angel Stadium,Chris Segal
+1899,564891,2019-08-18,sf,ari,1,6,Chase Field,Jeremie Rehak
+1900,566238,2019-08-18,chc,pit,7,1,BB&T Ballpark,Stu Scheurwater
+1901,564991,2019-08-19,kc,bal,5,4,Oriole Park at Camden Yards,Sam Holbrook
+1902,566239,2019-08-19,wsh,pit,13,0,PNC Park,Marvin Hudson
+1903,565285,2019-08-19,sd,cin,3,2,Great American Ball Park,Brian O'Nora
+1904,566726,2019-08-19,sea,tb,9,3,Tropicana Field,CB Bucknor
+1905,566625,2019-08-19,mil,stl,0,3,Busch Stadium,Ted Barrett
+1906,566830,2019-08-19,laa,tex,7,8,Globe Life Park in Arlington,Tom Hallion
+1907,565664,2019-08-19,det,hou,4,5,Minute Maid Park,Alfonso Marquez
+1908,567024,2019-08-19,cws,min,6,4,Target Field,Gabe Morales
+1909,564892,2019-08-19,col,ari,3,5,Chase Field,Tripp Gibson
+1910,566806,2019-08-20,laa,tex,5,1,Globe Life Park in Arlington,Todd Tichenor
+1911,566831,2019-08-20,laa,tex,2,3,Globe Life Park in Arlington,Ben May
+1912,564992,2019-08-20,kc,bal,1,4,Oriole Park at Camden Yards,Jim Wolf
+1913,566240,2019-08-20,wsh,pit,1,4,PNC Park,Adrian Johnson
+1914,566045,2019-08-20,cle,nym,2,9,Citi Field,Mike Everitt
+1915,565286,2019-08-20,sd,cin,2,3,Great American Ball Park,Mike Estabrook
+1916,566727,2019-08-20,sea,tb,7,4,Tropicana Field,D.J. Reyburn
+1917,565093,2019-08-20,phi,bos,3,2,Fenway Park,Dan Iassogna
+1918,567230,2019-08-20,mia,atl,1,5,SunTrust Park,Alan Porter
+1919,566626,2019-08-20,mil,stl,4,9,Busch Stadium,John Tumpane
+1920,565184,2019-08-20,sf,chc,3,5,Wrigley Field,Ed Hickox
+1921,565665,2019-08-20,det,hou,3,6,Minute Maid Park,David Rackley
+1922,567025,2019-08-20,cws,min,4,14,Target Field,Bill Welke
+1923,564893,2019-08-20,col,ari,7,8,Chase Field,Dan Bellino
+1924,566148,2019-08-20,nyy,oak,2,6,Oakland Coliseum,Roberto Ortiz
+1925,565863,2019-08-20,tor,lad,3,16,Dodger Stadium,Gerry Davis
+1926,565287,2019-08-21,sd,cin,2,4,Great American Ball Park,Nic Lentz
+1927,566728,2019-08-21,sea,tb,6,7,Tropicana Field,John Libka
+1928,567026,2019-08-21,cws,min,4,0,Target Field,Jansen Visconti
+1929,564894,2019-08-21,col,ari,7,2,Chase Field,Chris Segal
+1930,564993,2019-08-21,kc,bal,1,8,Oriole Park at Camden Yards,Ramon De Jesus
+1931,566241,2019-08-21,wsh,pit,11,1,PNC Park,Gary Cederstrom
+1932,566832,2019-08-21,laa,tex,7,8,Globe Life Park in Arlington,Adam Hamari
+1933,566046,2019-08-21,cle,nym,3,4,Citi Field,Lance Barrett
+1934,565094,2019-08-21,phi,bos,5,2,Fenway Park,Hunter Wendelstedt
+1935,567231,2019-08-21,mia,atl,0,5,SunTrust Park,Mark Wegner
+1936,566627,2019-08-21,mil,stl,5,3,Busch Stadium,Lance Barksdale
+1937,565185,2019-08-21,sf,chc,11,12,Wrigley Field,Carlos Torres
+1938,565666,2019-08-21,det,hou,2,1,Minute Maid Park,Quinn Wolcott
+1939,566149,2019-08-21,nyy,oak,4,6,Oakland Coliseum,Mike Muchlinski
+1940,565864,2019-08-21,tor,lad,1,2,Dodger Stadium,Brian Knight
+1941,565085,2019-08-22,kc,bos,4,5,Fenway Park,Ryan Blakney
+1942,565186,2019-08-22,sf,chc,0,1,Wrigley Field,Paul Nauert
+1943,566242,2019-08-22,wsh,pit,7,1,PNC Park,Tom Woodring
+1944,564994,2019-08-22,tb,bal,5,2,Oriole Park at Camden Yards,John Bacon
+1945,566047,2019-08-22,cle,nym,0,2,Citi Field,Chris Guccione
+1946,567232,2019-08-22,mia,atl,2,3,SunTrust Park,Sean Barber
+1947,566628,2019-08-22,col,stl,5,6,Busch Stadium,Bruce Dreckman
+1948,565667,2019-08-22,det,hou,3,6,Minute Maid Park,Jeremie Rehak
+1949,567325,2019-08-22,tex,cws,1,6,Guaranteed Rate Field,Manny Gonzalez
+1950,566150,2019-08-22,nyy,oak,3,5,Oakland Coliseum,Rob Drake
+1951,565865,2019-08-22,tor,lad,2,3,Dodger Stadium,Pat Hoberg
+1952,565187,2019-08-23,wsh,chc,9,3,Wrigley Field,Jordan Baker
+1953,566243,2019-08-23,cin,pit,2,3,PNC Park,Phil Cuzzi
+1954,564995,2019-08-23,tb,bal,7,1,Oriole Park at Camden Yards,Ted Barrett
+1955,565381,2019-08-23,kc,cle,1,4,Progressive Field,Angel Hernandez
+1956,566048,2019-08-23,atl,nym,2,1,Citi Field,Marvin Hudson
+1957,567423,2019-08-23,phi,mia,11,19,Marlins Park,Larry Vanover
+1958,565668,2019-08-23,laa,hou,4,5,Minute Maid Park,Stu Scheurwater
+1959,567027,2019-08-23,det,min,9,6,Target Field,Tim Timmons
+1960,567326,2019-08-23,tex,cws,3,8,Guaranteed Rate Field,Sam Holbrook
+1961,567614,2019-08-23,ari,mil,1,6,Miller Park,Ryan Blakney
+1962,566629,2019-08-23,col,stl,3,8,Busch Stadium,Mike Estabrook
+1963,566337,2019-08-23,bos,sd,11,0,Petco Park,Tom Hallion
+1964,566435,2019-08-23,tor,sea,4,7,T-Mobile Park,Kerwin Danley
+1965,565866,2019-08-23,nyy,lad,10,2,Dodger Stadium,Ron Kulpa
+1966,565188,2019-08-24,wsh,chc,7,2,Wrigley Field,Vic Carapazza
+1967,565867,2019-08-24,nyy,lad,1,2,Dodger Stadium,Gabe Morales
+1968,567424,2019-08-24,phi,mia,9,3,Marlins Park,Alfonso Marquez
+1969,566244,2019-08-24,cin,pit,0,14,PNC Park,Fieldin Culbreth
+1970,564996,2019-08-24,tb,bal,1,7,Oriole Park at Camden Yards,John Tumpane
+1971,565669,2019-08-24,laa,hou,2,5,Minute Maid Park,Alan Porter
+1972,565382,2019-08-24,kc,cle,2,4,Progressive Field,Ed Hickox
+1973,567028,2019-08-24,det,min,5,8,Target Field,Tripp Gibson
+1974,566049,2019-08-24,atl,nym,9,5,Citi Field,Adrian Johnson
+1975,567327,2019-08-24,tex,cws,4,0,Guaranteed Rate Field,Jim Wolf
+1976,567615,2019-08-24,ari,mil,0,4,Miller Park,Mike Everitt
+1977,566630,2019-08-24,col,stl,0,6,Busch Stadium,Paul Emmel
+1978,566338,2019-08-24,bos,sd,5,4,Petco Park,Todd Tichenor
+1979,566151,2019-08-24,sf,oak,10,5,Oakland Coliseum,Greg Gibson
+1980,566436,2019-08-24,tor,sea,7,5,T-Mobile Park,Roberto Ortiz
+1981,564997,2019-08-25,tb,bal,3,8,Oriole Park at Camden Yards,Lance Barksdale
+1982,565383,2019-08-25,kc,cle,9,8,Progressive Field,Carlos Torres
+1983,566050,2019-08-25,atl,nym,2,1,Citi Field,Gary Cederstrom
+1984,567425,2019-08-25,phi,mia,2,3,Marlins Park,David Rackley
+1985,566245,2019-08-25,cin,pit,8,9,PNC Park,CB Bucknor
+1986,565670,2019-08-25,laa,hou,2,11,Minute Maid Park,Mark Wegner
+1987,567029,2019-08-25,det,min,4,7,Target Field,Dan Bellino
+1988,567328,2019-08-25,tex,cws,0,2,Guaranteed Rate Field,Ramon De Jesus
+1989,567616,2019-08-25,ari,mil,5,2,Miller Park,Lance Barrett
+1990,566631,2019-08-25,col,stl,4,11,Busch Stadium,Chad Fairchild
+1991,565189,2019-08-25,wsh,chc,7,5,Wrigley Field,Dan Iassogna
+1992,566152,2019-08-25,sf,oak,5,4,Oakland Coliseum,John Libka
+1993,566339,2019-08-25,bos,sd,1,3,Petco Park,Ben May
+1994,566437,2019-08-25,tor,sea,1,3,T-Mobile Park,Mike Muchlinski
+1995,565868,2019-08-25,nyy,lad,5,1,Dodger Stadium,Bill Welke
+1996,565418,2019-08-26,atl,col,1,3,Coors Field,Nic Lentz
+1997,567125,2019-08-26,pit,phi,5,6,Citizens Bank Park,Brian O'Nora
+1998,567617,2019-08-26,stl,mil,12,2,Miller Park,Angel Hernandez
+1999,567426,2019-08-26,cin,mia,6,3,Marlins Park,Hunter Wendelstedt
+2000,565765,2019-08-26,oak,kc,19,4,Kauffman Stadium,Chris Guccione
+2001,566533,2019-08-26,ari,sf,6,4,Oracle Park,Adam Hamari
+2002,566340,2019-08-26,lad,sd,3,4,Petco Park,Rob Drake
+2003,566438,2019-08-26,nyy,sea,5,4,T-Mobile Park,Manny Gonzalez
+2004,565958,2019-08-27,bal,wsh,2,0,Nationals Park,Jeremie Rehak
+2005,567126,2019-08-27,pit,phi,5,4,Citizens Bank Park,James Hoye
+2006,566928,2019-08-27,atl,tor,1,3,Rogers Centre,Cory Blaser
+2007,565571,2019-08-27,cle,det,10,1,Comerica Park,Sean Barber
+2008,566051,2019-08-27,chc,nym,5,2,Citi Field,Chad Whitson
+2009,567427,2019-08-27,cin,mia,8,5,Marlins Park,Ryan Blakney
+2010,567618,2019-08-27,stl,mil,6,3,Miller Park,Alfonso Marquez
+2011,565671,2019-08-27,tb,hou,1,15,Minute Maid Park,Pat Hoberg
+2012,567329,2019-08-27,min,cws,3,1,Guaranteed Rate Field,Andy Fletcher
+2013,565766,2019-08-27,oak,kc,2,1,Kauffman Stadium,Mike Everitt
+2014,565476,2019-08-27,bos,col,10,6,Coors Field,Jansen Visconti
+2015,566534,2019-08-27,ari,sf,3,2,Oracle Park,Tom Hallion
+2016,564798,2019-08-27,tex,laa,2,5,Angel Stadium,Bruce Dreckman
+2017,566341,2019-08-27,lad,sd,9,0,Petco Park,Tim Timmons
+2018,566439,2019-08-27,nyy,sea,7,0,T-Mobile Park,Sam Holbrook
+2019,567619,2019-08-28,stl,mil,1,4,Miller Park,Tom Woodring
+2020,566440,2019-08-28,nyy,sea,7,3,T-Mobile Park,Jim Wolf
+2021,567127,2019-08-28,pit,phi,3,12,Citizens Bank Park,Alex Tosi
+2022,565959,2019-08-28,bal,wsh,4,8,Nationals Park,Larry Vanover
+2023,566929,2019-08-28,atl,tor,9,4,Rogers Centre,Tony Randazzo
+2024,565572,2019-08-28,cle,det,4,2,Comerica Park,Stu Scheurwater
+2025,566052,2019-08-28,chc,nym,10,7,Citi Field,Doug Eddings
+2026,567428,2019-08-28,cin,mia,5,0,Marlins Park,Vic Carapazza
+2027,565672,2019-08-28,tb,hou,6,8,Minute Maid Park,Greg Gibson
+2028,567330,2019-08-28,min,cws,8,2,Guaranteed Rate Field,Will Little
+2029,565767,2019-08-28,oak,kc,4,6,Kauffman Stadium,Chris Segal
+2030,565477,2019-08-28,bos,col,7,4,Coors Field,Jerry Meals
+2031,566342,2019-08-28,lad,sd,6,4,Petco Park,Roberto Ortiz
+2032,564799,2019-08-28,tex,laa,3,0,Angel Stadium,Paul Emmel
+2033,565573,2019-08-29,cle,det,2,0,Comerica Park,Alan Porter
+2034,565768,2019-08-29,oak,kc,9,8,Kauffman Stadium,Bill Welke
+2035,565673,2019-08-29,tb,hou,9,8,Minute Maid Park,Jordan Baker
+2036,567331,2019-08-29,min,cws,10,5,Guaranteed Rate Field,Joe West
+2037,566053,2019-08-29,chc,nym,4,1,Citi Field,Bill Miller
+2038,567429,2019-08-29,cin,mia,3,4,Marlins Park,Dan Iassogna
+2039,566833,2019-08-29,sea,tex,5,3,Globe Life Park in Arlington,Gabe Morales
+2040,565478,2019-08-29,pit,col,11,8,Coors Field,Todd Tichenor
+2041,564895,2019-08-29,lad,ari,5,11,Chase Field,Mark Ripperger
+2042,566535,2019-08-29,sd,sf,5,3,Oracle Park,Ramon De Jesus
+2043,565190,2019-08-30,mil,chc,1,7,Wrigley Field,Mike Muchlinski
+2044,567128,2019-08-30,nym,phi,11,5,Citizens Bank Park,Eric Cooper
+2045,565960,2019-08-30,mia,wsh,6,7,Nationals Park,Lance Barrett
+2046,567525,2019-08-30,oak,nyy,8,2,Yankee Stadium,Jim Reynolds
+2047,566930,2019-08-30,hou,tor,7,4,Rogers Centre,Mike Estabrook
+2048,566729,2019-08-30,cle,tb,0,4,Tropicana Field,Hunter Wendelstedt
+2049,565574,2019-08-30,min,det,13,5,Comerica Park,John Libka
+2050,567233,2019-08-30,cws,atl,7,10,SunTrust Park,Brian Knight
+2051,566834,2019-08-30,sea,tex,3,6,Globe Life Park in Arlington,Phil Cuzzi
+2052,565769,2019-08-30,bal,kc,14,2,Kauffman Stadium,Jeff Nelson
+2053,565479,2019-08-30,pit,col,9,4,Coors Field,Ben May
+2054,564896,2019-08-30,lad,ari,4,5,Chase Field,Brian O'Nora
+2055,564800,2019-08-30,bos,laa,7,6,Angel Stadium,Dan Bellino
+2056,566536,2019-08-30,sd,sf,3,8,Oracle Park,Manny Gonzalez
+2057,566632,2019-08-30,cin,stl,5,3,Busch Stadium,Bill Miller
+2058,567526,2019-08-31,oak,nyy,3,4,Yankee Stadium,Sean Barber
+2059,566599,2019-08-31,cin,stl,6,10,Busch Stadium,Chris Conroy
+2060,566633,2019-08-31,cin,stl,2,3,Busch Stadium,Chad Whitson
+2061,565191,2019-08-31,mil,chc,2,0,Wrigley Field,Rob Drake
+2062,566931,2019-08-31,hou,tor,4,6,Rogers Centre,Bruce Dreckman
+2063,567129,2019-08-31,nym,phi,6,3,Citizens Bank Park,Will Little
+2064,566730,2019-08-31,cle,tb,6,9,Tropicana Field,Vic Carapazza
+2065,565575,2019-08-31,min,det,7,10,Comerica Park,Carlos Torres
+2066,565961,2019-08-31,mia,wsh,0,7,Nationals Park,Nic Lentz
+2067,565770,2019-08-31,bal,kc,5,7,Kauffman Stadium,Laz Diaz
+2068,567234,2019-08-31,cws,atl,5,11,SunTrust Park,Pat Hoberg
+2069,566835,2019-08-31,sea,tex,2,3,Globe Life Park in Arlington,Jansen Visconti
+2070,564897,2019-08-31,lad,ari,5,6,Chase Field,James Hoye
+2071,565480,2019-08-31,pit,col,11,4,Coors Field,Adam Hamari
+2072,566537,2019-08-31,sd,sf,4,1,Oracle Park,Sam Holbrook
+2073,564801,2019-08-31,bos,laa,4,10,Angel Stadium,David Rackley
+2074,566634,2019-09-01,cin,stl,3,4,Busch Stadium,Doug Eddings
+2075,566632,2019-09-01,cin,stl,5,3,Busch Stadium,Bill Miller
+2076,567527,2019-09-01,oak,nyy,4,5,Yankee Stadium,Stu Scheurwater
+2077,566932,2019-09-01,hou,tor,2,0,Rogers Centre,Paul Emmel
+2078,566731,2019-09-01,cle,tb,2,8,Tropicana Field,Dan Iassogna
+2079,565576,2019-09-01,min,det,8,3,Comerica Park,Angel Hernandez
+2080,565962,2019-09-01,mia,wsh,3,9,Nationals Park,Chad Fairchild
+2081,565771,2019-09-01,bal,kc,4,6,Kauffman Stadium,Cory Blaser
+2082,565192,2019-09-01,mil,chc,4,0,Wrigley Field,Tim Timmons
+2083,566836,2019-09-01,sea,tex,11,3,Globe Life Park in Arlington,Jerry Meals
+2084,565481,2019-09-01,pit,col,6,2,Coors Field,Tom Hallion
+2085,566538,2019-09-01,sd,sf,8,4,Oracle Park,Jim Wolf
+2086,564802,2019-09-01,bos,laa,4,3,Angel Stadium,Jeremie Rehak
+2087,564898,2019-09-01,lad,ari,4,3,Chase Field,Alex Tosi
+2088,567235,2019-09-01,cws,atl,3,5,SunTrust Park,Greg Gibson
+2089,567130,2019-09-01,nym,phi,2,5,Citizens Bank Park,Joe West
+2090,565963,2019-09-02,nym,wsh,7,3,Nationals Park,Alan Porter
+2091,567528,2019-09-02,tex,nyy,7,0,Yankee Stadium,Chris Segal
+2092,566732,2019-09-02,bal,tb,4,5,Tropicana Field,Mike Everitt
+2093,565577,2019-09-02,min,det,4,3,Comerica Park,Paul Nauert
+2094,567236,2019-09-02,tor,atl,3,6,SunTrust Park,Jordan Baker
+2095,565288,2019-09-02,phi,cin,7,1,Great American Ball Park,Quinn Wolcott
+2096,566635,2019-09-02,sf,stl,1,3,Busch Stadium,Jeff Nelson
+2097,565193,2019-09-02,sea,chc,1,5,Wrigley Field,Ryan Blakney
+2098,564899,2019-09-02,sd,ari,7,14,Chase Field,Ted Barrett
+2099,567620,2019-09-02,hou,mil,3,2,Miller Park,Ben May
+2100,565384,2019-09-02,cws,cle,3,11,Progressive Field,Mark Carlson
+2101,565869,2019-09-02,col,lad,9,16,Dodger Stadium,Larry Vanover
+2102,566733,2019-09-03,bal,tb,4,2,Tropicana Field,Mark Wegner
+2103,566734,2019-09-03,bal,tb,0,2,Tropicana Field,Lance Barrett
+2104,567529,2019-09-03,tex,nyy,1,10,Yankee Stadium,Eric Cooper
+2105,565289,2019-09-03,phi,cin,6,2,Great American Ball Park,Marvin Hudson
+2106,565964,2019-09-03,nym,wsh,10,11,Nationals Park,Jim Reynolds
+2107,566246,2019-09-03,mia,pit,5,4,PNC Park,John Libka
+2108,565095,2019-09-03,min,bos,6,5,Fenway Park,D.J. Reyburn
+2109,565385,2019-09-03,cws,cle,6,5,Progressive Field,Tripp Gibson
+2110,567237,2019-09-03,tor,atl,2,7,SunTrust Park,Hunter Wendelstedt
+2111,567621,2019-09-03,hou,mil,2,4,Miller Park,Chad Whitson
+2112,566636,2019-09-03,sf,stl,0,1,Busch Stadium,Laz Diaz
+2113,565194,2019-09-03,sea,chc,1,6,Wrigley Field,Mike Estabrook
+2114,565772,2019-09-03,det,kc,5,6,Kauffman Stadium,Roberto Ortiz
+2115,564900,2019-09-03,sd,ari,1,2,Chase Field,Kerwin Danley
+2116,566153,2019-09-03,laa,oak,5,7,Oakland Coliseum,Mark Ripperger
+2117,565870,2019-09-03,col,lad,3,5,Dodger Stadium,Dan Bellino
+2118,565965,2019-09-04,nym,wsh,8,4,Nationals Park,Sean Barber
+2119,567530,2019-09-04,tex,nyy,1,4,Yankee Stadium,Will Little
+2120,565290,2019-09-04,phi,cin,5,8,Great American Ball Park,Tom Woodring
+2121,566247,2019-09-04,mia,pit,5,6,PNC Park,Carlos Torres
+2122,565096,2019-09-04,min,bos,2,6,Fenway Park,Ramon De Jesus
+2123,565386,2019-09-04,cws,cle,6,8,Progressive Field,Brennan Miller
+2124,566637,2019-09-04,sf,stl,9,8,Busch Stadium,Jansen Visconti
+2125,565773,2019-09-04,det,kc,4,5,Kauffman Stadium,Mike Muchlinski
+2126,564901,2019-09-04,sd,ari,1,4,Chase Field,John Tumpane
+2127,566154,2019-09-04,laa,oak,0,4,Oakland Coliseum,Brian O'Nora
+2128,565871,2019-09-04,col,lad,3,7,Dodger Stadium,David Rackley
+2129,565291,2019-09-05,phi,cin,3,4,Great American Ball Park,Gary Cederstrom
+2130,565387,2019-09-05,cws,cle,7,1,Progressive Field,Chris Conroy
+2131,565774,2019-09-05,det,kc,6,4,Kauffman Stadium,Rob Drake
+2132,566638,2019-09-05,sf,stl,0,10,Busch Stadium,Cory Blaser
+2133,566155,2019-09-05,laa,oak,6,10,Oakland Coliseum,James Hoye
+2134,564998,2019-09-05,tex,bal,3,1,Oriole Park at Camden Yards,Stu Scheurwater
+2135,566248,2019-09-05,mia,pit,10,7,PNC Park,Angel Hernandez
+2136,566735,2019-09-05,tor,tb,4,6,Tropicana Field,Doug Eddings
+2137,565097,2019-09-05,min,bos,2,1,Fenway Park,Fieldin Culbreth
+2138,567622,2019-09-05,chc,mil,10,5,Miller Park,Vic Carapazza
+2139,567238,2019-09-05,wsh,atl,2,4,SunTrust Park,Bruce Dreckman
+2140,565674,2019-09-05,sea,hou,9,11,Minute Maid Park,Joe West
+2141,566249,2019-09-06,stl,pit,4,9,PNC Park,Lance Barksdale
+2142,564999,2019-09-06,tex,bal,7,6,Oriole Park at Camden Yards,Alan Porter
+2143,565292,2019-09-06,ari,cin,7,5,Great American Ball Park,Mark Wegner
+2144,566736,2019-09-06,tor,tb,0,5,Tropicana Field,Bill Miller
+2145,566054,2019-09-06,phi,nym,4,5,Citi Field,CB Bucknor
+2146,567430,2019-09-06,kc,mia,3,0,Marlins Park,Quinn Wolcott
+2147,565098,2019-09-06,nyy,bos,1,6,Fenway Park,Tim Timmons
+2148,567239,2019-09-06,wsh,atl,3,4,SunTrust Park,Paul Emmel
+2149,565675,2019-09-06,sea,hou,4,7,Minute Maid Park,Dan Iassogna
+2150,567030,2019-09-06,cle,min,6,2,Target Field,Jeff Nelson
+2151,567332,2019-09-06,laa,cws,5,4,Guaranteed Rate Field,Paul Nauert
+2152,567623,2019-09-06,chc,mil,1,7,Miller Park,Eric Cooper
+2153,565534,2019-09-06,oak,det,7,3,Oakland Coliseum,Tim Timmons
+2154,566156,2019-09-06,det,oak,5,4,Oakland Coliseum,Larry Vanover
+2155,566343,2019-09-06,col,sd,3,2,Petco Park,Alex Tosi
+2156,565872,2019-09-06,sf,lad,5,4,Dodger Stadium,Bill Welke
+2157,565099,2019-09-07,nyy,bos,5,1,Fenway Park,Ron Kulpa
+2158,565293,2019-09-07,ari,cin,2,0,Great American Ball Park,Tripp Gibson
+2159,566737,2019-09-07,tor,tb,3,5,Tropicana Field,Ben May
+2160,567431,2019-09-07,kc,mia,7,2,Marlins Park,Marvin Hudson
+2161,566250,2019-09-07,stl,pit,10,1,PNC Park,Ted Barrett
+2162,565000,2019-09-07,tex,bal,9,4,Oriole Park at Camden Yards,Jim Reynolds
+2163,565676,2019-09-07,sea,hou,1,2,Minute Maid Park,Nick Mahrley
+2164,567031,2019-09-07,cle,min,3,5,Target Field,Laz Diaz
+2165,566055,2019-09-07,phi,nym,5,0,Citi Field,D.J. Reyburn
+2166,567333,2019-09-07,laa,cws,8,7,Guaranteed Rate Field,John Libka
+2167,567624,2019-09-07,chc,mil,2,3,Miller Park,Jordan Baker
+2168,567240,2019-09-07,wsh,atl,4,5,SunTrust Park,Ryan Blakney
+2169,566344,2019-09-07,col,sd,0,3,Petco Park,Mark Ripperger
+2170,566157,2019-09-07,det,oak,2,10,Oakland Coliseum,Dan Bellino
+2171,565873,2019-09-07,sf,lad,1,0,Dodger Stadium,Tony Randazzo
+2172,565001,2019-09-08,tex,bal,10,4,Oriole Park at Camden Yards,Brennan Miller
+2173,565294,2019-09-08,ari,cin,3,4,Great American Ball Park,Shane Livensparger
+2174,566738,2019-09-08,tor,tb,3,8,Tropicana Field,Chad Whitson
+2175,566056,2019-09-08,phi,nym,10,7,Citi Field,Ramon De Jesus
+2176,567432,2019-09-08,kc,mia,0,9,Marlins Park,Tom Woodring
+2177,567241,2019-09-08,wsh,atl,9,4,SunTrust Park,Mike Estabrook
+2178,566251,2019-09-08,stl,pit,2,0,PNC Park,Roberto Ortiz
+2179,565677,2019-09-08,sea,hou,1,21,Minute Maid Park,Hunter Wendelstedt
+2180,567032,2019-09-08,cle,min,5,2,Target Field,Jansen Visconti
+2181,567334,2019-09-08,laa,cws,1,5,Guaranteed Rate Field,Carlos Torres
+2182,567625,2019-09-08,chc,mil,5,8,Miller Park,Will Little
+2183,566158,2019-09-08,det,oak,1,3,Oakland Coliseum,David Rackley
+2184,566345,2019-09-08,col,sd,1,2,Petco Park,Brian O'Nora
+2185,565874,2019-09-08,sf,lad,0,5,Dodger Stadium,Lance Barrett
+2186,565100,2019-09-08,nyy,bos,10,5,Fenway Park,Mike Muchlinski
+2187,567131,2019-09-09,atl,phi,7,2,Citizens Bank Park,John Tumpane
+2188,566057,2019-09-09,ari,nym,1,3,Citi Field,Gabe Morales
+2189,565101,2019-09-09,nyy,bos,5,0,Fenway Park,Rob Drake
+2190,567433,2019-09-09,mil,mia,8,3,Marlins Park,Mark Carlson
+2191,565678,2019-09-09,oak,hou,0,15,Minute Maid Park,Adrian Johnson
+2192,566539,2019-09-09,pit,sf,6,4,Oracle Park,Chad Fairchild
+2193,564803,2019-09-09,cle,laa,6,2,Angel Stadium,Chris Guccione
+2194,566346,2019-09-09,chc,sd,10,2,Petco Park,Fieldin Culbreth
+2195,565578,2019-09-10,nyy,det,11,12,Comerica Park,Vic Carapazza
+2196,565002,2019-09-10,lad,bal,7,3,Oriole Park at Camden Yards,Ryan Additon
+2197,567132,2019-09-10,atl,phi,5,6,Citizens Bank Park,Lance Barksdale
+2198,566933,2019-09-10,bos,tor,3,4,Rogers Centre,Stu Scheurwater
+2199,566058,2019-09-10,ari,nym,2,3,Citi Field,Doug Eddings
+2200,567434,2019-09-10,mil,mia,4,3,Marlins Park,Kerwin Danley
+2201,567033,2019-09-10,wsh,min,0,5,Target Field,Todd Tichenor
+2202,566837,2019-09-10,tb,tex,5,3,Globe Life Park in Arlington,Tim Timmons
+2203,565679,2019-09-10,oak,hou,21,7,Minute Maid Park,Chris Conroy
+2204,567335,2019-09-10,kc,cws,3,7,Guaranteed Rate Field,Alfonso Marquez
+2205,565482,2019-09-10,stl,col,1,2,Coors Field,Brian Knight
+2206,566540,2019-09-10,pit,sf,4,5,Oracle Park,Paul Emmel
+2207,564804,2019-09-10,cle,laa,8,0,Angel Stadium,Bill Welke
+2208,566347,2019-09-10,chc,sd,8,9,Petco Park,CB Bucknor
+2209,566441,2019-09-10,cin,sea,3,4,T-Mobile Park,Paul Nauert
+2210,565003,2019-09-11,lad,bal,3,7,Oriole Park at Camden Yards,Manny Gonzalez
+2211,567133,2019-09-11,atl,phi,3,1,Citizens Bank Park,Ted Barrett
+2212,566934,2019-09-11,bos,tor,0,8,Rogers Centre,Alan Porter
+2213,566059,2019-09-11,ari,nym,0,9,Citi Field,Jerry Meals
+2214,567435,2019-09-11,mil,mia,7,5,Marlins Park,Tripp Gibson
+2215,567034,2019-09-11,wsh,min,6,2,Target Field,Phil Cuzzi
+2216,566838,2019-09-11,tb,tex,9,10,Globe Life Park in Arlington,Tony Randazzo
+2217,564805,2019-09-11,cle,laa,4,3,Angel Stadium,Tom Woodring
+2218,565680,2019-09-11,oak,hou,5,3,Minute Maid Park,Marvin Hudson
+2219,567336,2019-09-11,kc,cws,8,6,Guaranteed Rate Field,Dan Bellino
+2220,565483,2019-09-11,stl,col,1,2,Coors Field,Pat Hoberg
+2221,566541,2019-09-11,pit,sf,6,3,Oracle Park,Greg Gibson
+2222,566348,2019-09-11,chc,sd,0,4,Petco Park,D.J. Reyburn
+2223,566442,2019-09-11,cin,sea,3,5,T-Mobile Park,John Libka
+2224,565579,2019-09-11,nyy,det,6,4,Comerica Park,Nick Mahrley
+2225,566060,2019-09-12,ari,nym,1,11,Citi Field,Ron Kulpa
+2226,565580,2019-09-12,nyy,det,10,4,Comerica Park,Dan Iassogna
+2227,565579,2019-09-12,nyy,det,6,4,Comerica Park,Nick Mahrley
+2228,567436,2019-09-12,mil,mia,3,2,Marlins Park,Shane Livensparger
+2229,567337,2019-09-12,kc,cws,6,3,Guaranteed Rate Field,Jeremie Rehak
+2230,565484,2019-09-12,stl,col,10,3,Coors Field,Gerry Davis
+2231,566349,2019-09-12,chc,sd,4,1,Petco Park,Ramon De Jesus
+2232,566542,2019-09-12,pit,sf,4,2,Oracle Park,Ryan Blakney
+2233,566935,2019-09-12,bos,tor,7,4,Rogers Centre,Chris Segal
+2234,565004,2019-09-12,lad,bal,4,2,Oriole Park at Camden Yards,Sam Holbrook
+2235,567134,2019-09-12,atl,phi,5,9,Citizens Bank Park,Roberto Ortiz
+2236,567035,2019-09-12,wsh,min,12,6,Target Field,Adam Hamari
+2237,566839,2019-09-12,tb,tex,4,6,Globe Life Park in Arlington,Mike Muchlinski
+2238,565681,2019-09-12,oak,hou,3,2,Minute Maid Park,Cory Blaser
+2239,566443,2019-09-12,cin,sea,11,5,T-Mobile Park,Ed Hickox
+2240,565195,2019-09-13,pit,chc,8,17,Wrigley Field,David Rackley
+2241,565966,2019-09-13,atl,wsh,5,0,Nationals Park,Rob Drake
+2242,566936,2019-09-13,nyy,tor,5,6,Rogers Centre,Jim Wolf
+2243,565581,2019-09-13,bal,det,6,2,Comerica Park,Lance Barksdale
+2244,566061,2019-09-13,lad,nym,9,2,Citi Field,Hunter Wendelstedt
+2245,566840,2019-09-13,oak,tex,14,9,Globe Life Park in Arlington,Mark Carlson
+2246,565775,2019-09-13,hou,kc,4,1,Kauffman Stadium,Lance Barrett
+2247,566639,2019-09-13,mil,stl,0,10,Busch Stadium,Tom Hallion
+2248,565485,2019-09-13,sd,col,8,10,Coors Field,Carlos Torres
+2249,564902,2019-09-13,cin,ari,4,3,Chase Field,Chad Fairchild
+2250,564806,2019-09-13,tb,laa,11,4,Angel Stadium,Brian Knight
+2251,566444,2019-09-13,cws,sea,9,7,T-Mobile Park,Quinn Wolcott
+2252,566543,2019-09-13,mia,sf,0,1,Oracle Park,Fieldin Culbreth
+2253,565388,2019-09-13,min,cle,2,0,Progressive Field,Mark Wegner
+2254,565388,2019-09-14,min,cle,2,0,Progressive Field,Mark Wegner
+2255,565389,2019-09-14,min,cle,9,5,Progressive Field,Stu Scheurwater
+2256,565196,2019-09-14,pit,chc,1,14,Wrigley Field,Alfonso Marquez
+2257,566937,2019-09-14,nyy,tor,13,3,Rogers Centre,Ryan Additon
+2258,565967,2019-09-14,atl,wsh,10,1,Nationals Park,Tim Timmons
+2259,565582,2019-09-14,bal,det,4,8,Comerica Park,Ted Barrett
+2260,567135,2019-09-14,bos,phi,2,1,Citizens Bank Park,Bruce Dreckman
+2261,566062,2019-09-14,lad,nym,0,3,Citi Field,Ben May
+2262,565776,2019-09-14,hou,kc,6,1,Kauffman Stadium,Chris Guccione
+2263,566640,2019-09-14,mil,stl,5,2,Busch Stadium,Todd Tichenor
+2264,566841,2019-09-14,oak,tex,8,6,Globe Life Park in Arlington,Jordan Baker
+2265,564903,2019-09-14,cin,ari,0,1,Chase Field,Mike Estabrook
+2266,565486,2019-09-14,sd,col,10,11,Coors Field,Paul Nauert
+2267,566544,2019-09-14,mia,sf,4,2,Oracle Park,CB Bucknor
+2268,564807,2019-09-14,tb,laa,3,1,Angel Stadium,Kerwin Danley
+2269,566445,2019-09-14,cws,sea,1,2,T-Mobile Park,Adrian Johnson
+2270,567136,2019-09-15,bos,phi,6,3,Citizens Bank Park,Gabe Morales
+2271,566938,2019-09-15,nyy,tor,4,6,Rogers Centre,Manny Gonzalez
+2272,565583,2019-09-15,bal,det,8,2,Comerica Park,Chris Segal
+2273,565390,2019-09-15,min,cle,5,7,Progressive Field,Alan Porter
+2274,565968,2019-09-15,atl,wsh,0,7,Nationals Park,Bill Welke
+2275,565777,2019-09-15,hou,kc,12,3,Kauffman Stadium,Jansen Visconti
+2276,566641,2019-09-15,mil,stl,7,6,Busch Stadium,Phil Cuzzi
+2277,565197,2019-09-15,pit,chc,6,16,Wrigley Field,Dan Bellino
+2278,566842,2019-09-15,oak,tex,6,1,Globe Life Park in Arlington,Tripp Gibson
+2279,565487,2019-09-15,sd,col,5,10,Coors Field,John Libka
+2280,566545,2019-09-15,mia,sf,1,2,Oracle Park,D.J. Reyburn
+2281,564808,2019-09-15,tb,laa,4,6,Angel Stadium,Pat Hoberg
+2282,564904,2019-09-15,cin,ari,3,1,Chase Field,Greg Gibson
+2283,566446,2019-09-15,cws,sea,10,11,T-Mobile Park,Alex Tosi
+2284,566063,2019-09-15,lad,nym,3,2,Citi Field,Vic Carapazza
+2285,565584,2019-09-16,bal,det,2,5,Comerica Park,Roberto Ortiz
+2286,567036,2019-09-16,cws,min,3,5,Target Field,Mike Everitt
+2287,567626,2019-09-16,sd,mil,1,5,Miller Park,Jerry Meals
+2288,566642,2019-09-16,wsh,stl,2,4,Busch Stadium,Sam Holbrook
+2289,565198,2019-09-16,cin,chc,2,8,Wrigley Field,Jeff Nelson
+2290,565488,2019-09-16,nym,col,4,9,Coors Field,Ryan Blakney
+2291,564905,2019-09-16,mia,ari,5,7,Chase Field,Gerry Davis
+2292,566159,2019-09-16,kc,oak,6,5,Oakland Coliseum,CB Bucknor
+2293,567531,2019-09-17,laa,nyy,0,8,Yankee Stadium,Bill Miller
+2294,566252,2019-09-17,sea,pit,6,0,PNC Park,James Hoye
+2295,565005,2019-09-17,tor,bal,8,5,Oriole Park at Camden Yards,Larry Vanover
+2296,565391,2019-09-17,det,cle,2,7,Progressive Field,Adam Hamari
+2297,565102,2019-09-17,sf,bos,7,6,Fenway Park,Joe West
+2298,567242,2019-09-17,phi,atl,5,4,SunTrust Park,Ed Hickox
+2299,567037,2019-09-17,cws,min,8,9,Target Field,Lance Barrett
+2300,567627,2019-09-17,sd,mil,1,3,Miller Park,Ron Kulpa
+2301,566643,2019-09-17,wsh,stl,6,2,Busch Stadium,Jim Wolf
+2302,565199,2019-09-17,cin,chc,4,2,Wrigley Field,Laz Diaz
+2303,565682,2019-09-17,tex,hou,1,4,Minute Maid Park,Angel Hernandez
+2304,565489,2019-09-17,nym,col,6,1,Coors Field,Chad Fairchild
+2305,564906,2019-09-17,mia,ari,12,6,Chase Field,Nick Mahrley
+2306,566160,2019-09-17,kc,oak,1,2,Oakland Coliseum,Ryan Additon
+2307,565875,2019-09-17,tb,lad,5,7,Dodger Stadium,Gary Cederstrom
+2308,566644,2019-09-18,wsh,stl,1,5,Busch Stadium,John Tumpane
+2309,565490,2019-09-18,nym,col,7,4,Coors Field,Kerwin Danley
+2310,566161,2019-09-18,kc,oak,0,1,Oakland Coliseum,D.J. Reyburn
+2311,564907,2019-09-18,mia,ari,4,5,Chase Field,Brian Knight
+2312,567532,2019-09-18,laa,nyy,3,2,Yankee Stadium,Doug Eddings
+2313,566253,2019-09-18,sea,pit,4,1,PNC Park,Shane Livensparger
+2314,565006,2019-09-18,tor,bal,11,10,Oriole Park at Camden Yards,Alfonso Marquez
+2315,565392,2019-09-18,det,cle,1,2,Progressive Field,Ben May
+2316,565103,2019-09-18,sf,bos,11,3,Fenway Park,Eric Cooper
+2317,567243,2019-09-18,phi,atl,4,1,SunTrust Park,Carlos Torres
+2318,567038,2019-09-18,cws,min,3,1,Target Field,Chris Guccione
+2319,567628,2019-09-18,sd,mil,2,1,Miller Park,Tom Woodring
+2320,565200,2019-09-18,cin,chc,3,2,Wrigley Field,Tony Randazzo
+2321,565876,2019-09-18,tb,lad,8,7,Dodger Stadium,Adrian Johnson
+2322,565683,2019-09-18,tex,hou,2,3,Minute Maid Park,Lance Barksdale
+2323,567244,2019-09-19,phi,atl,4,5,SunTrust Park,Chris Conroy
+2324,566254,2019-09-19,sea,pit,6,5,PNC Park,Brian O'Nora
+2325,565104,2019-09-19,sf,bos,4,5,Fenway Park,Will Little
+2326,567629,2019-09-19,sd,mil,1,5,Miller Park,Bruce Dreckman
+2327,567533,2019-09-19,laa,nyy,1,9,Yankee Stadium,Chad Whitson
+2328,565007,2019-09-19,tor,bal,8,4,Oriole Park at Camden Yards,Dan Bellino
+2329,565393,2019-09-19,det,cle,0,7,Progressive Field,Tom Hallion
+2330,565201,2019-09-19,stl,chc,5,4,Wrigley Field,Bill Welke
+2331,567039,2019-09-19,kc,min,5,8,Target Field,Manny Gonzalez
+2332,565202,2019-09-20,stl,chc,2,1,Wrigley Field,Mike Everitt
+2333,565008,2019-09-20,sea,bal,3,5,Oriole Park at Camden Yards,Phil Cuzzi
+2334,567534,2019-09-20,tor,nyy,4,3,Yankee Stadium,Joe West
+2335,565295,2019-09-20,nym,cin,8,1,Great American Ball Park,Mark Ripperger
+2336,566739,2019-09-20,bos,tb,4,5,Tropicana Field,Paul Nauert
+2337,565394,2019-09-20,phi,cle,2,5,Progressive Field,Larry Vanover
+2338,565585,2019-09-20,cws,det,10,1,Comerica Park,Jansen Visconti
+2339,567437,2019-09-20,wsh,mia,6,4,Marlins Park,Ted Barrett
+2340,567245,2019-09-20,sf,atl,0,6,SunTrust Park,Jerry Meals
+2341,565684,2019-09-20,laa,hou,4,6,Minute Maid Park,Mike Estabrook
+2342,567040,2019-09-20,kc,min,3,4,Target Field,Sam Holbrook
+2343,567630,2019-09-20,pit,mil,1,10,Miller Park,Cory Blaser
+2344,566162,2019-09-20,tex,oak,0,8,Oakland Coliseum,Pat Hoberg
+2345,565877,2019-09-20,col,lad,5,12,Dodger Stadium,Greg Gibson
+2346,566350,2019-09-20,ari,sd,9,0,Petco Park,Todd Tichenor
+2347,567535,2019-09-21,tor,nyy,2,7,Yankee Stadium,Jeremie Rehak
+2348,565203,2019-09-21,stl,chc,9,8,Wrigley Field,Lance Barrett
+2349,565296,2019-09-21,nym,cin,2,3,Great American Ball Park,James Hoye
+2350,566740,2019-09-21,bos,tb,4,5,Tropicana Field,Ed Hickox
+2351,565586,2019-09-21,cws,det,5,3,Comerica Park,Bill Miller
+2352,567438,2019-09-21,wsh,mia,10,4,Marlins Park,Chris Segal
+2353,565009,2019-09-21,sea,bal,7,6,Oriole Park at Camden Yards,Adam Hamari
+2354,565685,2019-09-21,laa,hou,8,4,Minute Maid Park,Ryan Blakney
+2355,567041,2019-09-21,kc,min,12,5,Target Field,Jim Wolf
+2356,565395,2019-09-21,phi,cle,9,4,Progressive Field,Alfonso Marquez
+2357,567631,2019-09-21,pit,mil,1,10,Miller Park,Jeff Nelson
+2358,567246,2019-09-21,sf,atl,1,8,SunTrust Park,Ron Kulpa
+2359,566351,2019-09-21,ari,sd,4,2,Petco Park,Alex Tosi
+2360,566163,2019-09-21,tex,oak,3,12,Oakland Coliseum,Gerry Davis
+2361,565878,2019-09-21,col,lad,4,2,Dodger Stadium,CB Bucknor
+2362,565010,2019-09-22,sea,bal,1,2,Oriole Park at Camden Yards,Ben May
+2363,567536,2019-09-22,tor,nyy,3,8,Yankee Stadium,Eric Cooper
+2364,565297,2019-09-22,nym,cin,6,3,Great American Ball Park,Shane Livensparger
+2365,566741,2019-09-22,bos,tb,7,4,Tropicana Field,Carlos Torres
+2366,565587,2019-09-22,cws,det,3,6,Comerica Park,Doug Eddings
+2367,567439,2019-09-22,wsh,mia,3,5,Marlins Park,Angel Hernandez
+2368,567247,2019-09-22,sf,atl,4,1,SunTrust Park,Tom Woodring
+2369,565686,2019-09-22,laa,hou,5,13,Minute Maid Park,Chad Fairchild
+2370,567042,2019-09-22,kc,min,8,12,Target Field,Roberto Ortiz
+2371,567632,2019-09-22,pit,mil,3,4,Miller Park,Laz Diaz
+2372,565204,2019-09-22,stl,chc,3,2,Wrigley Field,Chris Guccione
+2373,566164,2019-09-22,tex,oak,8,3,Oakland Coliseum,Nick Mahrley
+2374,565879,2019-09-22,col,lad,4,7,Dodger Stadium,Nic Lentz
+2375,566352,2019-09-22,ari,sd,4,6,Petco Park,Gary Cederstrom
+2376,565396,2019-09-22,phi,cle,1,10,Progressive Field,Dan Bellino
+2377,565969,2019-09-23,phi,wsh,2,7,Nationals Park,Mark Wegner
+2378,566939,2019-09-23,bal,tor,10,11,Rogers Centre,Dan Iassogna
+2379,566742,2019-09-23,bos,tb,4,7,Tropicana Field,Chris Conroy
+2380,566064,2019-09-23,mia,nym,8,4,Citi Field,Joe West
+2381,564908,2019-09-23,stl,ari,9,7,Chase Field,David Rackley
+2382,565930,2019-09-24,phi,wsh,1,4,Nationals Park,Alan Porter
+2383,565970,2019-09-24,phi,wsh,5,6,Nationals Park,Stu Scheurwater
+2384,565588,2019-09-24,min,det,4,2,Comerica Park,Tony Randazzo
+2385,565298,2019-09-24,mil,cin,4,2,Great American Ball Park,Chad Whitson
+2386,566255,2019-09-24,chc,pit,2,9,PNC Park,Bruce Dreckman
+2387,566940,2019-09-24,bal,tor,11,4,Rogers Centre,Jansen Visconti
+2388,566065,2019-09-24,mia,nym,4,5,Citi Field,Jordan Baker
+2389,566743,2019-09-24,nyy,tb,1,2,Tropicana Field,Gabe Morales
+2390,566843,2019-09-24,bos,tex,12,10,Globe Life Park in Arlington,Fieldin Culbreth
+2391,567338,2019-09-24,cle,cws,11,0,Guaranteed Rate Field,Brian O'Nora
+2392,565778,2019-09-24,atl,kc,6,9,Kauffman Stadium,Marvin Hudson
+2393,564909,2019-09-24,stl,ari,2,3,Chase Field,Larry Vanover
+2394,566546,2019-09-24,col,sf,8,5,Oracle Park,Adrian Johnson
+2395,564809,2019-09-24,oak,laa,2,3,Angel Stadium,Mike Muchlinski
+2396,566353,2019-09-24,lad,sd,6,3,Petco Park,Mark Carlson
+2397,566447,2019-09-24,hou,sea,3,0,T-Mobile Park,Manny Gonzalez
+2398,564910,2019-09-25,stl,ari,7,9,Chase Field,Alfonso Marquez
+2399,565589,2019-09-25,min,det,5,1,Comerica Park,Ramon De Jesus
+2400,565299,2019-09-25,mil,cin,9,2,Great American Ball Park,Bill Miller
+2401,566256,2019-09-25,chc,pit,2,4,PNC Park,Paul Nauert
+2402,565971,2019-09-25,phi,wsh,2,5,Nationals Park,Ben May
+2403,566941,2019-09-25,bal,tor,2,3,Rogers Centre,Hunter Wendelstedt
+2404,566066,2019-09-25,mia,nym,3,10,Citi Field,Jeremie Rehak
+2405,566744,2019-09-25,nyy,tb,0,4,Tropicana Field,Cory Blaser
+2406,566844,2019-09-25,bos,tex,10,3,Globe Life Park in Arlington,John Libka
+2407,567339,2019-09-25,cle,cws,3,8,Guaranteed Rate Field,Mark Ripperger
+2408,565779,2019-09-25,atl,kc,10,2,Kauffman Stadium,Ryan Blakney
+2409,566547,2019-09-25,col,sf,1,2,Oracle Park,Todd Tichenor
+2410,564810,2019-09-25,oak,laa,3,2,Angel Stadium,Rob Drake
+2411,566354,2019-09-25,lad,sd,6,4,Petco Park,Tripp Gibson
+2412,566448,2019-09-25,hou,sea,3,0,T-Mobile Park,Sam Holbrook
+2413,565300,2019-09-26,mil,cin,5,3,Great American Ball Park,Doug Eddings
+2414,565590,2019-09-26,min,det,10,4,Comerica Park,Jeff Nelson
+2415,566845,2019-09-26,bos,tex,5,7,Globe Life Park in Arlington,CB Bucknor
+2416,566355,2019-09-26,lad,sd,1,0,Petco Park,Brian Gorman
+2417,566548,2019-09-26,col,sf,3,8,Oracle Park,Alex Tosi
+2418,565972,2019-09-26,phi,wsh,3,6,Nationals Park,Vic Carapazza
+2419,566257,2019-09-26,chc,pit,5,9,PNC Park,Ed Hickox
+2420,566067,2019-09-26,mia,nym,4,2,Citi Field,Eric Cooper
+2421,567340,2019-09-26,cle,cws,0,8,Guaranteed Rate Field,James Hoye
+2422,564811,2019-09-26,hou,laa,3,4,Angel Stadium,David Rackley
+2423,566449,2019-09-26,oak,sea,3,1,T-Mobile Park,Angel Hernandez
+2424,565973,2019-09-27,cle,wsh,2,8,Nationals Park,Joe West
+2425,566258,2019-09-27,cin,pit,5,6,PNC Park,John Tumpane
+2426,567137,2019-09-27,mia,phi,4,5,Citizens Bank Park,Chris Conroy
+2427,566942,2019-09-27,tb,tor,6,2,Rogers Centre,Laz Diaz
+2428,565105,2019-09-27,bal,bos,4,1,Fenway Park,Shane Livensparger
+2429,566068,2019-09-27,atl,nym,2,4,Citi Field,Mark Wegner
+2430,566846,2019-09-27,nyy,tex,14,7,Globe Life Park in Arlington,Gary Cederstrom
+2431,565491,2019-09-27,mil,col,7,11,Coors Field,Nick Mahrley
+2432,566645,2019-09-27,chc,stl,8,2,Busch Stadium,Will Little
+2433,565780,2019-09-27,min,kc,6,2,Kauffman Stadium,Carlos Torres
+2434,564911,2019-09-27,sd,ari,3,6,Chase Field,Tim Timmons
+2435,564812,2019-09-27,hou,laa,4,0,Angel Stadium,Ben May
+2436,566450,2019-09-27,oak,sea,3,4,T-Mobile Park,Chad Fairchild
+2437,566549,2019-09-27,lad,sf,9,2,Oracle Park,Jim Wolf
+2438,567341,2019-09-27,det,cws,4,3,Guaranteed Rate Field,Ron Kulpa
+2439,567304,2019-09-27,det,cws,0,0,Guaranteed Rate Field,
+2440,565106,2019-09-28,bal,bos,9,4,Fenway Park,Brian O'Nora
+2441,565781,2019-09-28,min,kc,4,3,Kauffman Stadium,Paul Nauert
+2442,566943,2019-09-28,tb,tor,1,4,Rogers Centre,Tony Randazzo
+2443,567342,2019-09-28,det,cws,1,7,Guaranteed Rate Field,Jerry Meals
+2444,567341,2019-09-28,det,cws,4,3,Guaranteed Rate Field,Ron Kulpa
+2445,565974,2019-09-28,cle,wsh,7,10,Nationals Park,Bruce Dreckman
+2446,566550,2019-09-28,lad,sf,2,0,Oracle Park,Roberto Ortiz
+2447,567138,2019-09-28,mia,phi,3,9,Citizens Bank Park,Chad Whitson
+2448,566259,2019-09-28,cin,pit,4,2,PNC Park,Dan Iassogna
+2449,566646,2019-09-28,chc,stl,8,6,Busch Stadium,Fieldin Culbreth
+2450,566069,2019-09-28,atl,nym,0,3,Citi Field,Stu Scheurwater
+2451,566847,2019-09-28,nyy,tex,4,9,Globe Life Park in Arlington,Adrian Johnson
+2452,564912,2019-09-28,sd,ari,5,6,Chase Field,Ryan Additon
+2453,565492,2019-09-28,mil,col,2,3,Coors Field,Mark Carlson
+2454,564813,2019-09-28,hou,laa,6,3,Angel Stadium,Larry Vanover
+2455,566451,2019-09-28,oak,sea,1,0,T-Mobile Park,Ryan Blakney
+2456,565107,2019-09-29,bal,bos,4,5,Fenway Park,Mark Ripperger
+2457,565975,2019-09-29,cle,wsh,2,8,Nationals Park,Cory Blaser
+2458,566260,2019-09-29,cin,pit,3,1,PNC Park,Jansen Visconti
+2459,566551,2019-09-29,lad,sf,9,0,Oracle Park,Manny Gonzalez
+2460,567139,2019-09-29,mia,phi,4,3,Citizens Bank Park,Bill Miller
+2461,566848,2019-09-29,nyy,tex,1,6,Globe Life Park in Arlington,Jordan Baker
+2462,564814,2019-09-29,hou,laa,8,5,Angel Stadium,Alfonso Marquez
+2463,566944,2019-09-29,tb,tor,3,8,Rogers Centre,Jeff Nelson
+2464,564913,2019-09-29,sd,ari,0,1,Chase Field,Mike Muchlinski
+2465,566452,2019-09-29,oak,sea,1,3,T-Mobile Park,Marvin Hudson
+2466,566070,2019-09-29,atl,nym,6,7,Citi Field,Alan Porter
+2467,567343,2019-09-29,det,cws,3,5,Guaranteed Rate Field,Gabe Morales
+2468,565493,2019-09-29,mil,col,3,4,Coors Field,Tripp Gibson
+2469,566647,2019-09-29,chc,stl,0,9,Busch Stadium,Doug Eddings
+2470,565782,2019-09-29,min,kc,4,5,Kauffman Stadium,John Libka

@@ -1,10 +1,16 @@
 import pandas as pd
 import numpy as np
 import datetime
+import os
 from sklearn.preprocessing import LabelBinarizer
 
 
-def create_processed_data(path="./data/pitchfx/"):
+def create_processed_data(
+        path="/home/simon/Documents/601-Project/pitchfx2019/raw/",
+        out_path="/home/simon/Documents/601-Project/pitchfx2019/processed/",
+        year=2019,
+        min_games=25
+):
     # import files
     try:
         atbats = pd.read_csv(path + "atbats.csv")
@@ -13,38 +19,83 @@ def create_processed_data(path="./data/pitchfx/"):
     except FileNotFoundError:
         raise FileNotFoundError("Data files not found. Please download them from Kaggle"
                                 " and unzip it into " + str(path))
-    # subset to 2018
-    pitches2018 = pitches[(pitches["ab_id"] // 1000000) == 2018]
+    # subset to year
+    pitches_year = pitches[(pitches["ab_id"] // 1000000) == year]
     del pitches
-    print("Imported 2018 pitches:", pitches2018.shape)
-    atbats2018 = atbats[(atbats["ab_id"] // 1000000) == 2018]
+    print("Imported year pitches:", pitches_year.shape)
+    atbats_year = atbats[(atbats["ab_id"] // 1000000) == year]
     del atbats
-    print("Imported 2018 at bats:", atbats2018.shape)
-    games2018 = games[(games["g_id"] // 100000) == 2018]
+    print("Imported year at bats:", atbats_year.shape)
+    games_year = games[(games["g_id"] // 100000) == year]
     del games
-    print("Imported 2018 games:", games2018.shape)
+    print("Imported year games:", games_year.shape)
+    # patch umpires
+    umpire_path = path + "umpires.csv"
+    if os.path.isfile(umpire_path):
+        umpires = pd.read_csv(umpire_path, index_col=0)
+        umpires["date"] = pd.to_datetime(umpires["datetime"]).dt.strftime('%Y-%m-%d')
+
+        abbrev = {
+            'chc': 'chn',
+            'cws': 'cha',
+            'kc': 'kca',
+            'laa': 'laa',
+            'lad': 'lan',
+            'nym': 'nyn',
+            'nyy': 'nya',
+            'sd': 'sdn',
+            'sf': 'sfn',
+            'stl': 'sln',
+            'tb': 'tba',
+        }
+
+        umpires["away"].replace(abbrev, inplace=True)
+        umpires["home"].replace(abbrev, inplace=True)
+
+        umpires["home"].value_counts()
+        games_year["home_team"].value_counts()
+        umpires["away"].value_counts()
+        games_year["away_team"].value_counts()
+
+        umpires["unique_id"] = umpires["date"] + "_" + \
+                               umpires["away"] + "-" + \
+                               umpires["away_score"].astype(str) + "_" + \
+                               umpires["home"] + "-" + \
+                               umpires["home_score"].astype(str)
+        games_year["unique_id"] = pd.to_datetime(games_year["date"]).dt.strftime('%Y-%m-%d') + "_" + \
+                                  games_year["away_team"] + "-" + \
+                                  games_year["away_final_score"].astype(int).astype(str) + "_" + \
+                                  games_year["home_team"] + "-" + \
+                                  games_year["home_final_score"].astype(int).astype(str)
+
+        merged = pd.merge(left=games_year, right=umpires, how="inner", on="unique_id")
+        hp_umpires = merged["hp_umpire"]
+        games_year.loc[hp_umpires.index, "umpire_HP"] = hp_umpires.values
+    print("Patching umpires:", games_year.shape)
+    games_year = games_year[~games_year["umpire_HP"].isna()]
+    print("With umpires:", games_year.shape)
     # Keep only called balls and strikes
-    pitchfx = pitches2018[pitches2018["code"].isin(["B", "C"])]
-    del pitches2018
+    pitchfx = pitches_year[pitches_year["code"].isin(["B", "C"])]
+    del pitches_year
     print("Keep only called balls and strikes:", pitchfx.shape)
     # join into pitches
-    pitchfx = pd.merge(pitchfx, atbats2018, how="left", on="ab_id")
-    del atbats2018
+    pitchfx = pd.merge(pitchfx, atbats_year, how="left", on="ab_id")
+    del atbats_year
     print("Merged at bats into pitches:", pitchfx.shape)
-    pitchfx = pd.merge(pitchfx, games2018, how="left", on="g_id")
+    pitchfx = pd.merge(pitchfx, games_year, how="left", on="g_id")
     print("Merged games into pitches:", pitchfx.shape)
     # regular season only
     pitchfx["date"] = pd.to_datetime(pitchfx["date"], format='%Y-%m-%d')
-    pitchfx = pitchfx[pitchfx["date"] <= datetime.datetime(2018, 10, 1, 0, 0, 0)]
-    pitchfx = pitchfx[pitchfx["date"] >= datetime.datetime(2018, 3, 29, 0, 0, 0)]
+    pitchfx = pitchfx[pitchfx["date"] <= datetime.datetime(year, 9, 29, 0, 0, 0)]
+    pitchfx = pitchfx[pitchfx["date"] >= datetime.datetime(year, 3, 28, 0, 0, 0)]
     print("Keep only regular season games:", pitchfx.shape)
     # umpires with many games
-    umpires_counts = games2018["umpire_HP"].value_counts()
-    del games2018
-    umpires = umpires_counts.index[umpires_counts > 29]
-    print("Umpires with at least 30 games:", umpires.shape)
+    umpires_counts = games_year["umpire_HP"].value_counts()
+    del games_year
+    umpires = umpires_counts.index[umpires_counts >= min_games]
+    print("Umpires with at least", min_games, "games:", umpires.shape)
     pitchfx = pitchfx[pitchfx["umpire_HP"].isin(umpires)]
-    print("Subset to umpires with at least 30 games:", pitchfx.shape)
+    print("Subset to umpires with at least", min_games, "games:", pitchfx.shape)
     # clean dataset (arbitrary by looking at histograms)
     ranges = {
         "px": (-5, 5),
@@ -58,8 +109,8 @@ def create_processed_data(path="./data/pitchfx/"):
         print("Subset to {} in {}:".format(col, r), pitchfx.shape)
 
     # write to file
-    print("Writing to ", path + "pitchfx.csv")
-    pitchfx.to_csv(path + "pitchfx.csv", index=False)
+    print("Writing to ", out_path + "pitchfx.csv")
+    pitchfx.to_csv(out_path + "pitchfx.csv", index=False)
     print("Success.")
 
 
@@ -139,12 +190,12 @@ class PitchFxDataset:
             if bins == "all":
                 cols.append(feature)
             else:
-                col = feature+"_binned"
+                col = feature + "_binned"
                 bins = sorted(bins)
                 labels = [
-                    feature+"_({},{}]".format(bins[i], bins[i+1]) if i > 0 else
-                    feature+"_[{},{}]".format(bins[i], bins[i+1])
-                    for i in range(len(bins)-1)
+                    feature + "_({},{}]".format(bins[i], bins[i + 1]) if i > 0 else
+                    feature + "_[{},{}]".format(bins[i], bins[i + 1])
+                    for i in range(len(bins) - 1)
                 ]
                 self.pitchfx[col] = pd.cut(
                     x=self.pitchfx[feature],
